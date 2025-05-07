@@ -11,7 +11,15 @@ body{
 
 /* Fonts */
 
+/* ? VERSION MOBILE */
 
+
+@media screen and (min-width: 390px) and (max-width: 900px){
+    body{
+        font-size: 14px;
+    }
+    
+}
 
 /*-------------------------- Colors ------------------*/
 /* #2DBBD4 */ /* Blue */
