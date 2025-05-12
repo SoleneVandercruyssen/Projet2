@@ -1,24 +1,130 @@
-/* *, ::before, ::after{
+*, ::before, ::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-} */
+}
 
 body{
     width: 100%;
     height: 100vh;
+    
 }
+
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 2px solid yellow;
+}
+
 
 /* Fonts */
 
 /* ? VERSION MOBILE */
 
 
-@media screen and (min-width: 390px) and (max-width: 900px){
+@media screen and (min-width: 350px) and (max-width: 900px){
     body{
         font-size: 14px;
+        background-color: #6e7777;
+        display: flex;
+    }
+
+.titre{
+    font-size: 1em;
+    color: #2DBBD4;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #BAE0E0;
+    width: 90%;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+
+
+h1{
+font-size: 20px;
+color: white;
+
+
+}
+
+.create{
+    background-color: #BAE0E0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #2DBBD4;
+    width: 100%;
+    padding: 10px;
+
+}
+li{
+list-style-type: none;
+float: inline-start;
+justify-content: center;
+align-items: center;
+/* padding: 20px; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    display: inline-block;
+}
+
+
+    nav{
+    width: 100%;
+    height: 50px;
+
+}
+
+
+
+
+    footer{
+        border: 2px solid plum;
+        font-size: 12px;
+        background-color:#2DBBD4 ;
+        width: 100%;
+        height: 5px;
+        position: sticky;
+        top: 100vh;
     }
     
+
+    footer ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    align-items:left ; 
+    height: 10px;
+}
+    .copyright{
+    width: 30%;
+    /* margin-top: 5%; */
+    margin-left: 30%;
+    font-size: 1em;
+    color: black;
+}
+
 }
 
 /*-------------------------- Colors ------------------*/
