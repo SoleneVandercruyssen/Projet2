@@ -194,12 +194,18 @@ nav{
     };
 }
 
+
+
+/*! bouton en savoir + */
+
 .more{
     width: 100px;
     height: 20px;
     border-radius: 10px;
     background-color: #2DBBD4;
 }
+
+
 
 /* TODO carousel statistiques */
 
@@ -219,6 +225,10 @@ nav{
     border-radius: 10px;
 }
 
+
+
+/* ! Footer */
+/* TODO changer les fonts */
 
 #mirror{
     display: flex;
