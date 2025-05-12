@@ -26,15 +26,51 @@ body{
 @media screen and (min-width: 350px) and (max-width: 900px){
     body{
         font-size: 14px;
-        background-color: #6e7777;
         display: flex;
-    }
+        display: grid;
+        grid-template-areas : 
+        "header header   "
+        "main main  "
+        "footer footer ";
+}
 
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #2DBBD4;
+    width: 100%;
+    padding: 3px;
+    grid-area: header;
+
+} 
+
+nav li{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    float: inline-start;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    display: inline-block;
+}
+
+    
+
+
+
+/* TODO premier titre */
 .titre{
     font-size: 1em;
     color: #2DBBD4;
     margin-left: 2%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 
@@ -53,79 +89,195 @@ body{
 }
 
 
-
 h1{
 font-size: 20px;
 color: white;
-
-
 }
 
-.create{
-    background-color: #BAE0E0;
-}
-
-header{
+nav{
     display: flex;
     flex-direction: row;
-    background-color: #2DBBD4;
-    width: 100%;
-    padding: 10px;
-
-}
-li{
-list-style-type: none;
-float: inline-start;
-justify-content: center;
-align-items: center;
-/* padding: 20px; */
 }
 
-a{
-    text-decoration: none;
+
+/* TODO second titre */
+
+#title{
+    display: flex;
     color: black;
-    font-size: large;
-    display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 
 
-    nav{
-    width: 100%;
-    height: 50px;
 
+
+.paragraphes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 2%;
+    background-color: #9381FF;
+    width: 90%;
+    height: 25vh;
+    border-radius: 10px;
 }
 
 
+
+/* TODO Cartes de présentation rapide */
+
+#create{
+    background-color: #BAE0E0;
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+    p{
+        font-size: 1em;
+    };
+}
+
+#seo{
+    background-color: #BAE0E0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+    p{
+        font-size: 1em;
+    };
+}
+
+#devops{
+    background-color: #BAE0E0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+    p{
+        font-size: 1em;
+    };
+}
+
+#design{
+    background-color: #BAE0E0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+    p{
+        font-size: 1em;
+    };
+}
+
+.more{
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #2DBBD4;
+}
+
+/* TODO carousel statistiques */
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.carousel_mobile{
+    width: 50%;
+    height: 15vh;
+    background-color: #BAE0E0;
+    border-radius: 10px;
+}
+
+
+#mirror{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+}
+
+
+.liens_footer{
+    width: 50%;
+}
 
 
     footer{
-        border: 2px solid plum;
+        /* border: 2px solid plum; */
+        position: sticky;
         font-size: 12px;
         background-color:#2DBBD4 ;
         width: 100%;
-        height: 5px;
-        position: sticky;
+        height: 10vh;
         top: 100vh;
+        grid-area: footer;
     }
     
 
     footer ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    float: left;
     justify-content: right;
     align-items:left ; 
-    height: 10px;
+    height: 20px;
 }
+
+    footer ul li{
+    display: flex;
+    float: left;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    a{
+        text-decoration: underline;
+        color: black;
+        font-size: 1em;
+        width: 100%;
+    }
+}
+
     .copyright{
-    width: 30%;
-    /* margin-top: 5%; */
-    margin-left: 30%;
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
     font-size: 1em;
     color: black;
 }
 
-}
+}   
 
 /*-------------------------- Colors ------------------*/
 /* #2DBBD4 */ /* Blue */
