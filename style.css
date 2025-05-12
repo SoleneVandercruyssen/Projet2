@@ -24,6 +24,24 @@ body{
 
 
 @media screen and (min-width: 350px) and (max-width: 900px){
+
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#affiche{
+    width: 100%;
+    height: 20vh;
+}
+
     body{
         font-size: 14px;
         display: flex;
