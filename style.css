@@ -18,6 +18,16 @@ body{
 }
 
 
+@font-face {
+    font-family: Play;
+    src: url(./fonts/Play/Play-Regular.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    src: url(./fonts/Spectral/Spectral-Regular.ttf);
+}
+
 /* Fonts */
 
 /* ? VERSION MOBILE */
@@ -25,22 +35,40 @@ body{
 
 @media screen and (min-width: 350px) and (max-width: 900px){
 
-img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+strong{
+    color: #FFFF;
 }
 
-.logo_img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
 }
 
-#affiche{
-    width: 100%;
-    height: 20vh;
+    .logo_img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
 }
+
+    #affiche{
+        width: 100%;
+        height: 25vh;
+        z-index: 100;
+}
+
+#discover{
+    width: 120px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: #F5CB5C;
+    font-family: Spectral;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
 
     body{
         font-size: 14px;
@@ -79,7 +107,8 @@ nav a{
     display: inline-block;
 }
 
-    
+
+
 
 
 
@@ -108,9 +137,17 @@ nav a{
 
 
 h1{
-font-size: 20px;
-color: white;
+    font-family: Play;
+    font-size: 20px;
+    color: white;
 }
+
+p{
+    font-family: Spectral;
+    font-size: 12px;
+}
+
+
 
 nav{
     display: flex;
