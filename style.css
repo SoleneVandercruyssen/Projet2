@@ -36,6 +36,9 @@ body{
 @media screen and (min-width: 350px) and (max-width: 900px){
 
 strong{
+    /* color: #F5CB5C; */
+    /* color: #2DBBD4; */
+    /* color: #2DBBD4; */
     color: #FFFF;
 }
 
@@ -100,6 +103,9 @@ p{
 }
 
 
+
+/* TODO Faire un menu burger, placer le titre au centre */
+
 header{
     display: flex;
     flex-direction: row;
@@ -153,15 +159,6 @@ nav a{
     height: 80vh;
     border-radius: 10px;
 }
-
-
-
-
-
-/* nav{
-    display: flex;
-    flex-direction: row;
-} */
 
 
 /* TODO second titre : "Bienvenue sur Quanticode"*/
@@ -287,7 +284,9 @@ nav a{
     height: 20px;
     border-radius: 10px;
     background-color: #2DBBD4;
-    margin-left: 5%;
+    justify-content: center;
+    font-family: Play;
+    box-shadow: 1px 1px 1px #000000;    
 }
 
 
@@ -340,16 +339,16 @@ nav a{
 /* ! Footer */
 /* TODO changer les fonts */
 
-#mirror{
-    display: flex;
-    flex-direction: row;
-    margin-left: 2%;
+    #mirror{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
 }
 
 
-.liens_footer{
-    width: 50%;
-    font-family: Play;
+    .liens_footer{
+        width: 50%;
+        font-family: Play;
 }
 
 
@@ -366,19 +365,19 @@ nav a{
     
 
     footer ul {
-    float: left;
-    justify-content: right;
-    align-items:left ; 
-    height: 20px;
+        float: left;
+        justify-content: right;
+        align-items:left ; 
+        height: 20px;
 }
 
     footer ul li{
-    display: flex;
-    float: left;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+        display: flex;
+        float: left;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
 
     a{
         text-decoration: underline;
@@ -390,12 +389,12 @@ nav a{
 
     .copyright{
         font-family: Play;
-    width: 50%;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    margin-left: 2%;
-    color: black;
+        width: 50%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        color: black;
 }
 
 }   
