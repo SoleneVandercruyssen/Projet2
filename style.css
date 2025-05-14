@@ -4,19 +4,7 @@
     padding: 0;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    
-}
-
-
-.logo{
-    width: 50px;
-    height: 50px;
-    border-radius: 2px solid yellow;
-}
-
+/* ? FONTS  */
 
 @font-face {
     font-family: Play;
@@ -28,18 +16,44 @@ body{
     src: url(./fonts/Spectral/Spectral-Regular.ttf);
 }
 
-/* Fonts */
 
-/* ? VERSION MOBILE */
+/* ! Version desktop */
+@media screen and (min-width: 1000px) and (max-width: 1990px) {
+    
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+}
+/* ! Fin Version Desktop */
+
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 2px solid yellow;
+}
+
+
+
+
+/* ! VERSION MOBILE */
 
 
 @media screen and (min-width: 350px) and (max-width: 900px){
 
-strong{
-    /* color: #F5CB5C; */
-    /* color: #2DBBD4; */
-    /* color: #2DBBD4; */
+
+
+em{
     color: #FFFF;
+    font-size: 11.5px;
 }
 
 h1{
@@ -67,31 +81,35 @@ p{
     #affiche{
         position: absolute;
         width: 100%;
-        height: 25vh;
-        z-index: 100;
-        border: 2px solid #2DBBD4;
+        height: 26vh;
+        margin-bottom: 15%;
+        z-index: 1;
+        /* border: 2px solid #2DBBD4; */
 }
 
 
 
- /* ! Attention : Titre de l'input : */
+ /* ! Attention : Titre de l'input : Discover */
 
-#discover{
-    width: 120px;
-    height: 22px;
-    border-radius: 10px;
-    background-color: #F5CB5C;
-    font-family: Spectral;
-    font-size: 1em;
-    font-weight: bold;
-    margin-left: 35%;
-    margin-top: 10%;
+    #discover{
+        width: 120px;
+        height: 22px;
+        border-radius: 10px;
+        background-color: #F5CB5C;
+        font-family: Spectral;
+        font-size: 1em;
+        font-weight: bold;
+        margin-left: 35%;
+        margin-top: 10%;
+        border: none;
 }
 
 
 
 
     body{
+        width: 100%;
+        height: 100vh;
         font-size: 14px;
         display: flex;
         display: grid;
@@ -104,7 +122,7 @@ p{
 
 
 
-/* TODO Faire un menu burger, placer le titre au centre */
+/* TODO Faire un menu burger à droite, placer le titre au centre */
 
 header{
     display: flex;
@@ -135,7 +153,7 @@ nav a{
 
 
 
-
+/* ! MAIN */
 
 /* TODO premier titre */
 .titre{
@@ -208,7 +226,7 @@ nav a{
 
 
 #create{
-    background-color: #BAE0E0;
+    background-color: #F5CB5C;
     width: 90%;
     height: 100%;
     display: flex;
@@ -225,7 +243,7 @@ nav a{
 }
 
 #seo{
-    background-color: #BAE0E0;
+    background-color: #2DBBD4;
     float: right;
     width: 90%;
     height: 100%;
@@ -259,7 +277,7 @@ nav a{
 }
 
 #design{
-    background-color: #BAE0E0;
+    background-color: #9381FF;
     width: 90%;
     height: 100%;
     display: flex;
@@ -281,7 +299,7 @@ nav a{
 
 .more{
     width: 100px;
-    height: 20px;
+    height: 25px;
     border-radius: 10px;
     background-color: #2DBBD4;
     justify-content: center;
@@ -296,6 +314,11 @@ nav a{
     margin-top: 15%;
 }
 
+#section6 {
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
 #chiffres{
     p{
         margin-bottom: 5%;
@@ -306,6 +329,8 @@ nav a{
     margin-top: 15%;
     margin-bottom: 5%;
 }
+
+
 
 
 /* TODO carousel statistiques */
@@ -326,15 +351,64 @@ nav a{
 .carousel_mobile{
     width: auto;
     height: auto;
-    background-color: #BAE0E0;
+    background-color: #F5CB5C;
     border-radius: 10px;
+    margin-right: 3%;  
+    max-width: 1000px;
     position: relative;
-    margin-right: 3%;
+    display: none;
+    margin: auto;
 }
 
 
 
 
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 230vh;
+        width: auto;
+        /* margin-top: 22px; */
+        padding: 16px;
+        color: #000000;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #9381FF;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #000000;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
 
 /* ! Footer */
 /* TODO changer les fonts */
@@ -345,6 +419,9 @@ nav a{
         margin-left: 2%;
 }
 
+.face-to-face{
+    display: flex;
+}
 
     .liens_footer{
         width: 50%;
@@ -353,7 +430,6 @@ nav a{
 
 
     footer{
-        /* border: 2px solid plum; */
         position: sticky;
         font-size: 12px;
         background-color:#2DBBD4 ;
@@ -387,6 +463,11 @@ nav a{
     }
 }
 
+#phone{
+    width: 25px;
+    height: 25px;
+}
+
     .copyright{
         font-family: Play;
         width: 50%;
@@ -395,6 +476,10 @@ nav a{
         flex-direction: column;
         margin-left: 2%;
         color: black;
+
+        #mail, #tel{
+            text-decoration: underline;
+        }
 }
 
 }   

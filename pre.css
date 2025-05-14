@@ -1,0 +1,210 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ? FONTS  */
+
+@font-face {
+    font-family: Play;
+    src: url(./fonts/Play/Play-Regular.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    src: url(./fonts/Spectral/Spectral-Regular.ttf);
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 900px){
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #BAE0E0;
+    
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#map{
+    background-color: rgba( 255, 255, 255, 0.5);
+}
+
+iframe{
+    position: static;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    
+}
+
+/* TODO Faire un menu burger, placer le titre au centre */
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #2DBBD4;
+    width: 100%;
+    padding: 3px;
+    grid-area: header;
+
+} 
+
+nav li{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    float: inline-start;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    display: inline-block;
+}
+
+
+/* Fin du header */
+
+h1{
+    margin-left: 40%;
+}
+
+h2{
+    margin-top: 20%;
+    margin-left: 25%;
+    font-family: Play;
+}
+
+p{
+    font-family: Spectral;
+    font-size: 11px;
+}
+
+form{
+    width: 300px;
+    height: 420px;
+    background-color: rgba( 255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    input{
+        border-radius: 5px;
+        border: none;
+        width: 90%;
+        height: 3vh;
+        margin-top: 5%;
+
+    }
+
+    textarea{
+        border: 1px solid rgb(0, 0, 0, 0.2);
+        border-radius: 5px;
+        margin-top: 5%;
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! Footer */
+/* TODO changer les fonts */
+
+    #mirror{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
+}
+
+
+    .liens_footer{
+        width: 50%;
+        font-family: Play;
+}
+
+
+    footer{
+        position: sticky;
+        font-size: 12px;
+        background-color:#2DBBD4 ;
+        width: 100%;
+        height: 15vh;
+        top: 100vh;
+        grid-area: footer;
+    }
+    
+
+    footer ul {
+        float: left;
+        justify-content: right;
+        align-items:left ; 
+        height: 20px;
+}
+
+    footer ul li{
+        display: flex;
+        float: left;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    a{
+        text-decoration: underline;
+        color: black;
+        font-size: 1em;
+        width: 100%;
+    }
+}
+
+    .copyright{
+        font-family: Play;
+        width: 50%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        color: black;
+
+        #mail, #tel{
+            text-decoration: underline;
+        }
+}
+
+}
+/*-------------------------- Colors ------------------*/
+/* #2DBBD4 */ /* Blue */
+/* #BAE0E0 */ /* LightBlue */
+/* #F5CB5C */ /* Yellow */
+/* #9381FF */ /* Purple */
