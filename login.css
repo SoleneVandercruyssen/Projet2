@@ -47,23 +47,32 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
+#sub{
+        
+        /* border:1px solid #2DBBD4; */
+        margin-bottom: 4%;
+        font-family: Spectral;
+        /* font-weight: bold; */
 }
+
 
 
 .face-to-face{
     display: flex;
 }
 
-
-
     input{
-        width: 50%;
+        width: 100%;
         border-radius: 5px;
         background-color: transparent;
         color: #000000;
         border: 2px solid black;
-        
     }
+
+}
+
 }
 
 /*-------------------------- Colors ------------------*/
