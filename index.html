@@ -113,8 +113,6 @@
         </div>
 
 
-
-        
 </section>
 <!-- Fin de la section  -->
 
@@ -129,48 +127,52 @@
             <p>Chez <strong>Quanticode</strong>, nous sommes fiers de notre parcours et de nos réalisations. Voici quelques chiffres qui témoignent de notre expertise et de notre engagement envers nos clients et apprenants.</p>
         </div>
 
-    <div id="carousel">
-        <div class="carousel_mobile" >
 
-    <p>📈 +120 projets web livrés
+<!-- Début du carousel/slider -->
+    <div id="carousel">
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094; </a>
+        
+        <div class="slider-container">
+
+        <div class="carousel_mobile" > 
+    <p>📈 +120 projets web livrés <br>
         Des sites vitrine, e-commerce, plateformes sur mesure et applications web réalisés pour des clients de tous secteurs.</p>
     </div>
 
     <div  class="carousel_mobile">
-        <p>🎓 +350 personnes formées
+        <p>🎓 +350 personnes formées <br>
         Des professionnels et passionnés ont suivi nos formations en SEO, DevOps, design UX/UI et développement web.</p>
     </div>
 
     <div  class="carousel_mobile">
-        <p><i class="fa-thin fa-globe" style="color: #74C0FC;"></i>🌐 97% de satisfaction client
+        <p><i class="fa-thin fa-globe" style="color: #74C0FC;"></i>🌐 97% de satisfaction client <br>
         Une qualité de service saluée par nos clients pour notre réactivité, notre expertise et notre accompagnement personnalisé.</p>
     </div>
 
     <div  class="carousel_mobile">
-        <p>👨‍💻 Une équipe de 12 experts
+        <p>👨‍💻 Une équipe de 12 experts <br>
         Développeurs, designers, formateurs et consultants réunis autour d'une même passion : l'innovation numérique.</p>
     </div>
 
     <div class="carousel_mobile">
-        <p>🚀 Taux de reconversion post-formation : 82%
+        <p>🚀 Taux de reconversion post-formation : 82% <br>
         Un grand nombre de nos apprenants trouvent un emploi ou lancent leur propre activité dans les 6 mois suivant la formation.</p>
+    </div> 
     </div>
+    <a class="next"onclick="changeSlide(1)">&#10095;</a>
 
-    </div>
-
-    <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
- <!-- Boutons du bas -->
-    <div style="text-align:center">
+    <div class="dots">
+        <!-- DOTS du carousel-->
         <span class="dot" onclick="setSlide(0)"></span>
         <span class="dot" onclick="setSlide(1)"></span>
         <span class="dot" onclick="setSlide(2)"></span>
         <span class="dot" onclick="setSlide(3)"></span>
         <span class="dot" onclick="setSlide(4)"></span>
     </div>
+    
+</div>
 </section>
 <!-- ! Fin du carousel -->
 
@@ -189,14 +191,15 @@
                 <li><a href="">Mentions légales</a></li>
                 <li><a href="">Politique de confidentialité</a></li>
                 <li><a href="">Cookies</a></li>
-                
             </ul>
         </div>
             <div class="copyright">
-            <!-- <img src="" id="mail" alt=""> -->
-            <p id="mail">Quanticode@gmail.com</p>
             <div class="face-to-face">
-            <img src="./images/icons8-call-50(2).png" id="phone" alt="">
+            <img src="./images/icons8-courrier-50.png" id="mail" alt="icône mail">
+            <p id="mail">Quanticode@gmail.com</p>
+            </div>
+            <div class="face-to-face">
+            <img src="./images/icons8-call-50(2).png" id="phone" alt="icône phone">
             <p id="tel"> 06 44 52 20 10</p>
         </div>
             <p> ©Copyright|Solène Vandercruyssen</p>

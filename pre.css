@@ -25,6 +25,11 @@ body{
     background-color: #BAE0E0;
     
 }
+.blanco{
+    background-color: #FFFFFF;
+    height: 15vh;
+    margin-top: 5vh;
+}
 
 main{
     display: grid;
@@ -44,6 +49,30 @@ iframe{
     margin-bottom: 10%;
     margin-left: 10%;
     
+}
+
+.face-to-face{
+    display: flex;
+}
+
+#mail, #phone{
+    width: 20px;
+    height: 20px;
+    margin-right: 4%;
+    border-radius: 0;
+}
+
+#parking{
+    width: 20px;
+    height: 20px;
+    margin-right: 1%;
+    border-radius: 0;
+}
+
+#local{
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
 }
 
 /* TODO Faire un menu burger, placer le titre au centre */
@@ -82,7 +111,7 @@ h1{
 }
 
 h2{
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 25%;
     font-family: Play;
 }
@@ -120,6 +149,16 @@ form{
         border-radius: 5px;
         margin-top: 5%;
         width: 90%;
+    }
+
+    #sub{
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        border:1px solid #2DBBD4;
+        margin-bottom: 4%;
+        font-family: Spectral;
+        font-weight: bold;
     }
 }
 

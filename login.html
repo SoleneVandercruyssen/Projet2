@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
     <title>Login</title>
 </head>
 <body>
-    
+    <header>
+
+ <!-- Version mobile -->
+        <nav>
+            <div id="flex">
+        <div class="logo">
+            <img src="" alt="Logo de l'entreprise" class="logo_img">
+        </div>
+        <div class="title">
+            <h1 id="titre">Quanticode</h1>
+        </div>
+    </div>
+            <div class="nav">
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="./index.html"></a>Home</li>
+                        <li><a href="./presentation.html"></a>Qui sommes-nous ?</li>
+                        <li><a href=""></a>Projets</li>
+                        <li><a href="./formations.html"></a>Formations</li>
+                        <!-- <li><a href=""></a>Desserts</li>
+                        <li><a href=""></a>Réservations</li> -->
+                    </ul>
+                        </div>
+                </div>
+        </nav>
+
+        <div class="compte">
+            <button type="button" id="private">Privé</button>
+            <button type="button" id="public">Public</button>
+        </div>
+    </header>
+    <!-- Accés utilisateur et accés entreprise -->
+    <form action="" method="get">
+                <label for="prenom" id="prenom"></label>
+                <div class="face-to-face">
+                <img src="./images/icons8-name-tag-24.png" alt="icône Identifiant">
+                <input type="text" name="prenom" placeholder="Identifiant">
+                </div> 
+                <br>
+
+                <label for="password" id="password"></label>
+                <div class="face-to-face" >
+                <img src="./images/icons8-password-24.png" alt="icône password">   
+                <input type="password" name="password" placeholder="Password">
+                </div> 
+                <br>
+                <button type="submit" id="sub">Valider</button>
+    </form>
+
+<!-- ! FOOTER -->
+    <footer class="foot">
+        <div id="mirror">
+        <div class="liens_footer">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./presentation.html">Qui sommes-nous ?</a></li>
+                <li><a href="./formations.html">Formations</a></li>
+                <li><a href="">Projets</a></li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="">Politique de confidentialité</a></li>
+                <li><a href="">Cookies</a></li>
+                
+            </ul>
+        </div>
+            <div class="copyright">
+            <div class="face-to-face">
+            <img src="./images/icons8-courrier-50.png" id="mail" alt="icône mail">
+            <p id="mail">Quanticode@gmail.com</p>
+            </div>
+            <div class="face-to-face">
+            <img src="./images/icons8-call-50(2).png" id="phone" alt="icône phone">
+            <p id="tel"> 06 44 52 20 10</p>
+        </div>
+            <p> ©Copyright|Solène Vandercruyssen</p>
+            <p>All rights reserved|2025</p>
+        </div>
+        </div>
+    </footer>
+<!-- Fin du footer -->
+
+
 </body>
 </html>
