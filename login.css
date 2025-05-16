@@ -1,0 +1,82 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ? FONTS  */
+
+@font-face {
+    font-family: Play;
+    src: url(./fonts/Play/Play-Regular.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    src: url(./fonts/Spectral/Spectral-Regular.ttf);
+}
+
+@media screen and (min-width: 360px) and (max-width: 990px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #9381FF;
+    }
+
+
+    /* Button switch */
+    button{
+        width: 100px;
+        height: 20px;
+        background-color: #BAE0E0;
+        border-radius: 20px;
+        border: 1px solid #000000;
+        box-shadow: 2px 4px 2px;
+        color: #000000;
+    }
+
+form{
+    width: 300px;
+    height: 420px;
+    background-color: rgba( 255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+#sub{
+        
+        /* border:1px solid #2DBBD4; */
+        margin-bottom: 4%;
+        font-family: Spectral;
+        /* font-weight: bold; */
+}
+
+
+
+.face-to-face{
+    display: flex;
+}
+
+    input{
+        width: 100%;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #000000;
+        border: 2px solid black;
+    }
+
+}
+
+}
+
+/*-------------------------- Colors ------------------*/
+/* #2DBBD4 */ /* Blue */
+/* #BAE0E0 */ /* LightBlue */
+/* #F5CB5C */ /* Yellow */
+/* #9381FF */ /* Purple */

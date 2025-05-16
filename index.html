@@ -1,172 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Projet 2</title>
-  </head>
-  <body>
-    <div>
-      <header class="head">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./script.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Quanticode</title>
+</head>
+<body>
+    <!-- ! Menu burger  -->
+    <header>
+        <!-- Version mobile -->
+        <nav>
+            <div id="flex">
         <div class="logo">
-          <img
-            src="images/logo.png"
-            alt="Logo de l'entreprise"
-            class="logo_img"
-          />
+            <img src="" alt="Logo de l'entreprise" class="logo_img">
         </div>
-
-        <div class="nav">
-          <div class="title">
-            <h1>Quanticode</h1>
-          </div>
-          <div class="nav-menu">
-            <ul>
-              <li><a href=""></a>Home</li>
-              <li><a href=""></a>Qui sommes-nous ?</li>
-              <li><a href=""></a>Projets</li>
-              <li><a href=""></a>Formations</li>
-
-              <!-- <li><a href=""></a>Desserts</li>
+        <div class="title">
+            <h1 id="titre">Quanticode</h1>
+        </div>
+    </div>
+            <div class="nav">
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="./index.html"></a>Home</li>
+                        <li><a href="./presentation.html"></a>Qui sommes-nous ?</li>
+                        <li><a href=""></a>Projets</li>
+                        <li><a href="./formations.html"></a>Formations</li>
+                        <!-- <li><a href=""></a>Desserts</li>
                         <li><a href=""></a>Réservations</li> -->
-            </ul>
-          </div>
+                    </ul>
+                        </div>
+                </div>
+        </nav>
+    </header>
+<!-- ! Fin du Menu -->
+
+
+
+<main>
+    <!-- Section 1 : grande image; invite les clients à découvrir ce que l'entreprise propose  -->
+<section  id="presentation"  class="section1">
+    <div>
+        <div>
+            
+            <img id="affiche" src="./images/logo.png" alt="">
+            <!-- <h1 id="title">Bienvenue sur Quanticode !</h1> -->
+            <button id="discover"  type="button">Découvrir</button>
         </div>
-      </header>
+    </div>
+</section>
+
+
+
+
+
+<!-- Section de paragraphes : petite présentation de l'entreprise -->
+<section  id="section3"  class="section1">
+    <div>
+        <div class="paragraphes" id="paragraphe1"  >
+            <p> <em>Quanticode</em> est une entreprise innovante spécialisée dans le <em>développement web</em> et <em>la formation numérique</em>. Nous mettons notre expertise au service des entreprises, startups et professionnels souhaitant renforcer leur présence en ligne ou monter en compétences dans les domaines du <em>SEO</em> , du <em>DevOps</em> , du <em>design</em>  et du <em> développement web</em>.</p>
+        </div> 
+        <br>
+        <div class="paragraphes" id="paragraphe2" >
+            <p>Notre équipe de développeurs passionnés accompagne les entreprises dans la création de <em> sites web performants, sur mesure et à forte valeur ajoutée</em>, adaptés à leurs objectifs et à leur identité. En parallèle, notre offre de formations est conçue pour transmettre des savoir-faire concrets, actuels et directement applicables, que ce soit pour monter en compétence ou pour amorcer une reconversion professionnelle.</p>
+        </div>
+        <br>
+        <div class="paragraphes" id="paragraphe3" >
+            <p> Chez <em>Quanticode</em> , nous croyons en la <em> technologie utile</em>, à la <em> pédagogie pratique </em>et à l'importance <em>d'un accompagnement humain</em>  à chaque étape de votre projet digital. De plus nous croyons fermement que la technologie doit être <em>accessible à tous</em>  et que chacun peut devenir acteur de sa transformation numérique. C'est pourquoi nous proposons des solutions adaptées à chaque besoin, qu'il s'agisse de <em> développement web</em>, de <em> SEO</em>, de <em> DevOps</em> ou de <em>design</em> .</p>
+    </div>
+</section>
+<!-- Fin de la section  -->
+
+
+
+
+
+<!-- Section coupée en 4 -->
+<section   id="section5"  class="section1">
+
+        <div id="create">
+            <h1  class="values">Développement</h1>
+            <img src="./images/4716574.jpg" alt="illustration développement web">
+            <p>Cœur de métier de Quanticode, le développement web est notre terrain d'expression. Nous construisons des <em>applications modernes, performantes et évolutives</em> , en utilisant les dernières technologies. Nos formations couvrent tout le cycle de développement : HTML/CSS, JavaScript, frameworks modernes, bases de données, API, etc</p>
+            
+            <button class="more" type="button">En savoir +</button>
+        </div>
+
+        <div class="values" id="seo">
+            <h1>SEO</h1>
+            <img src="./images/32010.jpg" alt="illustration SEO">
+            <p>Dans un web ultra-concurrentiel, être visible est crucial. Nous formons et accompagnons nos clients dans la <em>maîtrise du SEO </em> pour améliorer leur position sur les moteurs de recherche, générer du trafic qualifié et renforcer leur stratégie de contenu. De la technique à la sémantique, nous couvrons toutes les facettes du référencement.</p>
+            
+            <button class="more" type="button">En savoir +</button>
+        </div>
+
+        <div class="values" id="devops">
+            <h1>DEVOPS</h1>
+            <img src="./images/7060483.jpg" alt="illustration devops">
+            <p>L'agilité et la stabilité des systèmes sont des atouts majeurs dans un monde digital en constante évolution. Grâce à notre expertise <em>DevOps</em> , nous formons à <em> l'intégration continue</em>, au  <em>déploiement automatisé</em> et aux  <em>bonnes pratiques de collaboration </em>entre les équipes de développement et d'exploitation.</p>
+            
+            <button class="more" type="button">En savoir +</button>
+        </div>
+
+        <div class="values" id="design">
+            <h1 >DESIGN</h1>
+            <img src="./images/2248604.jpg" alt="illustration design">
+            <p>Un bon produit est avant tout un produit bien pensé pour l'utilisateur. Nous transmettons les fondements du <em>design UX/UI</em> , de la conception de maquettes à la création d'interfaces ergonomiques et engageantes. Nos designers travaillent également en synergie avec les développeurs pour proposer des solutions à la fois esthétiques et fonctionnelles</p>
+            
+            <button class="more" type="button">En savoir +</button>
+        </div>
+
+
+</section>
+<!-- Fin de la section  -->
+
+
+<!-- ! Carousel statistiques -->
+
+
+<section id="section6" class="section1">
+    <div>
+        <div id="chiffres">
+            <h1 id="chiffre" >Nos chiffres clés</h1>
+            <p>Chez <strong>Quanticode</strong>, nous sommes fiers de notre parcours et de nos réalisations. Voici quelques chiffres qui témoignent de notre expertise et de notre engagement envers nos clients et apprenants.</p>
+        </div>
+
+
+<!-- Début du carousel/slider -->
+    <div id="carousel">
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094; </a>
+        
+        <div class="slider-container">
+
+        <div class="carousel_mobile" > 
+    <p>📈 +120 projets web livrés <br>
+        Des sites vitrine, e-commerce, plateformes sur mesure et applications web réalisés pour des clients de tous secteurs.</p>
     </div>
 
-    <main>
-      <section id="presentation" class="section1">
-        <div>
-          <div>
-            <img
-              src="/craiyon_132544_transformer_based_meta_learner.png"
-              alt="Image représentative de l'entreprise"
-            />
-            <h1>Bienvenue sur Quanticode !</h1>
-            <button type="button">Découvrir</button>
-          </div>
-        </div>
-      </section>
-      <section id="section2" class="section1">
-        <div>
-          <div>
-            <img src="" alt="" />
-          </div>
-        </div>
-      </section>
-      <section id="section3" class="section1">
-        <div>
-          <div class="paragraphes" id="paragraphe1">
-            <p>
-              Fondée en 2022, Quanticode est une entreprise spécialisée dans le
-              développement de sites web sur mesure. Depuis ses débuts, elle
-              s'est donnée pour mission d'accompagner les entrepreneurs,
-              commerçants, associations et PME dans leur transition numérique,
-              en leur offrant des solutions modernes, performantes et adaptées à
-              leurs besoins.
-              <br />
-              Basée à Lille, France, Quanticode met à profit ses 3 années
-              d'expérience pour concevoir des sites internet professionnels,
-              intuitifs et esthétiques. Que ce soit pour un site vitrine, un
-              site e-commerce ou une plateforme personnalisée, notre équipe
-              travaille en étroite collaboration avec ses clients afin de
-              transformer leurs idées en projets concrets.
-              <br />
-              Grâce à une approche centrée sur l'écoute, l'innovation et la
-              qualité, Quantique s'est rapidement imposée comme un partenaire de
-              confiance dans le domaine du web. Notre objectif : offrir à chaque
-              client une présence en ligne qui lui ressemble et qui performe.
-            </p>
-          </div>
-          <div class="paragraphes" id="paragraphe2">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-              error deleniti commodi! Ipsam sapiente eveniet temporibus
-              accusamus dolorum! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Architecto, laudantium.
-            </p>
-          </div>
-        </div>
-      </section>
+    <div  class="carousel_mobile">
+        <p>🎓 +350 personnes formées <br>
+        Des professionnels et passionnés ont suivi nos formations en SEO, DevOps, design UX/UI et développement web.</p>
+    </div>
 
-      <section id="section4" class="section1">
-        <div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt
-              aspernatur odit magni labore ducimus voluptates quisquam cumque
-              dicta voluptatem!
-            </p>
-          </div>
-        </div>
-      </section>
+    <div  class="carousel_mobile">
+        <p><i class="fa-thin fa-globe" style="color: #74C0FC;"></i>🌐 97% de satisfaction client <br>
+        Une qualité de service saluée par nos clients pour notre réactivité, notre expertise et notre accompagnement personnalisé.</p>
+    </div>
 
-      <section id="section5" class="section1">
-        <div>
-          <div>
-            <h1>CREATE</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt
-              aspernatur odit magni labore ducimus voluptates quisquam cumque
-              dicta voluptatem!
-            </p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h1>SEO</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt
-              aspernatur odit magni labore ducimus voluptates quisquam cumque
-              dicta voluptatem!
-            </p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h1>DEVOPS</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt
-              aspernatur odit magni labore ducimus voluptates quisquam cumque
-              dicta voluptatem!
-            </p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h1>DESIGN</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt
-              aspernatur odit magni labore ducimus voluptates quisquam cumque
-              dicta voluptatem!
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
+    <div  class="carousel_mobile">
+        <p>👨‍💻 Une équipe de 12 experts <br>
+        Développeurs, designers, formateurs et consultants réunis autour d'une même passion : l'innovation numérique.</p>
+    </div>
 
+    <div class="carousel_mobile">
+        <p>🚀 Taux de reconversion post-formation : 82% <br>
+        Un grand nombre de nos apprenants trouvent un emploi ou lancent leur propre activité dans les 6 mois suivant la formation.</p>
+    </div> 
+    </div>
+    <a class="next"onclick="changeSlide(1)">&#10095;</a>
+
+    <div class="dots">
+        <!-- DOTS du carousel-->
+        <span class="dot" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+        <span class="dot" onclick="setSlide(4)"></span>
+    </div>
+    
+</div>
+</section>
+<!-- ! Fin du carousel -->
+
+
+</main>
+
+<!-- ! FOOTER -->
     <footer class="foot">
-      <div class="liens_footer">
-        <ul>
-          <li><a href=""></a>Home</li>
-          <li><a href=""></a>Qui sommes-nous ?</li>
-          <li><a href=""></a>Projects</li>
-          <li><a href=""></a>Formations</li>
-          <!-- <li><a href=""></a>Desserts</li>
-                <li><a href=""></a>Réservations</li> -->
-        </ul>
-      </div>
-      <div class="copyright">
-        <p>Qui sommes-nous ?</p>
-        <p>Cookies</p>
-
-        <br />
-        <p>Mentions légales</p>
-        <p>Politique de confidentialités</p>
-        <p>©Copyright|Solène Vandercruyssen|All rights reserved 2025</p>
-      </div>
+        <div id="mirror">
+        <div class="liens_footer">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./presentation.html">Qui sommes-nous ?</a></li>
+                <li><a href="./formations.html">Formations</a></li>
+                <li><a href="">Projets</a></li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="">Politique de confidentialité</a></li>
+                <li><a href="">Cookies</a></li>
+            </ul>
+        </div>
+            <div class="copyright">
+            <div class="face-to-face">
+            <img src="./images/icons8-courrier-50.png" id="mail" alt="icône mail">
+            <p id="mail">Quanticode@gmail.com</p>
+            </div>
+            <div class="face-to-face">
+            <img src="./images/icons8-call-50(2).png" id="phone" alt="icône phone">
+            <p id="tel"> 06 44 52 20 10</p>
+        </div>
+            <p> ©Copyright|Solène Vandercruyssen</p>
+            <p>All rights reserved|2025</p>
+        </div>
+        </div>
     </footer>
-  </body>
+<!-- Fin du footer -->
+
+</body>
 </html>
