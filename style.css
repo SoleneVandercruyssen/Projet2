@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+/* ? Couleurs */
+
+:root {
+    --blue: #2DBBD4;
+    --yellow: #F5CB5C;
+    --lightblue: #BAE0E0;
+    --purple: #9381FF;
+}
+
+
 /* ? FONTS  */
 
 @font-face {
@@ -100,7 +110,7 @@ p{
         font-size: 1em;
         font-weight: bold;
         margin-left: 35%;
-        margin-top: 10%;
+        margin-top: 50%;
         border: none;
 }
 
@@ -198,12 +208,12 @@ nav a{
 /* ! MAIN */
 
 /* TODO premier titre */
-.titre{
+/* .titre{
     font-size: 1em;
     color: #2DBBD4;
     margin-left: 2%;
     margin-top: 3%;
-}
+} */
 
 
 .section{
@@ -224,8 +234,11 @@ nav a{
 /* TODO second titre : "Bienvenue sur Quanticode"*/
 
 #title{
+    font-family: Play;
+    font-weight: bold;
     position: relative;
     margin-top: 5%;
+    margin-left: -5%;
     display: flex;
     color: #000000;
     justify-content: center;
@@ -562,8 +575,4 @@ nav a{
 
 }   
 
-/*-------------------------- Colors ------------------*/
-/* #2DBBD4 */ /* Blue */
-/* #BAE0E0 */ /* LightBlue */
-/* #F5CB5C */ /* Yellow */
-/* #9381FF */ /* Purple */
+

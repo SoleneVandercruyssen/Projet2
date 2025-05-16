@@ -4,6 +4,17 @@
     margin: 0;
 }
 
+/* ? Couleurs */
+
+:root {
+    --blue: #2DBBD4;
+    --yellow: #F5CB5C;
+    --lightblue: #BAE0E0;
+    --purple: #9381FF;
+}
+
+
+
 /* ? FONTS  */
 
 @font-face {
@@ -31,7 +42,9 @@ body{
     margin-top: 5vh;
 }
 
-/* TODO Faire un menu burger à droite, placer le titre au centre */
+/* HEADER */
+
+
 
 header{
     display: flex;
@@ -146,36 +159,7 @@ iframe{
     border-radius: 0;
 }
 
-/* TODO Faire un menu burger, placer le titre au centre */
 
-header{
-    display: flex;
-    flex-direction: row;
-    background-color: #2DBBD4;
-    width: 100%;
-    padding: 3px;
-    grid-area: header;
-
-} 
-
-nav li{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    float: inline-start;
-    justify-content: center;
-    align-items: center;
-}
-
-nav a{
-    text-decoration: none;
-    color: black;
-    font-size: large;
-    display: inline-block;
-}
-
-
-/* Fin du header */
 
 h1{
     margin-left: 40%;
@@ -314,8 +298,4 @@ form{
 }
 
 }
-/*-------------------------- Colors ------------------*/
-/* #2DBBD4 */ /* Blue */
-/* #BAE0E0 */ /* LightBlue */
-/* #F5CB5C */ /* Yellow */
-/* #9381FF */ /* Purple */
+

@@ -4,6 +4,18 @@
     padding: 0;
 }
 
+
+/* ? Couleurs */
+
+:root {
+    --blue: #2DBBD4;
+    --yellow: #F5CB5C;
+    --lightblue: #BAE0E0;
+    --purple: #9381FF;
+}
+
+
+
 /* ? FONTS  */
 
 @font-face {
@@ -180,12 +192,4 @@ form{
 }
 
 
-
-
 }
-
-/*-------------------------- Colors ------------------*/
-/* #2DBBD4 */ /* Blue */
-/* #BAE0E0 */ /* LightBlue */
-/* #F5CB5C */ /* Yellow */
-/* #9381FF */ /* Purple */
