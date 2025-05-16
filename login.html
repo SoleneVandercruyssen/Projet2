@@ -6,50 +6,68 @@
     <link rel="stylesheet" href="./login.css">
     <title>Login</title>
 </head>
-<body>
-    <header>
 
- <!-- Version mobile -->
-        <nav>
-            <div id="flex">
+
+
+<!-- TODO AUTRE PAGE OU POP-UP ?-->
+
+
+
+
+
+<body>
+<!-- ! Menu burger  -->
+<header>
+        <!-- Version mobile -->
+        
+        <div id="flex">
         <div class="logo">
-            <img src="" alt="Logo de l'entreprise" class="logo_img">
+            <img src="./images/logo.png" alt="Logo de l'entreprise" class="logo_img">
         </div>
         <div class="title">
             <h1 id="titre">Quanticode</h1>
         </div>
     </div>
+    <!-- Hidden Checkbox to Control Menu -->
+        <input type="checkbox" id="burger-toggle" hidden>
+            <!-- Burger Icon -->
+                <label for="burger-toggle" class="burger-container">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </label>
             <div class="nav">
-                <div class="menu-links">
+                <nav>
+                <div class="nav-menu">
                     <ul>
-                        <li><a href="./index.html"></a>Home</li>
-                        <li><a href="./presentation.html"></a>Qui sommes-nous ?</li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./presentation.html">Qui sommes-nous ?</a></li>
                         <li><a href=""></a>Projets</li>
-                        <li><a href="./formations.html"></a>Formations</li>
-                        <!-- <li><a href=""></a>Desserts</li>
-                        <li><a href=""></a>Réservations</li> -->
+                        <li><a href="./formations.html">Formations</a></li>
                     </ul>
-                        </div>
                 </div>
         </nav>
+    </div>
+</header>
+<!-- ! Fin du Menu -->
 
+
+    <!-- Accés utilisateur et accés entreprise -->
+    <form action="" method="get">
         <div class="compte">
             <button type="button" id="private">Privé</button>
             <button type="button" id="public">Public</button>
         </div>
-    </header>
-    <!-- Accés utilisateur et accés entreprise -->
-    <form action="" method="get">
+        <br>
                 <label for="prenom" id="prenom"></label>
                 <div class="face-to-face">
-                <img src="./images/icons8-name-tag-24.png" alt="icône Identifiant">
+                <img src="./images/icons8-name-tag-24.png" id="identity" alt="icône Identifiant">
                 <input type="text" name="prenom" placeholder="Identifiant">
                 </div> 
                 <br>
-
                 <label for="password" id="password"></label>
                 <div class="face-to-face" >
-                <img src="./images/icons8-password-24.png" alt="icône password">   
+                <img src="./images/icons8-password-24.png" id="password" alt="icône password">   
                 <input type="password" name="password" placeholder="Password">
                 </div> 
                 <br>

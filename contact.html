@@ -3,36 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pre.css">
-    <title>Qui sommes-nous !</title>
+    <link rel="stylesheet" href="./contact.css">
+    <title>Contactez-nous !</title>
 </head>
 <body>
 
-<header>
-<!-- Version mobile -->
-        <nav>
+ <!-- ! Menu burger  -->
+    <header>
+        <!-- Version mobile -->
+        
             <div id="flex">
         <div class="logo">
-            <img src="" alt="Logo de l'entreprise" class="logo_img">
+            <img src="./images/logo.png" alt="Logo de l'entreprise" class="logo_img">
         </div>
-        <div class="title">
+        <!-- <div class="title">
             <h1 id="titre">Quanticode</h1>
-        </div>
+        </div> -->
     </div>
-            <div class="nav">
-                <div class="menu-links">
+    <!-- Hidden Checkbox to Control Menu -->
+        <input type="checkbox" id="burger-toggle" hidden>
+         <div class="nav"></div>
+            <!-- Burger Icon -->
+                <label for="burger-toggle" class="burger-container">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </label>
+           
+                <nav>
+                <div class="nav-menu">
                     <ul>
-                        <li><a href="./index.html"></a>Home</li>
-                        <li><a href="./presentation.html"></a>Qui sommes-nous ?</li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./presentation.html">Qui sommes-nous ?</a></li>
                         <li><a href=""></a>Projets</li>
-                        <li><a href="./formations.html"></a>Formations</li>
-                        <!-- <li><a href=""></a>Desserts</li>
-                        <li><a href=""></a>Réservations</li> -->
+                        <li><a href="./formations.html">Formations</a></li>
                     </ul>
                         </div>
-                </div>
         </nav>
-</header>
+    </div>
+    </header>
+<!-- ! Fin du Menu -->
 
 <main>
     <!-- <img src="" alt="logo Quanticode"> -->

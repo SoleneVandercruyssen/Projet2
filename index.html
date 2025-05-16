@@ -12,28 +12,36 @@
     <!-- ! Menu burger  -->
     <header>
         <!-- Version mobile -->
-        <nav>
+        
             <div id="flex">
         <div class="logo">
-            <img src="" alt="Logo de l'entreprise" class="logo_img">
+            <img src="./images/logo.png" alt="Logo de l'entreprise" class="logo_img">
         </div>
         <div class="title">
             <h1 id="titre">Quanticode</h1>
         </div>
     </div>
+    <!-- Hidden Checkbox to Control Menu -->
+        <input type="checkbox" id="burger-toggle" hidden>
+            <!-- Burger Icon -->
+                <label for="burger-toggle" class="burger-container">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </label>
             <div class="nav">
-                <div class="menu-links">
+                <nav>
+                <div class="nav-menu">
                     <ul>
-                        <li><a href="./index.html"></a>Home</li>
-                        <li><a href="./presentation.html"></a>Qui sommes-nous ?</li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./presentation.html">Qui sommes-nous ?</a></li>
                         <li><a href=""></a>Projets</li>
-                        <li><a href="./formations.html"></a>Formations</li>
-                        <!-- <li><a href=""></a>Desserts</li>
-                        <li><a href=""></a>Réservations</li> -->
+                        <li><a href="./formations.html">Formations</a></li>
                     </ul>
                         </div>
-                </div>
+               
         </nav>
+     </div>
     </header>
 <!-- ! Fin du Menu -->
 
@@ -121,7 +129,7 @@
 
 
 <section id="section6" class="section1">
-    <div>
+    <div class="carousel-container" >
         <div id="chiffres">
             <h1 id="chiffre" >Nos chiffres clés</h1>
             <p>Chez <strong>Quanticode</strong>, nous sommes fiers de notre parcours et de nos réalisations. Voici quelques chiffres qui témoignent de notre expertise et de notre engagement envers nos clients et apprenants.</p>
@@ -171,7 +179,7 @@
         <span class="dot" onclick="setSlide(3)"></span>
         <span class="dot" onclick="setSlide(4)"></span>
     </div>
-    
+    </div>
 </div>
 </section>
 <!-- ! Fin du carousel -->
