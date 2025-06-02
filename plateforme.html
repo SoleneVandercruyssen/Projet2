@@ -3,12 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./plateforme.js" defer></script>
     <title>Notre Plateforme en ligne</title>
 </head>
 <body>
     <!-- Création d'un compte pour les cours à distanciel : proposer une plateforme e-learning pour que des personnes étrangères puissent suivre des cours dans leur langues.
-    Au niveau du payement voir pour créer une fonction pour que les personnes puissent payer à partir de leur compte -->
+        > Chercher une API de traduction ou un service de traduction automatique pour intégrer dans la plateforme.
+        > Ajouter une section pour les cours en ligne avec des vidéos, des quiz et des ressources téléchargeables.
+        > Ajouter un forum ou une section de commentaires pour que les utilisateurs puissent poser des questions et interagir entre eux.
 
+    OPTIONNEL :
+    Payement de la formation : créer une fonction pour que les personnes puissent payer.
+    -->
+
+      <!-- ! Menu burger  -->
+  <header>
+    <div id="flex">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo de l'entreprise" class="logo_img">
+        </div>
+    </div>
+    <input type="checkbox" id="burger-toggle" hidden>
     
+    <label for="burger-toggle" class="burger-container">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </label>
+    <div class="nav">
+        <nav>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="./formations.html">Formations</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- ! Fin du Menu -->
+
+    <main>
+        <!-- <section id="plateforme">
+            <h1>Notre Plateforme en ligne</h1>
+            <p>Bienvenue sur notre plateforme e-learning !</p>  
+        </section> -->
+
+
+
+<!-- ! Mini Header -->
+<section id="plateforme_icons">
+    <img src="./images/icons8-message-30.png" alt="icon_message">
+    <img src="./images/icons8-language-50.png" alt="icon_langue">
+</section>
+
+<!-- ! Section  calendrier -->
+<section id="calendar" >
+
+</section>
+
+
+<!-- ! Section Liste des Cours -->
+
+<section id="plateforme_liste">
+
+<div class="list" >
+    <div class="list_item">
+    <p>Cours HTML</p>
+    <img src="./images/icons8-download-30.png" alt="icon_download">
+    </div>
+</div>
+<div class="list" >
+    <div class="list_item">
+    <p>Cours CSS</p>
+    <img src="./images/icons8-download-30.png" alt="icon_download">
+    </div>
+</div>
+<div class="list" >
+    <div class="list_item">
+    <p>Cours SASS</p>
+    <img src="./images/icons8-download-30.png" alt="icon_download">
+    </div>
+</div>
+
+</section>
+
+<!-- ! Administratif -->
+<h2>Veuillez renommer vos fichiers <em>ex: Nom_Prenom_absence_01-12-2028</em> </h2>
+
+<section id="plateforme_pdf">
+<img src="./images/icons8-import-50.png" alt="icon_import">
+<img src="./images/icons8-export-50.png" alt="icon_export">
+</section>
+    </main>
+
+
+
+
+   <!-- ! FOOTER -->
+    <footer class="foot">
+        <div id="mirror">
+        <div class="liens_footer">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./presentation.html">Qui sommes-nous ?</a></li>
+                <li><a href="./formations.html">Formations</a></li>
+                <li><a href="">Projets</a></li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="">Politique de confidentialité</a></li>
+                <li><a href="">Cookies</a></li>
+            </ul>
+        </div>
+            <div class="copyright">
+            <div class="face-to-face">
+            <img src="./images/icons8-courrier-50.png" id="mail" alt="icône mail">
+            <p id="mail">Quanticode@gmail.com</p>
+            </div>
+            <div class="face-to-face">
+            <img src="./images/icons8-call-50(2).png" id="phone" alt="icône phone">
+            <p id="tel"> 06 44 52 20 10</p>
+        </div>
+            <p> ©Copyright|Solène Vandercruyssen</p>
+            <p>All rights reserved|2025</p>
+        </div>
+        </div>
+    </footer>
+<!-- Fin du footer -->
 </body>
 </html>

@@ -1,0 +1,29 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ? Couleurs */
+
+:root {
+    --blue: #2DBBD4;
+    --yellow: #F5CB5C;
+    --lightblue: #BAE0E0;
+    --purple: #9381FF;
+}
+
+
+
+/* ? FONTS  */
+
+@font-face {
+    font-family: Play;
+    src: url(./fonts/Play/Play-Regular.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    src: url(./fonts/Spectral/Spectral-Regular.ttf);
+}

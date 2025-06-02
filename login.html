@@ -11,41 +11,31 @@
 
 <!-- TODO AUTRE PAGE OU POP-UP ?-->
 
-
-
-
-
 <body>
-<!-- ! Menu burger  -->
-<header>
-        <!-- Version mobile -->
-        
-        <div id="flex">
+ <!-- ! Menu burger  -->
+  <header>
+    <div id="flex">
         <div class="logo">
             <img src="./images/logo.png" alt="Logo de l'entreprise" class="logo_img">
         </div>
-        <div class="title">
-            <h1 id="titre">Quanticode</h1>
-        </div>
     </div>
-    <!-- Hidden Checkbox to Control Menu -->
-        <input type="checkbox" id="burger-toggle" hidden>
-            <!-- Burger Icon -->
-                <label for="burger-toggle" class="burger-container">
-                    <div class="burger-line"></div>
-                    <div class="burger-line"></div>
-                    <div class="burger-line"></div>
-                </label>
-            <div class="nav">
-                <nav>
-                <div class="nav-menu">
+    <input type="checkbox" id="burger-toggle" hidden>
+    
+    <label for="burger-toggle" class="burger-container">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </label>
+    <div class="nav">
+        <nav>
+            <div class="nav-menu">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="./login.html">Login</a></li>
                     <li><a href="./formations.html">Formations</a></li>
                 </ul>
-                </div>
+            </div>
         </nav>
     </div>
 </header>
@@ -53,6 +43,7 @@
 
 
     <!-- Accés utilisateur et accés entreprise -->
+     <!-- Button switch : couleur -->
     <form action="" method="get">
         <div class="compte">
             <button type="button" id="private">Privé</button>
@@ -73,6 +64,31 @@
                 <br>
                 <button type="submit" id="sub">Valider</button>
     </form>
+<br>
+
+
+<!-- ! Formulaire d'inscription -->
+    <form action="" method="get" id="formulaire">
+        <div class="compte">
+            <h2>Inscription</h2>
+        </div>
+        <!-- <br> -->
+                <label for="prenom" id="prenom"></label>
+                <div class="face-to-face">
+                <img src="./images/icons8-name-tag-24.png" id="identity" alt="icône Identifiant">
+                <input type="text" name="prenom" placeholder="Identifiant">
+                </div> 
+                <br>
+                <label for="password" id="password"></label>
+                <div class="face-to-face" >
+                <img src="./images/icons8-password-24.png" id="mail" alt="icône mail">   
+                <input type="mail" name="mail" placeholder="Paul@gmail.com">
+                </div> 
+                <br>
+                <button type="submit" id="sub2">Valider</button>
+            </form>
+
+
 
 <!-- ! FOOTER -->
     <footer class="foot">

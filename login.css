@@ -9,12 +9,10 @@
 
 :root {
     --blue: #2DBBD4;
-    --yellow: #F5CB5C;
-    --lightblue: #BAE0E0;
-    --purple: #9381FF;
+    --yellow: #F5CB5C; /*245 203 92*/
+    --lightblue: #BAE0E0;  /*73, 88, 88*/
+    --purple: #9381FF; /*147 129 255 */
 }
-
-
 
 /* ? FONTS  */
 
@@ -32,9 +30,89 @@
     body{
         width: 100%;
         height: 100vh;
-        background-color: #9381FF;
     }
 
+/* ! Header */
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #2DBBD4;
+    width: 100%;
+    padding: 3px;
+    grid-area: header;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+
+
+    img{
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }
+} 
+
+.burger-container {
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 70%;
+    margin-top: 5%;
+    border: 2px solid orange;   
+}
+
+
+.nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #2DBBD4;
+    z-index: 1;
+}
+
+#burger-toggle:checked ~ .nav {
+    display: block;
+}
+
+.burger-line {
+    height: 4px;
+    background: #000000;
+    border-radius: 2px;
+}
+
+
+nav ul{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li{
+    position: relative;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+nav a{
+    position: relative;
+    right: 0;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    display: inline-block;
+}
+
+nav a:hover{
+    color: #2DBBD4;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: underline;}
 
     /* Button switch */
     button{
@@ -45,12 +123,21 @@
         border: 1px solid #000000;
         box-shadow: 2px 4px 2px;
         color: #000000;
+
     }
+
+    #public{
+    background-color: #2DBBD4;
+}
+
+#formulaire{
+    background-color: #F5CB5C;
+}
 
 form{
     width: 300px;
     height: 420px;
-    background-color: rgba( 255, 255, 255, 0.5);
+    background-color: rgb( 186,224, 224);
     border-radius: 20px;
     margin-left: 10%;
     margin-bottom: 10%;
@@ -59,6 +146,9 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
+
 
 .compte{
     position: relative;
@@ -73,6 +163,10 @@ form{
 }
 
 
+
+
+
+
 #sub{
         /* border:1px solid #2DBBD4; */
         margin-bottom: -14%;
@@ -80,7 +174,12 @@ form{
         margin-top: 15%;
         /* font-weight: bold; */
 }
-
+#sub2{
+    background-color: #F5CB5C;
+    margin-bottom: -14%;
+    font-family: Spectral;
+    margin-top: 15%;
+}
 
 #password, #identity{
     width: 24px;
