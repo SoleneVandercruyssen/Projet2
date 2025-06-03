@@ -42,8 +42,8 @@ body{
     margin-top: 5vh;
 }
 
-/* HEADER */
 
+/* ! Header */
 
 
 header{
@@ -72,13 +72,18 @@ header{
     gap: 6px;
     margin-left: 70%;
     margin-top: 5%;
+    border: 2px solid orange;   
 }
+
 
 .nav {
     display: none;
-}
-.nav-menu {
-    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 100%;
+    background-color: #2DBBD4;
+    z-index: 1;
 }
 
 #burger-toggle:checked ~ .nav {
@@ -93,26 +98,35 @@ header{
 
 
 nav ul{
-    border: 2px solid orange;
     width: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 nav li{
+    position: relative;
     display: flex;
+    padding: 5px;
     flex-direction: column;
     list-style-type: none;
-    float: inline-start;
-    justify-content: center;
-    align-items: center;
 }
 
 nav a{
+    position: relative;
+    right: 0;
     text-decoration: none;
     color: black;
     font-size: large;
     display: inline-block;
 }
 
+nav a:hover{
+    color: #2DBBD4;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: underline;
+}
+
+    /* ! Fin du HEADER */
 
 
 
@@ -217,19 +231,6 @@ form{
         margin-top: 5%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
