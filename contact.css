@@ -149,9 +149,6 @@ iframe{
     margin-left: 10%;
 }
 
-.face-to-face{
-    display: flex;
-}
 
 #mail, #phone{
     width: 20px;
@@ -258,8 +255,20 @@ form{
         height: 15vh;
         top: 100vh;
         grid-area: footer;
+
+        img{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 4%;
+        }
     }
     
+.face-to-face{
+    display: flex;
+    flex-direction: row;
+}
+
 
     footer ul {
         float: left;
@@ -295,6 +304,7 @@ form{
 
         #mail, #tel{
             text-decoration: underline;
+            
         }
 }
 
