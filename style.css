@@ -269,6 +269,8 @@ em{
 h1{
     font-family: Play;
     font-size: 20px;
+    margin-left: 20%;
+    margin-top: 5%;
 }
 
 p{
@@ -620,10 +622,30 @@ nav a{
 
 h1{
     margin-left: 20%;
+    margin-bottom: 10%;
 }
 
 p{
     margin-top: 5%;
+}
+
+li{
+    list-style: none;
+    margin-top: 5%;
+}
+a{
+  
+    text-decoration: none;
+    font-family: Play;
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-left: 15%;
+    margin-top: 10%;;
+    width: 190px;
+    height: 22px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+     background-color: #F5CB5C;
 }
 
 
@@ -635,18 +657,13 @@ p{
 
 }
 
-    #discoverFormation
+
+
+    /* #discoverFormation
     {
-        font-family: Play;
-        justify-items: center;
-        align-items: center;
-        margin-left: 15%;
-        margin-top: 10%;;
-        width: 180px;
-        height: 22px;
-        border-radius: 10px;
-        background-color: #F5CB5C;
-    }
+
+        
+    } */
 }
 /* TODO carousel statistiques */
 
