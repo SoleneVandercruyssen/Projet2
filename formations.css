@@ -14,8 +14,6 @@
 }
 
 
-
-
 /* ? FONTS  */
 
 @font-face {
@@ -31,13 +29,198 @@
 
 @media screen and (min-width: 350px) and (max-width: 900px) {
     body{
-        font-family: Play;
-        font-size: 1.2em;
         width: 100%;
         height: 100vh;
     }
     
 }
+
+/* ! Header */
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #2DBBD4;
+    width: 100%;
+    padding: 3px;
+    grid-area: header;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+
+    
+} 
+
+.logo_img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }
+
+
+.burger-container {
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 70%;
+    margin-top: 5%;
+    border: 2px solid orange;   
+}
+
+
+.nav {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 100%;
+    background-color: #2DBBD4;
+    z-index: 4;
+}
+
+#burger-toggle:checked ~ .nav {
+    display: block;
+}
+
+.burger-line {
+    height: 4px;
+    background: #000000;
+    border-radius: 2px;
+}
+
+
+nav ul{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li{
+    position: relative;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+nav a{
+    position: relative;
+    right: 0;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    display: inline-block;
+    
+}
+
+nav a:hover{
+    background-color: #2DBBD4;
+    color: #000000;
+    transition: background 0.3s, color 0.3s;
+    text-decoration: underline;
+}
+
+/* ! MAIN */
+
+/* h1, h2{
+font-family: Play;
+
+} */
+
+/* h1{
+    margin-left: 25%;
+}
+
+
+h2{
+    margin-bottom: 10%;
+    margin-top: 10%;
+} */
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+#titre{
+    margin-left: 20%;
+}
+
+/* .show{
+    display: none;
+} */
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    margin-top: 20%;
+    background-color: #BAE0E0;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px 2px;
+
+    
+}
+
+button{
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: rgba(5, 5, 5, 0.5);
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+
+.purple{
+    background-color: #9381FF;
+}
+
+.yellow{
+    background-color: #F5CB5C;
+}
+
+.black{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.white{
+    background-color: #FFFFFF;
+}
+
+#backgroundColor3{
+    margin-bottom: 20%;
+    background-color: #000000;
+}
+
+
+dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    border: 2px solid yellow;
+}
+
+
+
+
+
+
+
 
 /* ! Footer */
 /* TODO changer les fonts */

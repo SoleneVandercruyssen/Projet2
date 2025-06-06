@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formations.css">
     <title>Formations</title>
 </head>
 <body>
@@ -13,9 +14,6 @@
             <div id="flex">
         <div class="logo">
             <img src="./images/logo.png" alt="Logo de l'entreprise" class="logo_img">
-        </div>
-        <div class="title">
-            <h1 id="titre">Quanticode</h1>
         </div>
     </div>
     <!-- Hidden Checkbox to Control Menu -->
@@ -32,7 +30,7 @@
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./login.html" target="_blank">Login</a></li>
                     <li><a href="./formations.html">Formations</a></li>
                 </ul>
                 </div>
@@ -44,54 +42,815 @@
 <main>
 <h1>Nos Formations</h1>
 <!-- TODO #catégories : Design, Développement, SEO etc... -->
- <!-- ! 1ere catégorie -->
-<div class="cards">
+<!-- ! 1ere catégorie -->
+ <div id="backgroundColor1">
+ <h1> En Design</h1>
+<div class="cards" id="first">
     <h2>Web design</h2>
 <img src="./images/2248604.jpg" alt="image vectorielle de design web">
-<button type="button">Voir plus de détails</button>
+<button type="button" class="purple" id="1">Voir plus de détails</button>
+
+<dialog class="show">
+    <div class="modaleContainer">
+        <section class="mirror">
+        <div class="photos">
+            <img src="./images/2248604.jpg" alt="image vectorielle de design web">
+        </div>
+        <div class="infos">
+            <p> > Formation d'une durée de 3 mois</p>
+            <p> > En présentiel OU distanciel</p>
+            <p> > Prochaine date : 18 septembre au 18 décembre</p>
+        </div>
+    </section>
+
+<section class="section2">
+    <h2>Thèmes abordés</h2>
+    <div>
+        <pre>
+            > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
+
+            > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
+
+            > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.
+
+            > SEO technique : indexation, vitesse, mobile, architecture web.
+
+            > Stratégie de contenu : création, planification et optimisation éditoriale.
+
+            > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.
+
+            > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
+
+            > Cas pratique final : application sur un projet réel ou simulé.
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h2>💡 Nos solutions de financement</h2>
+    <div> 
+        <pre>
+            🎯 Pour les salariés
+                CPF (Compte Personnel de Formation)
+                Utilisez votre crédit CPF pour financer tout ou partie de la formation.
+
+                Plan de développement des compétences (via l'employeur)
+                La formation peut être prise en charge par votre entreprise dans le cadre de sa politique RH.
+
+            💼 Pour les demandeurs d'emploi
+                AIF (Aide Individuelle à la Formation - Pôle Emploi)
+                Sur validation de votre conseiller Pôle Emploi, la formation peut être financée partiellement ou totalement.
+
+                Dispositif régionaux ou départementaux
+                Certaines régions proposent des aides spécifiques pour la formation professionnelle (ex : PRF, chèques formation).
+
+            🧑‍💻 Pour les indépendants / freelances
+                FIFPL (professions libérales)
+                Prise en charge des frais de formation selon votre activité déclarée.
+
+                AGEFICE (commerçants, dirigeants non salariés)
+                Aide au financement pour les chefs d'entreprise relevant du commerce, de l'industrie ou des services.
+
+            🧾 Pour les dirigeants d'entreprise
+                Crédit d'impôt formation
+                Bénéficiez d'un crédit d'impôt sur les heures de formation réalisées.
+
+            💳 Financement personnel
+                Paiement échelonné
+                Paiement en 2, 3 ou 4 fois sans frais pour rendre la formation plus accessible.
+
+            Tarifs solidaires ou réduits
+            Tarification spéciale possible pour les étudiants, personnes en reconversion ou en recherche d'emploi (sur dossier).
+
+            🤝 Accompagnement personnalisé
+            Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
+        </pre>
+
+    </div>
+</section>
+
+<button class="close">Fermer</button>
+
+
+</div>
+</dialog>
 <!-- Pop-up -->
 </div>
 <div class="cards">
-    <h2>Web design</h2>
-<img src="./images/4716574.jpg" alt="">
-<button type="button">Voir plus de détails</button>
+    <h2>Designer UX/UI</h2>
+<img src="./images/4738060.jpg" alt="">
+<button type="button" class="purple" id="2">Voir plus de détails</button>
+
 <!-- Pop-up -->
+ <dialog class="show">
+    <div class="modaleContainer">
+        <section class="mirror">
+        <div class="photos">
+            <img src="./images/2248604.jpg" alt="image vectorielle de design web">
+        </div>
+        <div class="infos">
+            <p> > Formation d'une durée de 3 mois</p>
+            <p> > En présentiel OU distanciel</p>
+            <p> > Prochaine date : 18 septembre au 18 décembre</p>
+        </div>
+    </section>
+
+<section class="section2">
+    <h2>Thèmes abordés</h2>
+    <div>
+        <pre>
+            > Introduction à l'UX/UI Design
+
+            > Différences UX / UI, rôles du designer, processus de conception
+
+            > Design thinking & parcours utilisateur
+
+            . Empathie, personas, user journey, architecture de l'information
+
+            > Outils de design
+
+            . Figma (ou Adobe XD), moodboards, wireframes, UI kits
+
+            > Conception d'interfaces
+
+            . Hiérarchie visuelle, typographie, couleurs, grilles, composants
+
+            > Accessibilité & design inclusif
+
+            . Règles d'accessibilité, contrastes, navigation clavier
+
+            > Prototypage & tests utilisateurs
+
+            . Création de prototypes interactifs, tests et itérations
+
+            > Design systems & documentation
+
+            . Création et maintien d'un système de design cohérent
+
+            > Collaboration avec les développeurs
+
+            . Export, contraintes techniques, langage commun
+
+
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h2>💡 Nos solutions de financement</h2>
+    <div> 
+        <pre>
+            🎯 Pour les salariés
+                CPF (Compte Personnel de Formation)
+                Utilisez votre crédit CPF pour financer tout ou partie de la formation.
+
+                Plan de développement des compétences (via l'employeur)
+                La formation peut être prise en charge par votre entreprise dans le cadre de sa politique RH.
+
+            💼 Pour les demandeurs d'emploi
+                AIF (Aide Individuelle à la Formation - Pôle Emploi)
+                Sur validation de votre conseiller Pôle Emploi, la formation peut être financée partiellement ou totalement.
+
+                Dispositif régionaux ou départementaux
+                Certaines régions proposent des aides spécifiques pour la formation professionnelle (ex : PRF, chèques formation).
+
+            🧑‍💻 Pour les indépendants / freelances
+                FIFPL (professions libérales)
+                Prise en charge des frais de formation selon votre activité déclarée.
+
+                AGEFICE (commerçants, dirigeants non salariés)
+                Aide au financement pour les chefs d'entreprise relevant du commerce, de l'industrie ou des services.
+
+            🧾 Pour les dirigeants d'entreprise
+                Crédit d'impôt formation
+                Bénéficiez d'un crédit d'impôt sur les heures de formation réalisées.
+
+            💳 Financement personnel
+                Paiement échelonné
+                Paiement en 2, 3 ou 4 fois sans frais pour rendre la formation plus accessible.
+
+            Tarifs solidaires ou réduits
+            Tarification spéciale possible pour les étudiants, personnes en reconversion ou en recherche d'emploi (sur dossier).
+
+            🤝 Accompagnement personnalisé
+            Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
+        </pre>
+
+    </div>
+</section>
+
+<button class="close">Fermer</button>
+
+
+</div>
+</dialog>
+</div>
 </div>
 
- <!-- ! 2eme catégorie -->
-<div class="cards">
+
+
+
+
+<div id="backgroundColor2">
+ <h1> En Développement</h1>
+<!-- ! 2eme catégorie -->
+<div class="cards" id="second">
     <h2>Développeur/se Web</h2>
 <img src="./images/9906021.jpg" alt="image vectorielle de développeur web">
-<button type="button">Voir plus de détails</button>
+<button type="button" class="yellow" id="3">Voir plus de détails</button>
+
 <!-- Pop-up -->
+ <dialog class="show">
+    <div class="modaleContainer">
+        <section class="mirror">
+        <div class="photos">
+            <img src="./images/2248604.jpg" alt="image vectorielle de design web">
+        </div>
+        <div class="infos">
+            <p> > Formation d'une durée de 3 mois</p>
+            <p> > En présentiel OU distanciel</p>
+            <p> > Prochaine date : 18 septembre au 18 décembre</p>
+        </div>
+    </section>
+
+<section class="section2">
+    <h2>Thèmes abordés</h2>
+    <div>
+        <pre>
+            > Introduction au développement web
+
+            . Fonctionnement du web, frontend vs backend, outils de base
+
+            > HTML, CSS & Responsive Design
+
+            . Structure de page, flexbox/grid, mobile-first, accessibilité
+
+            > JavaScript & DOM
+
+            . Logique JS, manipulation DOM, événements, animations
+
+            > Frameworks front-end
+
+            . Introduction à React, Vue ou équivalent
+
+            > Back-end & bases de données
+
+            . Node.js, Express, MongoDB ou MySQL (selon la techno choisie)
+
+            > APIs & Requêtes HTTP
+
+            . RESTful APIs, fetch/axios, CRUD
+
+            > Versionning & collaboration
+
+            . Git, GitHub, travail en équipe
+
+            > Déploiement & mise en production
+
+            . Hébergement, Netlify/Vercel, sécurité de base
+            
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h2>💡 Nos solutions de financement</h2>
+    <div> 
+        <pre>
+            🎯 Pour les salariés
+                CPF (Compte Personnel de Formation)
+                Utilisez votre crédit CPF pour financer tout ou partie de la formation.
+
+                Plan de développement des compétences (via l'employeur)
+                La formation peut être prise en charge par votre entreprise dans le cadre de sa politique RH.
+
+            💼 Pour les demandeurs d'emploi
+                AIF (Aide Individuelle à la Formation - Pôle Emploi)
+                Sur validation de votre conseiller Pôle Emploi, la formation peut être financée partiellement ou totalement.
+
+                Dispositif régionaux ou départementaux
+                Certaines régions proposent des aides spécifiques pour la formation professionnelle (ex : PRF, chèques formation).
+
+            🧑‍💻 Pour les indépendants / freelances
+                FIFPL (professions libérales)
+                Prise en charge des frais de formation selon votre activité déclarée.
+
+                AGEFICE (commerçants, dirigeants non salariés)
+                Aide au financement pour les chefs d'entreprise relevant du commerce, de l'industrie ou des services.
+
+            🧾 Pour les dirigeants d'entreprise
+                Crédit d'impôt formation
+                Bénéficiez d'un crédit d'impôt sur les heures de formation réalisées.
+
+            💳 Financement personnel
+                Paiement échelonné
+                Paiement en 2, 3 ou 4 fois sans frais pour rendre la formation plus accessible.
+
+            Tarifs solidaires ou réduits
+            Tarification spéciale possible pour les étudiants, personnes en reconversion ou en recherche d'emploi (sur dossier).
+
+            🤝 Accompagnement personnalisé
+            Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
+        </pre>
+
+    </div>
+</section>
+
+<button class="close">Fermer</button>
+
+
+</div>
+</dialog>
 </div>
 <div class="cards">
-    <h2></h2>
+    <h2>Autres</h2>
 <img src="./images/4716574.jpg" alt="">
-<button type="button">Voir plus de détails</button>
+<button type="button" class="yellow" id="4">Voir plus de détails</button>
+
 <!-- Pop-up -->
+ <dialog class="show">
+    <div class="modaleContainer">
+        <section class="mirror">
+        <div class="photos">
+            <img src="./images/2248604.jpg" alt="image vectorielle de design web">
+        </div>
+        <div class="infos">
+            <p> > Formation d'une durée de 3 mois</p>
+            <p> > En présentiel OU distanciel</p>
+            <p> > Prochaine date : 18 septembre au 18 décembre</p>
+        </div>
+    </section>
+
+<section class="section2">
+    <h2>Thèmes abordés</h2>
+    <div>
+        <pre>
+            > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
+
+            > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
+
+            > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.
+
+            > SEO technique : indexation, vitesse, mobile, architecture web.
+
+            > Stratégie de contenu : création, planification et optimisation éditoriale.
+
+            > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.
+
+            > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
+
+            > Cas pratique final : application sur un projet réel ou simulé.
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h2>💡 Nos solutions de financement</h2>
+    <div> 
+        <pre>
+            🎯 Pour les salariés
+                CPF (Compte Personnel de Formation)
+                Utilisez votre crédit CPF pour financer tout ou partie de la formation.
+
+                Plan de développement des compétences (via l'employeur)
+                La formation peut être prise en charge par votre entreprise dans le cadre de sa politique RH.
+
+            💼 Pour les demandeurs d'emploi
+                AIF (Aide Individuelle à la Formation - Pôle Emploi)
+                Sur validation de votre conseiller Pôle Emploi, la formation peut être financée partiellement ou totalement.
+
+                Dispositif régionaux ou départementaux
+                Certaines régions proposent des aides spécifiques pour la formation professionnelle (ex : PRF, chèques formation).
+
+            🧑‍💻 Pour les indépendants / freelances
+                FIFPL (professions libérales)
+                Prise en charge des frais de formation selon votre activité déclarée.
+
+                AGEFICE (commerçants, dirigeants non salariés)
+                Aide au financement pour les chefs d'entreprise relevant du commerce, de l'industrie ou des services.
+
+            🧾 Pour les dirigeants d'entreprise
+                Crédit d'impôt formation
+                Bénéficiez d'un crédit d'impôt sur les heures de formation réalisées.
+
+            💳 Financement personnel
+                Paiement échelonné
+                Paiement en 2, 3 ou 4 fois sans frais pour rendre la formation plus accessible.
+
+            Tarifs solidaires ou réduits
+            Tarification spéciale possible pour les étudiants, personnes en reconversion ou en recherche d'emploi (sur dossier).
+
+            🤝 Accompagnement personnalisé
+            Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
+        </pre>
+
+    </div>
+</section>
+
+<button class="close">Fermer</button>
+
+
+</div>
+</dialog>
+</div>
 </div>
 
- <!-- ! 3eme catégorie -->
+
+<div id="backgroundColor3">
+ <h1> En SEO</h1>
+<!-- ! 3eme catégorie -->
 <div class="cards">
     <h2>SEO</h2>
 <img src="./images/32010.jpg" alt="image vectorielle de SEO">
-<button type="button">Voir plus de détails</button>
+<button type="button" class="black" id="5">Voir plus de détails</button>
+
 <!-- Pop-up -->
+ <dialog class="show">
+    <div class="modaleContainer">
+        <section class="mirror">
+        <div class="photos">
+            <img src="./images/2248604.jpg" alt="image vectorielle de design web">
+        </div>
+        <div class="infos">
+            <p> > Formation d'une durée de 3 mois</p>
+            <p> > En présentiel OU distanciel</p>
+            <p> > Prochaine date : 18 septembre au 18 décembre</p>
+        </div>
+    </section>
+
+<section class="section2">
+    <h2>Thèmes abordés</h2>
+    <div>
+        <pre>
+            > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
+
+            > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
+
+            > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.
+
+            > SEO technique : indexation, vitesse, mobile, architecture web.
+
+            > Stratégie de contenu : création, planification et optimisation éditoriale.
+
+            > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.
+
+            > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
+
+            > Cas pratique final : application sur un projet réel ou simulé.
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h2>💡 Nos solutions de financement</h2>
+    <div> 
+        <pre>
+            🎯 Pour les salariés
+                CPF (Compte Personnel de Formation)
+                Utilisez votre crédit CPF pour financer tout ou partie de la formation.
+
+                Plan de développement des compétences (via l'employeur)
+                La formation peut être prise en charge par votre entreprise dans le cadre de sa politique RH.
+
+            💼 Pour les demandeurs d'emploi
+                AIF (Aide Individuelle à la Formation - Pôle Emploi)
+                Sur validation de votre conseiller Pôle Emploi, la formation peut être financée partiellement ou totalement.
+
+                Dispositif régionaux ou départementaux
+                Certaines régions proposent des aides spécifiques pour la formation professionnelle (ex : PRF, chèques formation).
+
+            🧑‍💻 Pour les indépendants / freelances
+                FIFPL (professions libérales)
+                Prise en charge des frais de formation selon votre activité déclarée.
+
+                AGEFICE (commerçants, dirigeants non salariés)
+                Aide au financement pour les chefs d'entreprise relevant du commerce, de l'industrie ou des services.
+
+            🧾 Pour les dirigeants d'entreprise
+                Crédit d'impôt formation
+                Bénéficiez d'un crédit d'impôt sur les heures de formation réalisées.
+
+            💳 Financement personnel
+                Paiement échelonné
+                Paiement en 2, 3 ou 4 fois sans frais pour rendre la formation plus accessible.
+
+            Tarifs solidaires ou réduits
+            Tarification spéciale possible pour les étudiants, personnes en reconversion ou en recherche d'emploi (sur dossier).
+
+            🤝 Accompagnement personnalisé
+            Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
+        </pre>
+
+    </div>
+</section>
+
+<button class="close">Fermer</button>
+
+
+</div>
+</dialog>
 </div>
 <div class="cards">
-    <h2></h2>
-<img src="./images/4716574.jpg" alt="">
-<button type="button">Voir plus de détails</button>
+    <h2>SHOW 1</h2>
+<img src="./images/4716574.jpg" alt="third">
+<button type="button" class="black" id="6">Voir plus de détails</button>
+
+<dialog class="open">
+<div></div>
+</dialog>
+
 <!-- Pop-up -->
+ <dialog class="show">
+    <div class="modaleContainer">
+        <section class="mirror">
+        <div class="photos">
+            <img src="./images/2248604.jpg" alt="image vectorielle de design web">
+        </div>
+        <div class="infos">
+            <p> > Formation d'une durée de 3 mois</p>
+            <p> > En présentiel OU distanciel</p>
+            <p> > Prochaine date : 18 septembre au 18 décembre</p>
+        </div>
+    </section>
+
+<section class="section2">
+    <h2>Thèmes abordés</h2>
+    <div>
+        <pre>
+            > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
+
+            > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
+
+            > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.
+
+            > SEO technique : indexation, vitesse, mobile, architecture web.
+
+            > Stratégie de contenu : création, planification et optimisation éditoriale.
+
+            > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.
+
+            > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
+
+            > Cas pratique final : application sur un projet réel ou simulé.
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h2>💡 Nos solutions de financement</h2>
+    <div> 
+        <pre>
+            🎯 Pour les salariés
+                CPF (Compte Personnel de Formation)
+                Utilisez votre crédit CPF pour financer tout ou partie de la formation.
+
+                Plan de développement des compétences (via l'employeur)
+                La formation peut être prise en charge par votre entreprise dans le cadre de sa politique RH.
+
+            💼 Pour les demandeurs d'emploi
+                AIF (Aide Individuelle à la Formation - Pôle Emploi)
+                Sur validation de votre conseiller Pôle Emploi, la formation peut être financée partiellement ou totalement.
+
+                Dispositif régionaux ou départementaux
+                Certaines régions proposent des aides spécifiques pour la formation professionnelle (ex : PRF, chèques formation).
+
+            🧑‍💻 Pour les indépendants / freelances
+                FIFPL (professions libérales)
+                Prise en charge des frais de formation selon votre activité déclarée.
+
+                AGEFICE (commerçants, dirigeants non salariés)
+                Aide au financement pour les chefs d'entreprise relevant du commerce, de l'industrie ou des services.
+
+            🧾 Pour les dirigeants d'entreprise
+                Crédit d'impôt formation
+                Bénéficiez d'un crédit d'impôt sur les heures de formation réalisées.
+
+            💳 Financement personnel
+                Paiement échelonné
+                Paiement en 2, 3 ou 4 fois sans frais pour rendre la formation plus accessible.
+
+            Tarifs solidaires ou réduits
+            Tarification spéciale possible pour les étudiants, personnes en reconversion ou en recherche d'emploi (sur dossier).
+
+            🤝 Accompagnement personnalisé
+            Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
+        </pre>
+
+    </div>
+</section>
+
+<button class="close">Fermer</button>
+
+
+</div>
+</dialog>
+</div>
 </div>
 
 
 
+<div id="backgroundColor4">
+ <h1> En DEVOPPS</h1>
+<!-- ! 4eme catégorie -->
+<div class="cards" id="last">
+    <h2>DEVOPPS</h2>
+<img src="./images/7060483.jpg" alt="image vectorielle de DEVOPPS">
+<button type="button" class="white" id="7">Voir plus de détails</button>
+
+<!-- Pop-up -->
+ <dialog class="show">
+    <div class="modaleContainer">
+        <section class="mirror">
+        <div class="photos">
+            <img src="./images/2248604.jpg" alt="image vectorielle de design web">
+        </div>
+        <div class="infos">
+            <p> > Formation d'une durée de 3 mois</p>
+            <p> > En présentiel OU distanciel</p>
+            <p> > Prochaine date : 18 septembre au 18 décembre</p>
+        </div>
+    </section>
+
+<section class="section2">
+    <h2>Thèmes abordés</h2>
+    <div>
+        <pre>
+            > Introduction au DevOps
+
+Objectifs, culture DevOps, CI/CD, collaboration Dev/Ops
+
+Environnements de développement & conteneurisation
+
+Docker, images, volumes, conteneurs, Docker Compose
+
+Systèmes & réseaux (bases)
+
+Linux, terminal, gestion de processus, sécurité réseau
+
+Intégration continue (CI)
+
+GitHub Actions, GitLab CI ou Jenkins
+
+Déploiement continu (CD)
+
+Automatiser les builds, tests, mises en production
+
+Infrastructure as Code (IaC)
+
+Introduction à Terraform, Ansible ou équivalent
+
+Monitoring & logs
+
+Prometheus, Grafana, ELK stack (ou alternatives)
+
+Sécurité DevOps (DevSecOps)
+
+Analyse de vulnérabilités, bonnes pratiques, mise à jour automatique
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h2>💡 Nos solutions de financement</h2>
+    <div> 
+        <pre>
+            🎯 Pour les salariés
+                CPF (Compte Personnel de Formation)
+                Utilisez votre crédit CPF pour financer tout ou partie de la formation.
+
+                Plan de développement des compétences (via l'employeur)
+                La formation peut être prise en charge par votre entreprise dans le cadre de sa politique RH.
+
+            💼 Pour les demandeurs d'emploi
+                AIF (Aide Individuelle à la Formation - Pôle Emploi)
+                Sur validation de votre conseiller Pôle Emploi, la formation peut être financée partiellement ou totalement.
+
+                Dispositif régionaux ou départementaux
+                Certaines régions proposent des aides spécifiques pour la formation professionnelle (ex : PRF, chèques formation).
+
+            🧑‍💻 Pour les indépendants / freelances
+                FIFPL (professions libérales)
+                Prise en charge des frais de formation selon votre activité déclarée.
+
+                AGEFICE (commerçants, dirigeants non salariés)
+                Aide au financement pour les chefs d'entreprise relevant du commerce, de l'industrie ou des services.
+
+            🧾 Pour les dirigeants d'entreprise
+                Crédit d'impôt formation
+                Bénéficiez d'un crédit d'impôt sur les heures de formation réalisées.
+
+            💳 Financement personnel
+                Paiement échelonné
+                Paiement en 2, 3 ou 4 fois sans frais pour rendre la formation plus accessible.
+
+            Tarifs solidaires ou réduits
+            Tarification spéciale possible pour les étudiants, personnes en reconversion ou en recherche d'emploi (sur dossier).
+
+            🤝 Accompagnement personnalisé
+            Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
+        </pre>
+
+    </div>
+</section>
+
+<button class="close">Fermer</button>
 
 
+</div>
+</dialog>
+</div>
+<div class="cards">
+    <h2>Show 2</h2>
+<img src="./images/4716574.jpg" alt="">
+<button type="button" class="white" id="8">Voir plus de détails</button>
+
+<!-- Pop-up -->
+ <dialog class="show">
+    <div class="modaleContainer">
+        <section class="mirror">
+        <div class="photos">
+            <img src="./images/2248604.jpg" alt="image vectorielle de design web">
+        </div>
+        <div class="infos">
+            <p> > Formation d'une durée de 3 mois</p>
+            <p> > En présentiel OU distanciel</p>
+            <p> > Prochaine date : 18 septembre au 18 décembre</p>
+        </div>
+    </section>
+
+<section class="section2">
+    <h2>Thèmes abordés</h2>
+    <div>
+        <pre>
+            > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
+
+            > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
+
+            > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.
+
+            > SEO technique : indexation, vitesse, mobile, architecture web.
+
+            > Stratégie de contenu : création, planification et optimisation éditoriale.
+
+            > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.
+
+            > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
+
+            > Cas pratique final : application sur un projet réel ou simulé.
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h2>💡 Nos solutions de financement</h2>
+    <div> 
+        <pre>
+            🎯 Pour les salariés
+                CPF (Compte Personnel de Formation)
+                Utilisez votre crédit CPF pour financer tout ou partie de la formation.
+
+                Plan de développement des compétences (via l'employeur)
+                La formation peut être prise en charge par votre entreprise dans le cadre de sa politique RH.
+
+            💼 Pour les demandeurs d'emploi
+                AIF (Aide Individuelle à la Formation - Pôle Emploi)
+                Sur validation de votre conseiller Pôle Emploi, la formation peut être financée partiellement ou totalement.
+
+                Dispositif régionaux ou départementaux
+                Certaines régions proposent des aides spécifiques pour la formation professionnelle (ex : PRF, chèques formation).
+
+            🧑‍💻 Pour les indépendants / freelances
+                FIFPL (professions libérales)
+                Prise en charge des frais de formation selon votre activité déclarée.
+
+                AGEFICE (commerçants, dirigeants non salariés)
+                Aide au financement pour les chefs d'entreprise relevant du commerce, de l'industrie ou des services.
+
+            🧾 Pour les dirigeants d'entreprise
+                Crédit d'impôt formation
+                Bénéficiez d'un crédit d'impôt sur les heures de formation réalisées.
+
+            💳 Financement personnel
+                Paiement échelonné
+                Paiement en 2, 3 ou 4 fois sans frais pour rendre la formation plus accessible.
+
+            Tarifs solidaires ou réduits
+            Tarification spéciale possible pour les étudiants, personnes en reconversion ou en recherche d'emploi (sur dossier).
+
+            🤝 Accompagnement personnalisé
+            Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
+        </pre>
+
+    </div>
+</section>
+
+<button class="close">Fermer</button>
 
 
+</div>
+</dialog>
+</div>
+</div>
 </main>
 
 

@@ -4,6 +4,11 @@
 
 // ! MENU-BURGER
 
+/* 
+* Déclaration d'une variable "currentSlide" en let égale à 0
+* Déclaration de 3 constantes "slides", "container" et "dots"
+* Sélectionne par "document.querySelectorAll" : les points, les slides et chaque div 
+*/ 
 
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel_mobile');
@@ -14,6 +19,13 @@ const dots = document.querySelectorAll('.dot')
 window.changeSlide = changeSlide;
 window.setSlide = setSlide;
 
+
+/* *
+* @paramètre Fonction appelée "updateSlider"
+* Modification du style de la variable "container" : On demande à ce que les slides se déplace de 100% sur l'axe horizontale
+* @paramètre Boucle : on ajoute/enlève la classList "active" sur le point en fonction du numéro de la slide sur laquelle on est actuellement
+*/
+
 function updateSlider() {
 container.style.transform = `translateX(-${currentSlide * 100}%)`;  
 dots.forEach(dot => dot.classList.remove('active')),
@@ -23,9 +35,11 @@ dots[currentSlide].classList.add('active');
 
 
 /*
- * Function nommée changeSlide qui a comme paramètre (n)
+ * @paramètre Fonction nommée "changeSlide" qui a comme paramètre (n)
  * Permet de changer de slide
  * Itération de la slide présente avec une Condition "if"
+ * 
+ * 
 */
 function changeSlide(n) {
     
@@ -46,4 +60,11 @@ function setSlide(n) {
 
 // Initialisation
 updateSlider();
+
+
+/* *
+* @paramètre Une boucle avec en paramètre (dot et i)
+* @paramètre onclick = au click 
+* L'index des points est relié à la slide  
+*/
 dots.forEach((dot, i) => dot.onclick = () => setSlide(i));
