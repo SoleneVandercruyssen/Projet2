@@ -26,26 +26,99 @@
 }
 
 
+/* ! Version Desktop */
 
-
-
-
-
-@media  screen and (min-width: 991px) and (max-width: 1200px) {
+@media  screen and (min-width: 1000px) and (max-width: 1990px) {
     body{
         width: 100%;
         height: 100vh;
     }
 
     header{
-        display: flex;
-        flex-direction: row;
-        background-color: #2DBBD4;
-        width: 100%;
-        padding: 3px;
-        grid-area: header;
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: row;
+    background-color: #2DBBD4;
+    width: 100%;
+    height: 9vh;
+    padding: 5px;
+    grid-area: header;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
     }
+} 
+
+.burger-container {
+    display: none; 
+} 
+
+
+.nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+#burger-toggle:checked ~ .nav {
+    display:none;
+}
+
+.burger-line {
+    display: none;
+} 
+
+
+nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav li{
+    font-family: Spectral;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 20px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+nav a{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    display: inline-block;
+}
+
+nav a:hover{
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.50, 1, 0.50, 2);
+    text-decoration: underline;
+
+}
+
+#Forms{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row ;
+    gap: 30%;
+}
+
 
     img{
         width: 65px;
@@ -53,12 +126,99 @@
         border-radius: 50%;
     }
 
-    form{
-        width: 100%;
+
+    button{
+        width: 100px;
+        height: 20px;
+        background-color: #BAE0E0;
+        border-radius: 20px;
+        border: 1px solid #000000;
+        box-shadow: 2px 4px 2px;
+        color: #000000;
+
     }
-    
-    /* ! Footer */
-/* TODO changer les fonts */
+
+    #public{
+    background-color: #2DBBD4;
+}
+
+#formulaire{
+    background-color: #F5CB5C;
+
+    #mail_form{
+        margin-top: 5%;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+form{
+    width: 300px;
+    height: 420px;
+    background-color: rgb( 186,224, 224);
+    border-radius: 20px;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+.compte{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    margin-top: -25%;
+    margin-bottom: 20%;
+}
+
+#sub{
+        margin-bottom: -14%;
+        font-family: Spectral;
+        margin-top: 15%;
+}
+#sub2{
+    background-color: #F5CB5C;
+    margin-bottom: -14%;
+    font-family: Spectral;
+    margin-top: 15%;
+}
+
+#password, #identity{
+    width: 24px;
+    height: 24px;
+    margin-top: 5%;
+}
+
+
+
+.face-to-face{
+    display: flex;
+    gap: 5%;
+}
+
+
+    input{
+        width: 100%;
+        border-radius: 5px;
+        background-color: transparent;
+        margin-top: 5%;
+        color: #000000;
+        border: 2px solid black;
+    }
+
+}
+
+
+/* ! Footer */
+
 
     #mirror{
         display: flex;
@@ -66,44 +226,88 @@
         margin-left: 2%;
 }
 
-.face-to-face{
-    display: flex;
-}
 
     .liens_footer{
-        width: 50%;
+        width: 100%;
         font-family: Play;
+        font-size: 1rem;
 }
 
 
     footer{
+        position: sticky;
+        font-size: 12px;
+        background-color:#2DBBD4 ;
+        width: 100%;
+        height: 15vh;
+        top: 100vh;
+        grid-area: footer;
+
+        img{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-right: 1%;
+        }
+    }
+    
+.face-to-face{
+    display: flex;
+    flex-direction: row;
+}
+
+
+    footer ul {
+        float: left;
+        justify-content: right;
+        align-items:left ; 
+        height: 20px;
+}
+
+    footer ul li{
+
+        display: flex;
+        float: left;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    a{
+        text-decoration: underline;
+        color: black;
+        font-size: 1em;
         width: 100%;
     }
+}
 
+    .copyright{
+        font-family: Play;
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        color: black;
 
+        #mail, #tel{
+            text-decoration: underline;
+        }
+
+        #tel{
+            width: 120px;
+        }
+
+        #mail{
+            border-radius: 0%;
+        }
+   }
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ! Version Mobile */
 
 
 @media screen and (min-width: 360px) and (max-width: 990px) {
@@ -140,8 +344,7 @@ header{
     flex-direction: column;
     gap: 6px;
     margin-left: 70%;
-    margin-top: 5%;
-    border: 2px solid orange;   
+    margin-top: 5%; 
 }
 
 

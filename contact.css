@@ -34,11 +34,12 @@
 body{
     width: 100%;
     height: 100vh;
-    
+    background-color: #BAE0E0;
 }
+
 img{
-    width: 40px;
-    height: 40px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
@@ -56,6 +57,7 @@ header{
         width: 70px;
         height: 70px;
         border-radius: 50%;
+        position: relative;
     }
 } 
 
@@ -77,7 +79,7 @@ header{
     display:none;
 }
 
- .burger-line {
+.burger-line {
     display: none;
 } 
 
@@ -124,55 +126,89 @@ iframe{
     position: relative;
     justify-content: center;
     align-items: center;
-    left: 5%;
+    left: 20%;
     margin-top: 10%;
     margin-right: 3%;
-    width: 50%;
+    margin-bottom: 3%;
+    width: 60%;
 }
 
 
 #map{
     background-color: rgba( 255, 255, 255, 0.5);
+    width: 60%;
 }
 
 
 #parking{
-    width: 20px;
-    height: 20px;
+    width: 10%;
+    height: 10%;
     margin-right: 1%;
     border-radius: 0;
 }
 
 #local{
-    width: 20px;
-    height: 20px;
+    width: 10%;
+    height: 10%;
+    border-radius: 0;
+}
+
+#handicap{
+    width: 10%;
+    height: 10%;
     border-radius: 0;
 }
 
 
-
-h1{
-    position: relative;
-    left: 50%;
+#local:hover, #parking:hover, #handicap:hover {
+    scale: 2;
 }
 
+.face-to-face{
+    position: relative;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    border:#FFFFFF 5px solid;
+    border-radius: 10px;
+    background-color: rgba( 255, 255, 255, 0.5);
+}
+
+#parking_desktop{
+    margin-top: 3%;
+}
+
+.desktop_mirror{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
 h2{
-    margin-top: 15%;
-    margin-left: 25%;
+    margin-top: 5%;
+    margin-left: 40%;
     font-family: Play;
 }
 
 p{
     font-family: Spectral;
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 
 form{
-    width: 300px;
-    height: 420px;
+    width: 650px;
+    height: 650px;
     background-color: rgba( 255, 255, 255, 0.5);
+    border: #000000 2px solid;
     border-radius: 20px;
-    margin-left: 10%;
+    margin-left: 25%;
     margin-bottom: 10%;
     margin-top: 10%;
     display: flex;
@@ -185,12 +221,13 @@ form{
         border-radius: 5px;
         border: none;
         width: 90%;
-        height: 3vh;
+        height: 25vh;
         margin-top: 5%;
 
     }
 
     textarea{
+        height: 60vh;
         border: 1px solid rgb(0, 0, 0, 0.2);
         border-radius: 5px;
         margin-top: 5%;
@@ -201,7 +238,7 @@ form{
         width: 100px;
         height: 30px;
         border-radius: 15px;
-        border:1px solid #2DBBD4;
+        border:2px solid black;
         margin-bottom: 4%;
         font-family: Spectral;
         font-weight: bold;
@@ -211,10 +248,13 @@ form{
 
 
 
-
-
-
 /* ! Footer */
+
+.mirror{
+    display: flex;
+    flex-direction: row;
+}
+
 
     #mirror{
         display: flex;
@@ -247,10 +287,6 @@ form{
         }
     }
     
-.face-to-face{
-    display: flex;
-    flex-direction: row;
-}
 
 
     footer ul {
@@ -303,15 +339,6 @@ form{
         }
 }
 
-
-
-
-
-
-
-
-
-
 }
 /* ! Fin Version Desktop */
 
@@ -326,12 +353,6 @@ body{
     background-color: #BAE0E0;
     
 }
-.blanco{
-    background-color: #FFFFFF;
-    height: 15vh;
-    margin-top: 5vh;
-}
-
 
 /* ! Header */
 
@@ -361,8 +382,7 @@ header{
     flex-direction: column;
     gap: 6px;
     margin-left: 70%;
-    margin-top: 5%;
-    border: 2px solid orange;   
+    margin-top: 5%;   
 }
 
 
@@ -454,13 +474,36 @@ iframe{
     border-radius: 0;
 }
 
+
 #local{
     width: 20px;
     height: 20px;
     border-radius: 0;
 }
+#handicap{
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+}
+
+.face-to-face{
+    position: relative;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    border:#FFFFFF 5px solid;
+    border-radius: 10px;
+    background-color: rgba( 255, 255, 255, 0.5);
+}
 
 
+#parking_desktop{
+    margin-top: 3%;
+}
 
 h1{
     margin-left: 40%;
@@ -482,6 +525,7 @@ form{
     height: 420px;
     background-color: rgba( 255, 255, 255, 0.5);
     border-radius: 20px;
+    border: 2px solid black;
     margin-left: 10%;
     margin-bottom: 10%;
     margin-top: 10%;
@@ -495,7 +539,7 @@ form{
         border-radius: 5px;
         border: none;
         width: 90%;
-        height: 3vh;
+        height: 10vh;
         margin-top: 5%;
 
     }
@@ -511,7 +555,7 @@ form{
         width: 100px;
         height: 30px;
         border-radius: 15px;
-        border:1px solid #2DBBD4;
+        border:1px solid black;
         margin-bottom: 4%;
         font-family: Spectral;
         font-weight: bold;
@@ -559,7 +603,10 @@ form{
     flex-direction: row;
 }
 
-
+.mirror{
+    display: flex;
+    flex-direction: row;
+}
     footer ul {
         float: left;
         justify-content: right;
@@ -596,6 +643,11 @@ form{
             text-decoration: underline;
             
         }
+
+        #email{
+            border-radius: 0%;
+        }
+
 }
 
 }
