@@ -20,7 +20,7 @@ window.changeSlide = changeSlide;
 window.setSlide = setSlide;
 
 
-/* *
+/*
 * @paramètre Fonction appelée "updateSlider"
 * Modification du style de la variable "container" : On demande à ce que les slides se déplace de 100% sur l'axe horizontale
 * @paramètre Boucle : on ajoute/enlève la classList "active" sur le point en fonction du numéro de la slide sur laquelle on est actuellement
@@ -62,7 +62,7 @@ function setSlide(n) {
 updateSlider();
 
 
-/* *
+/*
 * @paramètre Une boucle avec en paramètre (dot et i)
 * @paramètre onclick = au click 
 * L'index des points est relié à la slide  

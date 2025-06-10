@@ -83,7 +83,7 @@ header{
     display:none;
 }
 
- .burger-line {
+.burger-line {
     display: none;
 } 
 
@@ -680,10 +680,7 @@ p{
         #tel{
             width: 120px;
         }
-
-        #mail{
-            width: 180px;
-        }
+        
         #email{
             border-radius: 0%;
         }
