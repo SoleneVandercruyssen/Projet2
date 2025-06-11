@@ -134,6 +134,42 @@ nav a:hover{
     margin-top: 5%;
     margin-bottom: 10%;
 }
+    .titre-inner {
+    display: inline-block;
+}
+
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+    
+  
+}
+
+
 
 
 #affiche{
