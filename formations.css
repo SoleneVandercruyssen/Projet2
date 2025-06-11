@@ -9,7 +9,6 @@
 :root {
     --blue: #2DBBD4;
     --yellow: #F5CB5C;
-    --lightblue: #BAE0E0;
     --bluelighter: #afddec;
     --purple: #9381FF;
 }
@@ -117,6 +116,212 @@ nav a:hover{
     text-decoration: underline;
 }
     
+/* ! MAIN */
+
+h1, h2{
+font-family: Play;
+
+}
+
+h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#h1{
+    margin-left: 20%;
+}
+
+h2{
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+
+#titre{
+    margin-left: 20%;
+}
+
+#thirdh1{
+    margin-left: 10%;
+}
+
+#backgroundColor1, #backgroundColor3{
+    background-color: black;
+    padding: 10px;
+
+    h1{
+        color: white;
+        margin-left: 30%;
+    }
+}
+
+#backgroundColor2, #backgroundColor4{
+    background-color: white;
+    padding: 10px;
+
+    h1{
+        color: black;
+    }
+}
+
+#backgroundColor3{
+    h1{
+        margin-left: 35%;
+    }
+}
+
+#backgroundColor4{
+    h1{
+        margin-left: 25%;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    background-color: var(--bluelighter);
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px 2px;
+}
+
+button{
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: rgba(5, 5, 5, 0.5);
+        margin-top: 10%;
+    }
+
+
+.purple{
+    background-color: var(--purple);
+}
+
+.yellow{
+    background-color: var(--yellow);
+}
+
+.black{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.white{
+    background-color: #FFFFFF;
+}
+
+#backgroundColor3{
+    margin-bottom: 20%;
+    background-color: #000000;
+}
+
+
+dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    border: 2px solid yellow;
+}
+
+
+
+/* ! Footer */
+/* TODO changer les fonts */
+
+    #mirror{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
+}
+
+
+    .liens_footer{
+        width: 50%;
+        font-family: Play;
+}
+
+
+    footer{
+        position: sticky;
+        font-size: 12px;
+        background-color:var(--blue) ;
+        width: 100%;
+        height: 15vh;
+        top: 100vh;
+        grid-area: footer;
+
+        img{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 4%;
+        }
+    }
+    
+.face-to-face{
+    display: flex;
+    flex-direction: row;
+}
+
+
+    footer ul {
+        float: left;
+        justify-content: right;
+        align-items:left ; 
+        height: 20px;
+}
+
+    footer ul li{
+        display: flex;
+        float: left;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    a{
+        text-decoration: underline;
+        color: black;
+        font-size: 1em;
+        width: 100%;
+    }
+}
+
+    .copyright{
+        font-family: Play;
+        width: 50%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        color: black;
+
+        #mail, #tel{
+            text-decoration: underline;
+            
+        }
+}
+
 }
 
 /* ! Fin Version Mobile */
@@ -220,12 +425,16 @@ font-family: Play;
 
 h1{
     margin-top: 5%;
-    margin-left: 40%;
+    margin-bottom: 5%;
 }
 
+#h1{
+    margin-left: 42%;
+}
 
 h2{
-    margin-bottom: 4%;
+    font-size: 2rem;
+    margin-bottom: 8%;
     margin-top: 2%;
 }
 
@@ -240,6 +449,41 @@ img{
     margin-left: 20%;
 }
 
+#thirdh1{
+    margin-left: 40%;
+}
+
+#backgroundColor1, #backgroundColor3{
+    background-color: black;
+    padding: 10px;
+
+    h1{
+        color: white;
+        margin-left: 45%;
+    }
+}
+
+#backgroundColor2, #backgroundColor4{
+    background-color: white;
+    padding: 10px;
+
+    h1{
+        color: black;
+    }
+}
+
+#backgroundColor3{
+    h1{
+        margin-left: 45%;
+    }
+}
+
+#backgroundColor4{
+    h1{
+        margin-left: 42%;
+    }
+}
+
 .cards{
     display: flex;
     flex-direction: column;
@@ -250,21 +494,20 @@ img{
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 10%;
-    margin-top: 20%;
+    margin-top: 5%;
     background-color: var(--bluelighter);
     border-radius: 10px;
     box-shadow: 2px 5px 5px 2px;
-
-    
 }
 
 button{
-        width: 150px;
-        height: 40px;
+    font-family: Spectral;
+    font-size: 1.2rem;
+        width: 250px;
+        height: 50px;
         border-radius: 10px;
         box-shadow: rgba(5, 5, 5, 0.5);
         margin-top: 10%;
-        margin-bottom: 10%;
     }
 
 
@@ -302,8 +545,6 @@ dialog{
     backdrop-filter: blur(5px);
     border: 2px solid yellow;
 }
-
-
 
 
 
@@ -367,23 +608,34 @@ dialog{
     a{
         text-decoration: underline;
         color: black;
-        font-size: 1em;
+        font-size: 1.2em;
         width: 100%;
     }
 }
 
     .copyright{
         font-family: Play;
-        width: 50%;
-        float: left;
+        font-size: 1rem;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        margin-left: 2%;
+        justify-content: center;
+        align-items: end;
         color: black;
 
         #mail, #tel{
             text-decoration: underline;
-            
+        }
+
+        #tel{
+            width: 120px;
+        }
+
+        #mail{
+            width: 180px;
+        }
+        #email{
+            border-radius: 0%;
         }
 }
 }
