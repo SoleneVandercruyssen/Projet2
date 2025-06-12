@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./formations.css">
+    <script src="./JS/formations.js" defer></script>
     <title>Formations</title>
 </head>
 <body>
@@ -65,66 +66,60 @@
 
 <section class="section2">
     <h2>Thèmes abordés</h2>
-    <div>
-        <pre>
-            > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
-
-            > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
-
-            > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.
-
-            > SEO technique : indexation, vitesse, mobile, architecture web.
-
-            > Stratégie de contenu : création, planification et optimisation éditoriale.
-
-            > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.
-
-            > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
-
-            > Cas pratique final : application sur un projet réel ou simulé.
-        </pre>
-    </div>
+        <div class="infos2">
+            <p>  > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.</p>
+            <p> > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.</p>
+            <p> > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.</p>
+            <p> > SEO technique : indexation, vitesse, mobile, architecture web.</p>
+            <p> > Stratégie de contenu : création, planification et optimisation éditoriale.</p>
+            <p> > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.</p>
+            <p> > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.</p>
+            <p> > Cas pratique final : application sur un projet réel ou simulé.</p>
+            <p> > Prochaine date : 18 septembre au 18 décembre</p>
+        </div>
 </section>
 
 <section>
     <h2>💡 Nos solutions de financement</h2>
-    <div> 
-        <pre>
+    <div class="infos3"> 
+        <p>
             🎯 Pour les salariés
                 CPF (Compte Personnel de Formation)
                 Utilisez votre crédit CPF pour financer tout ou partie de la formation.
-
                 Plan de développement des compétences (via l'employeur)
                 La formation peut être prise en charge par votre entreprise dans le cadre de sa politique RH.
-
+        </p>
+        <p>
             💼 Pour les demandeurs d'emploi
                 AIF (Aide Individuelle à la Formation - Pôle Emploi)
                 Sur validation de votre conseiller Pôle Emploi, la formation peut être financée partiellement ou totalement.
-
                 Dispositif régionaux ou départementaux
                 Certaines régions proposent des aides spécifiques pour la formation professionnelle (ex : PRF, chèques formation).
-
+        </p>
+        <p>
             🧑‍💻 Pour les indépendants / freelances
                 FIFPL (professions libérales)
                 Prise en charge des frais de formation selon votre activité déclarée.
-
                 AGEFICE (commerçants, dirigeants non salariés)
                 Aide au financement pour les chefs d'entreprise relevant du commerce, de l'industrie ou des services.
-
+        </p>
+        <p>
             🧾 Pour les dirigeants d'entreprise
                 Crédit d'impôt formation
                 Bénéficiez d'un crédit d'impôt sur les heures de formation réalisées.
-
+        </p>
+        <p>
             💳 Financement personnel
                 Paiement échelonné
                 Paiement en 2, 3 ou 4 fois sans frais pour rendre la formation plus accessible.
 
             Tarifs solidaires ou réduits
             Tarification spéciale possible pour les étudiants, personnes en reconversion ou en recherche d'emploi (sur dossier).
-
+        </p>
+        <p>
             🤝 Accompagnement personnalisé
             Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
-        </pre>
+        </p>
 
     </div>
 </section>
@@ -142,7 +137,7 @@
 <button type="button" class="purple" id="2">Voir plus de détails</button>
 
 <!-- Pop-up -->
- <dialog class="show">
+<dialog class="show">
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
@@ -157,16 +152,16 @@
 
 <section class="section2">
     <h2>Thèmes abordés</h2>
-    <div>
-        <pre>
+    <div class="mise-en-page">
+        <div>
+        <p>
             > Introduction à l'UX/UI Design
-
-            > Différences UX / UI, rôles du designer, processus de conception
-
-            > Design thinking & parcours utilisateur
-
-            . Empathie, personas, user journey, architecture de l'information
-
+            . Différences UX / UI, rôles du designer, processus de conception</p>
+        </div>
+        <div>
+            <p>> Design thinking & parcours utilisateur</p>
+            <p>. Empathie, personas, user journey, architecture de l'information</p>
+        </div>
             > Outils de design
 
             . Figma (ou Adobe XD), moodboards, wireframes, UI kits
@@ -192,14 +187,17 @@
             . Export, contraintes techniques, langage commun
 
 
-        </pre>
+        </p>
     </div>
 </section>
+
+
+<!-- ? Faire cette partie en JS ? -->
 
 <section>
     <h2>💡 Nos solutions de financement</h2>
     <div> 
-        <pre>
+        <p>
             🎯 Pour les salariés
                 CPF (Compte Personnel de Formation)
                 Utilisez votre crédit CPF pour financer tout ou partie de la formation.
@@ -234,7 +232,7 @@
 
             🤝 Accompagnement personnalisé
             Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
-        </pre>
+        </p>
 
     </div>
 </section>
@@ -275,8 +273,8 @@
 
 <section class="section2">
     <h2>Thèmes abordés</h2>
-    <div>
-        <pre>
+    <div class="mise-en-page">
+        <p>
             > Introduction au développement web
 
             . Fonctionnement du web, frontend vs backend, outils de base
@@ -309,14 +307,14 @@
 
             . Hébergement, Netlify/Vercel, sécurité de base
             
-        </pre>
+        </p>
     </div>
 </section>
 
 <section>
     <h2>💡 Nos solutions de financement</h2>
     <div> 
-        <pre>
+        <p>
             🎯 Pour les salariés
                 CPF (Compte Personnel de Formation)
                 Utilisez votre crédit CPF pour financer tout ou partie de la formation.
@@ -351,7 +349,7 @@
 
             🤝 Accompagnement personnalisé
             Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
-        </pre>
+        </p>
 
     </div>
 </section>
@@ -363,7 +361,7 @@
 </dialog>
 </div>
 <div class="cards">
-    <h2>Autres</h2>
+    <h2>Cybersécurité</h2>
 <img src="./images/4716574.jpg" alt="">
 <button type="button" class="yellow" id="4">Voir plus de détails</button>
 
@@ -383,31 +381,28 @@
 
 <section class="section2">
     <h2>Thèmes abordés</h2>
-    <div>
-        <pre>
-            > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
-
-            > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
-
-            > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.
-
-            > SEO technique : indexation, vitesse, mobile, architecture web.
-
-            > Stratégie de contenu : création, planification et optimisation éditoriale.
-
-            > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.
-
-            > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
-
-            > Cas pratique final : application sur un projet réel ou simulé.
-        </pre>
+    <div class="mise-en-page">
+        <p>
+            > Introduction à la cybersécurité : Menaces courantes, enjeux, acteurs </p>
+        <p>
+            > Principes de base de la sécurité informatique : Authentification, chiffrement, contrôle d'accès. </p>
+        <p>
+            > Sécurité des réseaux : Pare-feu, VPN, protection contre les intrusions</p>
+        <p>
+            > Sécurité des systèmes et des données :  Mises à jour, antivirus, gestion des droits</p>
+        <p>
+            > Sécurité des applications : Vulnérabilités courantes, bonnes pratiques de développement</p>
+        <p>
+            > Réponse aux incidents et gestion des risques : Détection, réaction, plan de continuité</p>
+        <p>
+            > Sensibilisation des utilisateurs : Phishing, mots de passe, hygiène numérique</p>
     </div>
 </section>
 
 <section>
     <h2>💡 Nos solutions de financement</h2>
     <div> 
-        <pre>
+        <p>
             🎯 Pour les salariés
                 CPF (Compte Personnel de Formation)
                 Utilisez votre crédit CPF pour financer tout ou partie de la formation.
@@ -442,7 +437,7 @@
 
             🤝 Accompagnement personnalisé
             Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
-        </pre>
+        </p>
 
     </div>
 </section>
@@ -480,8 +475,8 @@
 
 <section class="section2">
     <h2>Thèmes abordés</h2>
-    <div>
-        <pre>
+    <div class="mise-en-page">
+        <p>
             > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
 
             > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
@@ -497,14 +492,14 @@
             > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
 
             > Cas pratique final : application sur un projet réel ou simulé.
-        </pre>
+        </p>
     </div>
 </section>
 
 <section>
     <h2>💡 Nos solutions de financement</h2>
     <div> 
-        <pre>
+        <p>
             🎯 Pour les salariés
                 CPF (Compte Personnel de Formation)
                 Utilisez votre crédit CPF pour financer tout ou partie de la formation.
@@ -539,7 +534,7 @@
 
             🤝 Accompagnement personnalisé
             Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
-        </pre>
+        </p>
 
     </div>
 </section>
@@ -575,8 +570,8 @@
 
 <section class="section2">
     <h2>Thèmes abordés</h2>
-    <div>
-        <pre>
+    <div class="mise-en-page">
+        <p>
             > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
 
             > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
@@ -592,14 +587,14 @@
             > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
 
             > Cas pratique final : application sur un projet réel ou simulé.
-        </pre>
+        </p>
     </div>
 </section>
 
 <section>
     <h2>💡 Nos solutions de financement</h2>
     <div> 
-        <pre>
+        <p>
             🎯 Pour les salariés
                 CPF (Compte Personnel de Formation)
                 Utilisez votre crédit CPF pour financer tout ou partie de la formation.
@@ -634,7 +629,7 @@
 
             🤝 Accompagnement personnalisé
             Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
-        </pre>
+        </p>
 
     </div>
 </section>
@@ -673,47 +668,47 @@
 
 <section class="section2">
     <h2>Thèmes abordés</h2>
-    <div>
-        <pre>
+    <div class="mise-en-page">
+        <p>
             > Introduction au DevOps
 
-Objectifs, culture DevOps, CI/CD, collaboration Dev/Ops
+            > Objectifs, culture DevOps, CI/CD, collaboration Dev/Ops
 
-Environnements de développement & conteneurisation
+            > Environnements de développement & conteneurisation
 
-Docker, images, volumes, conteneurs, Docker Compose
+            > Docker, images, volumes, conteneurs, Docker Compose
 
-Systèmes & réseaux (bases)
+            > Systèmes & réseaux (bases)
 
-Linux, terminal, gestion de processus, sécurité réseau
+            > Linux, terminal, gestion de processus, sécurité réseau
 
-Intégration continue (CI)
+            > Intégration continue (CI)
 
-GitHub Actions, GitLab CI ou Jenkins
+            > GitHub Actions, GitLab CI ou Jenkins
 
-Déploiement continu (CD)
+            > Déploiement continu (CD)
 
-Automatiser les builds, tests, mises en production
+            > Automatiser les builds, tests, mises en production
 
-Infrastructure as Code (IaC)
+            > Infrastructure as Code (IaC)
 
-Introduction à Terraform, Ansible ou équivalent
+            > Introduction à Terraform, Ansible ou équivalent
 
-Monitoring & logs
+            > Monitoring & logs
 
-Prometheus, Grafana, ELK stack (ou alternatives)
+            > Prometheus, Grafana, ELK stack (ou alternatives)
 
-Sécurité DevOps (DevSecOps)
+            > Sécurité DevOps (DevSecOps)
 
-Analyse de vulnérabilités, bonnes pratiques, mise à jour automatique
-        </pre>
+            > Analyse de vulnérabilités, bonnes pratiques, mise à jour automatique
+        </p>
     </div>
 </section>
 
 <section>
     <h2>💡 Nos solutions de financement</h2>
     <div> 
-        <pre>
+        <p>
             🎯 Pour les salariés
                 CPF (Compte Personnel de Formation)
                 Utilisez votre crédit CPF pour financer tout ou partie de la formation.
@@ -748,7 +743,7 @@ Analyse de vulnérabilités, bonnes pratiques, mise à jour automatique
 
             🤝 Accompagnement personnalisé
             Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
-        </pre>
+        </p>
 
     </div>
 </section>
@@ -769,7 +764,7 @@ Analyse de vulnérabilités, bonnes pratiques, mise à jour automatique
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img src="./images/2248604.jpg" alt="image vectorielle de design web">
+            <img src="./images/4716574.jpg" alt="image vectorielle de design web">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 3 mois</p>
@@ -780,31 +775,32 @@ Analyse de vulnérabilités, bonnes pratiques, mise à jour automatique
 
 <section class="section2">
     <h2>Thèmes abordés</h2>
-    <div>
-        <pre>
-            > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
+    <div class="mise-en-page">
+        <p> > Fondamentaux du SEO : fonctionnement des moteurs, types de référencement, objectifs.
 
-            > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.
+        <p>  > Recherche de mots-clés : compréhension de l'intention de recherche, outils et méthodes.</p>
 
-            > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.
+        <p> > Optimisation On-page : balises HTML, structure du site, rédaction de contenu optimisé.</p>
 
-            > SEO technique : indexation, vitesse, mobile, architecture web.
+        <p> > SEO technique : indexation, vitesse, mobile, architecture web.</p>
 
-            > Stratégie de contenu : création, planification et optimisation éditoriale.
+        <p> > Stratégie de contenu : création, planification et optimisation éditoriale.</p>
 
-            > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.
+        <p> > Netlinking : acquisition de backlinks, autorité de domaine, SEO off-site.</p>
 
-            > Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.
+        <p>> Suivi & analyse : audit SEO, Google Search Console, indicateurs de performance.</p>
 
-            > Cas pratique final : application sur un projet réel ou simulé.
-        </pre>
+        <p> > Cas pratique final : application sur un projet réel ou simulé.</p>
+        
     </div>
+
+    
 </section>
 
 <section>
     <h2>💡 Nos solutions de financement</h2>
     <div> 
-        <pre>
+        <p>
             🎯 Pour les salariés
                 CPF (Compte Personnel de Formation)
                 Utilisez votre crédit CPF pour financer tout ou partie de la formation.
@@ -839,7 +835,7 @@ Analyse de vulnérabilités, bonnes pratiques, mise à jour automatique
 
             🤝 Accompagnement personnalisé
             Notre équipe vous aide à identifier la solution la plus adaptée à votre profil et à constituer les dossiers administratifs si nécessaire.
-        </pre>
+        </p>
 
     </div>
 </section>

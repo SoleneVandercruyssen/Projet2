@@ -240,10 +240,48 @@ dialog{
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
+    background-color: #000000;
+    color: #FFFFFF;
     border: 2px solid yellow;
+
+    p{
+        justify-content: center;
+        align-items: center;
+        font-family: Spectral;
+        font-size: 0.8rem;
+    }
+
+    img{
+        margin-left: 5%;
+        width: 150px;
+        height: 150px;
+    }
+
+    button{
+        margin-left: 25%;
+    }
+
+    .mise-en-page{
+        border: 2px solid red;
+        padding: 5px;
+        height: 35vh;
+        display: block;
+    }
 }
 
+.mirror{
+    padding: 5px;
+    display: flex;
+    gap: 15px;
+}
 
+.infos2{
+    padding:10px;
+}
+
+.infos3{
+    padding:10px;
+}
 
 /* ! Footer */
 /* TODO changer les fonts */
