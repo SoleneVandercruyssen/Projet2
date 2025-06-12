@@ -8,13 +8,6 @@
 *   
 */
 
-
-
-
-
-
-
-
 const closeButton = document.querySelector('.close');
 const modaleDialog = document.querySelectorAll('dialog');
 const buttons = document.querySelectorAll('button');
@@ -36,8 +29,6 @@ document.querySelectorAll('button + dialog').forEach((dialog, i) => {
         }
     }
 });
-
-
 
 
 // buttons.forEach((button, i )=>{

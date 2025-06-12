@@ -261,11 +261,8 @@ dialog{
         margin-left: 25%;
     }
 
-    .mise-en-page{
-        border: 2px solid red;
-        padding: 5px;
-        height: 35vh;
-        display: block;
+    h2{
+        margin-left: 15%;
     }
 }
 
