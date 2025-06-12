@@ -139,35 +139,33 @@ nav a:hover{
 }
 
 
-@keyframes text-clip {
-  from {
+/* @keyframes text-clip {
+from {
     clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  to {
+}
+to {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
+}
 }
 
 @keyframes outer-left {
-  from {
+from {
     transform: translateX(50%);
-  }
-  to {
+}
+to {
     transform: none;
-  }
+}
 }
 
 @keyframes inner-left {
-  from {
+from {
     transform: translateX(-50%);
-  }
-  to {
+}
+to {
     transform: none;
-  }
 }
-    
-  
 }
+} */
 
 
 
@@ -192,8 +190,6 @@ nav a:hover{
         margin-top: 20%;
         border: none;
 }
-
-
 
 
 /* ! MAIN */
