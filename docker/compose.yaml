@@ -38,4 +38,9 @@ services:
     # Permet de relancer le container si il s'arrête
     restart: always
 
+  #   Phpmyadmin
+  #   port : 
+  #   - "8092:80"
+  # container_name: serverPHPmyAdmin
+  #  restart: always
 
