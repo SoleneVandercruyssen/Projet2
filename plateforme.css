@@ -10,7 +10,7 @@
 :root {
     --blue: #2DBBD4;
     --yellow: #F5CB5C;
-    --lightblue: #BAE0E0;
+    --lightblue: #afddec;
     --purple: #9381FF;
 }
 
@@ -31,6 +31,7 @@
     body{
         width: 100%;
         height: 100vh;
+
     }
 
 
@@ -40,13 +41,11 @@
 header{
     display: flex;
     flex-direction: row;
-    background-color: #2DBBD4;
+    background-color: var(--blue);
     width: 100%;
     padding: 3px;
     grid-area: header;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-
 
     img{
         width: 65px;
@@ -72,7 +71,7 @@ header{
     top: 70px;
     right: 0;
     width: 100%;
-    background-color: #2DBBD4;
+    background-color: var(--blue);
     z-index: 1;
 }
 
@@ -117,14 +116,156 @@ nav a:hover{
     text-decoration: underline;
 }
 
+/* ! Main */
 
     #plateforme_icons{
+        background-color: var(--lightblue);
         width: 100%;
-        height: 10vh;
+        height: 4vh;
+        padding: 3px;
 
         img{
             width: 24px;
             height: 24px;
+            position: relative;
+            float: inline-end;
+            margin-right: 15px;
+            right: 0;
+        }
+
+        .list{
+            width: 100%;
+            height: 15vh;
+            border: 2px solid red;
         }
     }
+
+#plateforme_liste{
+    border: 2px solid yellow;
+    width: 70%;
+    height: 40vh;
+}
+
+h2{
+    font-family: Spectral;
+    color: red;
+    font-size: 1.0rem;
+    width: 100%;
+}
+
+#Administratif
+{
+    background-color: #afddec;
+
+}
+#plateforme_pdf{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid green ;
+    width: 100%;
+    justify-content: space-evenly;
+
+    p{
+        font-family: Spectral;
+        font-size: 1rem;
+    }
+
+#import{
+    margin-left: 40px;
+}
+
+#export{
+    margin-left: 45px;
+}
+
+}
+
+/* ! Footer */
+
+    #mirror{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
+}
+
+    .liens_footer{
+        width: 50%;
+        font-family: Play;
+}
+
+    footer{
+        position: sticky;
+        font-size: 12px;
+        background-color:var(--blue) ;
+        width: 100%;
+        height: 15vh;
+        top: 100vh;
+        grid-area: footer;
+    }
+    
+    #mail, #tel{
+            margin-right: 4%;
+            text-decoration: underline;
+            font-size: 0.8rem;
+        }
+
+.face-to-face{
+    display: flex;
+    flex-direction: row;
+}
+
+
+    footer ul {
+        float: left;
+        justify-content: right;
+        align-items:left ; 
+        height: 20px;
+}
+
+    footer ul li{
+        display: flex;
+        float: left;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    a{
+        text-decoration: underline;
+        color: black;
+        font-size: 1em;
+        width: 100%;
+    }
+}
+
+    .copyright{
+        width: 50%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        color: black;
+
+        #email{
+            border-radius: 0%;
+        }
+
+        img{
+            width: 25px;
+            height: 25px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

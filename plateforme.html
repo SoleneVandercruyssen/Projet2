@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./JS/plateforme.js" defer></script>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./plateforme.css">
     <title>Notre Plateforme en ligne</title>
 </head>
 <body>
@@ -37,10 +37,10 @@
         <nav>
             <div class="nav-menu">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="./formations.html">Formations</a></li>
+                    <li><a href="./index.html" target="_blank">Home</a></li>
+                    <li><a href="./contact.html" target="_blank">Contact</a></li>
+                    <li><a href="login.html" target="_parent">Login</a></li>
+                    <li><a href="./formations.html" target="_blank">Formations</a></li>
                 </ul>
             </div>
         </nav>
@@ -62,7 +62,44 @@
 <section id="calendar" >
 <table>
     <thead>
-        <tr> Jours </tr>
+        <th>
+        <tr id="jours">Jours</tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+            <td>08</td>
+            <td>09</td>
+            <td>10</td>
+            <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <tr>
+            <td>31</td>
+            </tr>
+        </th>
         <tr> Mois </tr>
         <tr> Années </tr>
     </thead>
@@ -96,27 +133,34 @@
 </div>
 
 </section>
-
+<section id="Administratif">
 <!-- ! Administratif -->
-<h2>Veuillez renommer vos fichiers <em>ex: Nom_Prenom_absence_01-12-2028</em> </h2>
+<h2>! Veuillez renommer vos fichiers <em>ex: Nom_Prenom_absence_01-12-2028</em> </h2>
 
 <section id="plateforme_pdf">
-<img src="./images/icons8-import-50.png" alt="icon_import">
-<img src="./images/icons8-export-50.png" alt="icon_export">
+    <div>
+<img src="./images/icons8-import-50.png" id="import" alt="icon_import">
+<p>Importez un fichier</p>
+</div>
+<div>
+<img src="./images/icons8-export-50.png" id="export" alt="icon_export">
+<p>Exporter un fichier</p>
+</div>
+</section>
 </section>
     </main>
 
 
 
 
-   <!-- ! FOOTER -->
+<!-- ! FOOTER -->
     <footer class="foot">
         <div id="mirror">
         <div class="liens_footer">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./presentation.html">Qui sommes-nous ?</a></li>
-                <li><a href="./formations.html">Formations</a></li>
+                <li><a href="./index.html" target="_blank">Home</a></li>
+                <li><a href="./presentation.html" target="_blank">Qui sommes-nous ?</a></li>
+                <li><a href="./formations.html" target="_blank">Formations</a></li>
                 <li><a href="">Projets</a></li>
                 <li><a href="">Mentions légales</a></li>
                 <li><a href="">Politique de confidentialité</a></li>
