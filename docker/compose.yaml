@@ -14,13 +14,18 @@ services:
     volumes:
       - .:/var/www/html
   # On peut ajouter des variables d'environnement
-    environment:
+    environment: 
+      - ALLOW_OVERRIDE=true
+      - DB_HOST=bddsql
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_NAME=Quanticode
       - MA_MOYENNE_VARIABLE=bidule
     container_name: Quanticode
+        # Permet de relancer le container si il s'arrête
     restart: always
-
-
-  bdd:
+    
+  bddsql:
   # On peut aussi lancer un service depuis une image
     image: mariadb
     ports:
@@ -33,14 +38,25 @@ services:
       - DB_USER=root
       - DB_PASSWORD=root
       - DB_NAME=quanticode
-    # permet de donner un nom au container
     container_name: serverMariaDB2025
-    # Permet de relancer le container si il s'arrête
     restart: always
+    
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8093:80"
+    container_name: serverPHPMyAdmin2025
+    restart: unless-stopped
+    depends_on:
+      - bddsql
+    environment:
+      PMA_HOST: ${DB_HOST}
+      PMA_USER: ${DB_USER}
+      PMA_PASSWORD: ${DB_PASSWORD}
 
-  #   Phpmyadmin
-  #   port : 
-  #   - "8092:80"
-  # container_name: serverPHPmyAdmin
-  #  restart: always
-
+    bddnosql:
+  image: mongo
+  ports:
+    - "27017:27017"
+  container_name: serverMongoDB2025
+  restart: always
