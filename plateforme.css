@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+@import "tailwindcss";
+tailwind base
+tailwind components
+tailwind utilities
 
 /* ? Couleurs */
 
@@ -31,7 +35,6 @@
     body{
         width: 100%;
         height: 100vh;
-
     }
 
 
@@ -117,6 +120,22 @@ nav a:hover{
 }
 
 /* ! Main */
+
+.calendar{
+    padding: 10px 10px;
+
+    .case{
+        border: 2px solid green;
+        width: 100px;
+        height: 200px;
+        background-color: #2DBBD4;
+    }
+}
+
+#chiffres{
+    width: 100%;
+    height: 45vh;
+}
 
     #plateforme_icons{
         background-color: var(--lightblue);
