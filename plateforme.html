@@ -6,6 +6,13 @@
     <script src="./JS/plateforme.js" defer></script>
     <link rel="stylesheet" href="./plateforme.css">
     <title>Notre Plateforme en ligne</title>
+     <style>
+        table, td, th
+        {
+            border: 2px solid blue;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <!-- Création d'un compte pour les cours à distanciel : proposer une plateforme e-learning pour que des personnes étrangères puissent suivre des cours dans leur langues.
@@ -60,49 +67,24 @@
 
 <!-- ! Section  calendrier -->
 <section id="calendar">
-    <div id="buttons">
+    
+
+<div id="button">
+    <button type="button">Ajouter un évènement</button>
+    </div>
+<table style="background-color: #9381FF;" id="chiffres">
+    <thead>
+        
+<div id="buttons">
     <button type="button">Jours</button>
     <button type="button">Semaines</button>
     <button type="button">Mois</button>
     </div>
 
-    <div id="button">
-    <button type="button">Ajouter un évènement</button>
-    </div>
-<div>
-
-</div>
-
-<!-- <thead>
-<tr>
-            <th class="p-2 border-r h-10 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 xl:text-sm text-xs">
-                <span class="xl:block lg:block md:block sm:block hidden">Lundi</span>
-            </th>
-            <th class="p-2 border-r h-10 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 xl:text-sm text-xs">
-                <span class="xl:block lg:block md:block sm:block hidden">Mardi</span>
-            </th>
-            <th class="p-2 border-r h-10 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 xl:text-sm text-xs">
-                <span class="xl:block lg:block md:block sm:block hidden">Mercredi</span>
-            </th>
-            <th class="p-2 border-r h-10 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 xl:text-sm text-xs">
-                <span class="xl:block lg:block md:block sm:block hidden">Jeudi</span>
-            </th>
-            <th class="p-2 border-r h-10 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 xl:text-sm text-xs">
-                <span class="xl:block lg:block md:block sm:block hidden">Vendredi</span>
-            </th>
-            <th class="p-2 border-r h-10 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 xl:text-sm text-xs">
-                <span class="xl:block lg:block md:block sm:block hidden">Samedi</span>
-            </th>
-            <th class="p-2 border-r h-10 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 xl:text-sm text-xs">
-                <span >Dimanche</span>
-            </th>
-</tr>
-        </thead> -->
-
+  <th>
     
-<table style="background-color: rgb(77, 154, 255);" id="chiffres">
-    <thead>
-        <th>
+    
+    </th> 
             <tr>
             <td colspan="2">01</td>
             <td colspan="2" style="border: 2px solid blue;">02</td>
@@ -152,8 +134,13 @@
 
         <tr>
             <td colspan="2">31</td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
         </tr>
-        </th>
+        </tr>
+        
     </thead>
     
 </table>

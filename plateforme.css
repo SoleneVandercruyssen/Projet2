@@ -44,7 +44,7 @@ tailwind utilities
 header{
     display: flex;
     flex-direction: row;
-    background-color: var(--blue);
+    background-color:#2DBBD4;
     width: 100%;
     padding: 3px;
     grid-area: header;
@@ -74,7 +74,7 @@ header{
     top: 70px;
     right: 0;
     width: 100%;
-    background-color: var(--blue);
+    background-color: #2DBBD4;
     z-index: 1;
 }
 
@@ -138,7 +138,7 @@ nav a:hover{
 }
 
     #plateforme_icons{
-        background-color: var(--lightblue);
+        background-color: #afddec;
         width: 100%;
         height: 4vh;
         padding: 3px;
@@ -177,6 +177,7 @@ h2{
     background-color: #afddec;
 
 }
+
 #plateforme_pdf{
     display: flex;
     flex-direction: row;
@@ -215,7 +216,7 @@ h2{
     footer{
         position: sticky;
         font-size: 12px;
-        background-color:var(--blue) ;
+        background-color:#2DBBD4;
         width: 100%;
         height: 15vh;
         top: 100vh;
