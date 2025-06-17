@@ -121,8 +121,9 @@ nav a:hover{
 
 /* ! Main */
 
-.calendar{
-    padding: 10px 10px;
+/* .calendar{
+  
+
 
     .case{
         border: 2px solid green;
@@ -130,7 +131,41 @@ nav a:hover{
         height: 200px;
         background-color: #2DBBD4;
     }
+} */
+
+
+#app-calendar{  padding-top: 5px;
+    border-top: 1px solid rgb(233, 233, 233);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 200ms color 200ms;
+    display: grid;
+    /* 7 colonnes */
+    grid-template-columns: repeat(7, 1fr);
+    /* 5 lignes */
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #9381FF;
+    height: 100%;
 }
+
+
+.name{
+    padding-bottom: 5px;
+}
+
+/* .days{
+
+}
+
+.weekends{
+ color : #2DBBD4;
+} */
+
+.selected{
+    background-color: #F5CB5C;
+    color: white;
+}
+
 
 button{
     width: 70px;
