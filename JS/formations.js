@@ -8,21 +8,41 @@
 *   
 */
 
-
-const modaleDialog = document.querySelectorAll('dialog')
+const closeButton = document.querySelector('.close');
+const modaleDialog = document.querySelectorAll('dialog');
 const buttons = document.querySelectorAll('button');
-const closeButton = document.querySelectorAll('.close')
 
-buttons.forEach((button, i )=>{
-    button.addEventListener("click", () => {
-    
-        modaleDialog[i].showModale();
-})})
+// Sélectionne tous les <dialog> précédés d'un <button>
+document.querySelectorAll('button + dialog').forEach((dialog, i) => {
+    const button = dialog.previousElementSibling;
+    if (button && button.tagName === "BUTTON") {
+        // Ouvre la modale au clic sur le bouton
+        button.addEventListener("click", () => {
+            dialog.showModal();
+        });
+        // Ferme la modale au clic sur le bouton .close à l'intérieur
+        const closeBtn = dialog.querySelector('.close');
+        if (closeBtn) {
+            closeBtn.addEventListener("click", () => {
+                dialog.close();
+            });
+        }
+    }
+});
 
 
-if(closeButton){
-    closeButton.addEventListener("click", ()=>
-    {
-        modaleDialog[i].close();
-    })
-}
+// buttons.forEach((button, i )=>{
+//     button.addEventListener("click", () => {
+//     if(modaleDialog[i])
+//         {
+//         modaleDialog[i].showModale();
+//     }
+// })
+
+// if(closeButton){
+//     closeButton.addEventListener("click", ()=>
+//     {
+//         modaleDialog[i].close();
+//     })
+// }
+// })

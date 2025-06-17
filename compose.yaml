@@ -1,0 +1,55 @@
+services:
+  web:
+    build: .
+    depends_on:
+      - bddsql
+      - bddnosql
+    container_name: Quanticode1
+    ports:
+      - "8087:80"
+    volumes:
+      - .:/var/www/html
+    environment: 
+      - ALLOW_OVERRIDE=true
+      - DB_HOST=bddsql
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_NAME=Quanticode
+      - MA_MOYENNE_VARIABLE=bidule
+    restart: always
+    
+  bddsql:
+    image: mariadb
+    ports:
+      - "3307:3306"
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+      - ALLOW_OVERRIDE=true
+      - DB_HOST=bddsql
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_NAME=quanticode
+    container_name: serverMaria
+    restart: always
+    
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8093:80"
+    container_name: serverPHPMyAdmin2025
+    restart: unless-stopped
+    depends_on:
+      - bddsql
+    environment:
+      PMA_HOST: bddsql
+      PMA_USER: root
+      PMA_PASSWORD: root
+
+  bddnosql:
+      image: mongo 
+      container_name: serverMongoDB2025
+      ports:
+        - "27017:27017"
+      restart: always
+
+# Lorsque l'on crée un fichier compose.yalm il est important de ne pas oublier les espaces au début de chaque éléments sauf "services:"
