@@ -1,6 +1,8 @@
 "use strict";
 
 const isWeekend = day => {
-  // 
-  return true;
+  // 6  =  Samedi ; 0 = Dimanche
+  return day % 7 === 6 || day % 7 === 0;
 }
+
+export {isWeekend};
