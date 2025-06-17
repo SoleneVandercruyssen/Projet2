@@ -16,9 +16,19 @@ for (let day = 1; day <= 31; day++){
   * Demande de retourner les jours de la semaine 
   */
 function getNameDay(day) {
-    const days = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+    const days = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"];
     return days[(day - 1) % 7];
 }
+
+
+
+// // Affiche la ligne des jours de la semaine
+// const days = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"];
+// for (let i = 0; i < days.length; i++) {
+//     calendar.innerHTML += `<div class="name">${days[i]}</div>`;
+// }
+
+
 
 // Variable "name" vide
   let name = "";
@@ -38,7 +48,4 @@ if (day <= 7) {
 
     }
   );
-  
-
-
   }

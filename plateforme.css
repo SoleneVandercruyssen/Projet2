@@ -122,9 +122,9 @@ nav a:hover{
 /* ! Main */
 
 #calendar{
-    width: 100%;
+    width: 90%;
     height: 50vh;
-    border: 2px solid orangered;
+    margin-left: 5%;
     margin-top: 20%;
     margin-bottom: 20%;
 }
@@ -141,25 +141,34 @@ nav a:hover{
     grid-template-columns: repeat(7, 1fr);
     /* 5 lignes */
     grid-template-rows: repeat(5, 1fr);
-    background-color: #9381FF;
+    background-color: #2DBBD4;
     height: 100%;
+    width: 100%;
 }
 
 
 .name{
     padding-bottom: 5px;
+    margin-bottom: 3%;
+    font-weight: bold;
 }
 
-.days{
-    background: #fff;
-    margin: 2px;
+.day{
+    background: #2DBBD4;
+    margin: 4px;
     border-radius: 4px;
-    padding: 8px;
-    color: #333;
+    padding: 6px 0;
+    color: #000000;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* aspect-ratio: 2 / 2; chaque case sera carrée */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.weekends{
-    color : #2DBBD4;
+.weekend{
+    color : #afddec;
 }
 
 .selected{
