@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module"  src="./JS/plateforme.js"></script>
+    <script type="module"  src="./JS/calendar.js"></script>
     <script type="module" src="./JS/date.js"></script>
-    <link rel="stylesheet" href="./plateforme.css">
+    <link rel="stylesheet" href="./plateforme.css" >
     <title>Notre Plateforme en ligne</title>
-     <!-- <style>
-        table, td, th
-        {
-            border: 2px solid blue;
-            border-collapse: collapse;
-        }
-    </style> -->
+    <script rel="stylesheet" src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+    <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const calendarEl = document.getElementById('calendar')
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        events: [
+        { title: 'Event 1', start: '2025-06-18' },
+        { title: 'Event 2', start: '2025-06-20', end: '2025-06-22' }
+        ]
+    });
+        calendar.render()
+    })
+
+    </script>
 </head>
 <body>
     <!-- Création d'un compte pour les cours à distanciel : proposer une plateforme e-learning pour que des personnes étrangères puissent suivre des cours dans leur langues.
@@ -55,129 +64,50 @@
     </div>
 </header>
 <!-- ! Fin du Menu -->
+ <!-- ! Mini Header -->
+<section id="plateforme_icons">
+    <button type="button" class="button_mini_header" ><img src="./images/icons8-message-30.png" alt="icon message"></button>
+    <button type="button" class="button_mini_header"><img src="./images/icons8-language-50.png" alt="icon langue"></button>
+</section>
 
     <main>
+<div id='calendar'></div>
 
 
-<!-- ! Mini Header -->
-<section id="plateforme_icons">
+<!-- Modale cachée par défaut -->
+<div id="eventModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:1000; align-items:center; justify-content:center;">
+    <form id="eventForm" style="background:#fff; padding:20px; border-radius:10px; min-width:250px; display:flex; flex-direction:column; gap:10px;">
+    <label>
+        Titre de l'événement :
+        <input type="text" id="eventTitle" required>
+    </label>
+    <label>
+        Date :
+        <input type="date" id="eventDate" required>
+    </label>
+    <label>
+        Couleur :
+        <input type="color" id="eventColor" value="#2DBBD4">
+    </label>
+    <div style="display:flex; gap:10px; justify-content:flex-end;">
+        <button type="button" id="closeModal">Annuler</button>
+        <button type="submit">Ajouter</button>
+    </div>
+</form>
+</div>
 
-    <img src="./images/icons8-message-30.png" alt="icon_message">
-    <img src="./images/icons8-language-50.png" alt="icon_langue">
-</section>
+<button id="addEventBtn">Ajouter un événement</button>
 
 <!-- ! Section  calendrier -->
-<section id="calendar">
-    <div id="app-calendar"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div id="button">
-    <button type="button">Ajouter un évènement</button>
-    </div>
-<table style="background-color: #9381FF;" id="chiffres">
-    <thead>
-        
-<div id="buttons">
-    <button type="button">Jours</button>
-    <button type="button">Semaines</button>
-    <button type="button">Mois</button>
-    </div> -->
-
-<!-- <th>
-    
-    
-    </th> 
-            <tr>
-            <td colspan="2">01</td>
-            <td colspan="2" style="border: 2px solid blue;">02</td>
-            <td colspan="2">03</td>
-            <td colspan="2">04</td>
-            <td colspan="2">05</td>
-            </tr>
-
-        <tr>
-            <td colspan="2">06</td>
-            <td colspan="2">07</td>
-            <td colspan="2">08</td>
-            <td colspan="2">09</td>
-            <td colspan="2">10</td>
-        </tr>
-
-        <tr>
-            <td colspan="2">11</td>
-            <td colspan="2">12</td>
-            <td colspan="2">13</td>
-            <td colspan="2">14</td>
-            <td colspan="2">15</td>
-        </tr>  
-
-        <tr>  
-            <td colspan="2">16</td>
-            <td colspan="2">17</td>
-            <td colspan="2">18</td>
-            <td colspan="2">19</td>
-            <td colspan="2">20</td>
-        </tr>
-
-        <tr>
-            <td colspan="2">21</td>
-            <td colspan="2">22</td>
-            <td colspan="2">23</td>
-            <td colspan="2">24</td>
-            <td colspan="2">25</td>
-        </tr>
-
-        <tr>
-            <td colspan="2">26</td>
-            <td colspan="2">27</td>
-            <td colspan="2">28</td>
-            <td colspan="2">29</td>
-            <td colspan="2">30</td>
-        </tr>
-
-        <tr>
-            <td colspan="2">31</td>
-            <td colspan="2"></td>
-            <td colspan="2"></td>
-            <td colspan="2"></td>
-            <td colspan="2"></td>
-        </tr>
-        </tr>
-        
-    </thead>
-    
-</table> -->
-
-</section>
+<!-- <section id="calendar">  
+    <div id="button_class">
+    <div><button onclick=""  type="button" id="prevMonth"  class="buttons"> <img src="./images/icons8-gauche-16.png" alt="icon flèche gauche"> </button></div>
+    <div><button onclick=""  type="button" id="nextMonth" class="buttons"> <img src="./images/icons8-droite-16.png" alt="icon flèche droite"></button></div>
+    <div><button onclick=""   type="button" id="plus" class="buttons"> <img src="./images/icons8-plus-16.png" alt="icon bouton plus">Add an event</button></div>
+    </div> 
+    <div id="app-calendar">
+    </div> 
+</section> -->
 
 
 <!-- ! Section Liste des Cours -->
@@ -210,11 +140,11 @@
 
 <section id="plateforme_pdf">
     <div>
-<img src="./images/icons8-import-50.png" id="import" alt="icon_import">
+<a href=""download=""><img src="./images/icons8-import-50.png" id="import" alt="icon_import"></a>
 <p>Importez un fichier</p>
 </div>
 <div>
-<img src="./images/icons8-export-50.png" id="export" alt="icon_export">
+<a href=""><img src="./images/icons8-export-50.png" id="export" alt="icon_export"></a>
 <p>Exporter un fichier</p>
 </div>
 </section>
@@ -224,14 +154,13 @@
 
 
 
-<!-- ! FOOTER -->
-    <footer class="foot">
+<footer>
         <div id="mirror">
         <div class="liens_footer">
             <ul>
-                <li><a href="./index.html" target="_blank">Home</a></li>
-                <li><a href="./presentation.html" target="_blank">Qui sommes-nous ?</a></li>
-                <li><a href="./formations.html" target="_blank">Formations</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./presentation.html">Qui sommes-nous ?</a></li>
+                <li><a href="./formations.html">Formations</a></li>
                 <li><a href="">Projets</a></li>
                 <li><a href="">Mentions légales</a></li>
                 <li><a href="">Politique de confidentialité</a></li>
@@ -240,13 +169,13 @@
         </div>
             <div class="copyright">
             <div class="face-to-face">
-            <img src="./images/icons8-courrier-50.png" id="mail" alt="icône mail">
+            <img src="./images/icons8-courrier-50.png" id="email" alt="icône mail">
             <p id="mail">Quanticode@gmail.com</p>
             </div>
             <div class="face-to-face">
             <img src="./images/icons8-call-50(2).png" id="phone" alt="icône phone">
             <p id="tel"> 06 44 52 20 10</p>
-        </div>
+            </div>
             <p> ©Copyright|Solène Vandercruyssen</p>
             <p>All rights reserved|2025</p>
         </div>

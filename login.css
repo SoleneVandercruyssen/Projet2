@@ -7,11 +7,10 @@
 /* ? Couleurs */
 
 :root {
-    --blue: #2DBBD4;
-    --yellow: #F5CB5C; /*245 203 92*/
-    --lightblue: #BAE0E0;  /*73, 88, 88*/
-    --purple: #9381FF; /*147 129 255 */
-    --bluelighter: #afddec;
+--blue: #36C8F6;
+    --yellow: #F5CB5C;
+    --lightblue: #afddec;
+    --purple: #9381FF;
 }
 
 /* ? FONTS  */
@@ -38,7 +37,7 @@
     header{
     display: flex;
     flex-direction: row;
-    background-color: #2DBBD4;
+    background-color: #36C8F6;
     width: 100%;
     height: 9vh;
     padding: 5px;
@@ -142,7 +141,7 @@ nav a:hover{
     }
 
     #public{
-    background-color: #2DBBD4;
+    background-color:  #36C8F6;
 }
 
 #formulaire{
@@ -240,7 +239,7 @@ form{
     footer{
         position: sticky;
         font-size: 12px;
-        background-color:#2DBBD4 ;
+        background-color: #36C8F6 ;
         width: 100%;
         height: 15vh;
         top: 100vh;
@@ -325,7 +324,7 @@ form{
 header{
     display: flex;
     flex-direction: row;
-    background-color: #2DBBD4;
+    background-color:  #36C8F6;
     width: 100%;
     padding: 3px;
     grid-area: header;
@@ -357,7 +356,7 @@ header{
     top: 70px;
     right: 0;
     width: 100%;
-    background-color: #2DBBD4;
+    background-color:  #36C8F6;
     z-index: 1;
 }
 
@@ -415,7 +414,7 @@ nav a:hover{
     }
 
     #public{
-    background-color: #2DBBD4;
+    background-color:  #36C8F6;
 }
 
 #formulaire{

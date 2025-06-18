@@ -7,9 +7,9 @@
 /* ? Couleurs */
 
 :root {
-    --blue: #2DBBD4;
+    --blue: #36C8F6;
     --yellow: #F5CB5C;
-    --lightblue: #BAE0E0;
+    --lightblue: #afddec;
     --purple: #9381FF;
 }
 
@@ -34,7 +34,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: #BAE0E0;
+    background-color: var(--lightblue);
 }
 
 img{
@@ -46,7 +46,7 @@ img{
 header{
     display: flex;
     flex-direction: row;
-    background-color: #2DBBD4;
+    background-color: var(--blue);
     width: 100%;
     height: 9vh;
     padding: 5px;
@@ -189,8 +189,6 @@ iframe{
 }
 
 
-
-
 h2{
     margin-top: 5%;
     margin-left: 40%;
@@ -223,7 +221,6 @@ form{
         width: 90%;
         height: 25vh;
         margin-top: 5%;
-
     }
 
     textarea{
@@ -273,7 +270,7 @@ form{
     footer{
         position: sticky;
         font-size: 12px;
-        background-color:#2DBBD4 ;
+        background-color:#36C8F6 ;
         width: 100%;
         height: 15vh;
         top: 100vh;
@@ -350,7 +347,7 @@ form{
 body{
     width: 100%;
     height: 100vh;
-    background-color: #BAE0E0;
+    background-color: #afddec;
     
 }
 
@@ -360,7 +357,7 @@ body{
 header{
     display: flex;
     flex-direction: row;
-    background-color: #2DBBD4;
+    background-color: #36C8F6;
     width: 100%;
     padding: 3px;
     grid-area: header;
@@ -389,10 +386,10 @@ header{
 .nav {
     display: none;
     position: absolute;
-    top: 55px;
+    top: 70px;
     right: 0;
     width: 100%;
-    background-color: #2DBBD4;
+    background-color: #36C8F6;
     z-index: 1;
 }
 
@@ -431,7 +428,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #2DBBD4;
+    color: #36C8F6;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-decoration: underline;
 }
@@ -497,7 +494,7 @@ iframe{
     width: 90%;
     border:#FFFFFF 5px solid;
     border-radius: 10px;
-    background-color: rgba( 255, 255, 255, 0.5);
+    /* background-color: rgba( 255, 255, 255, 0.5); */
 }
 
 
@@ -584,7 +581,7 @@ form{
     footer{
         position: sticky;
         font-size: 12px;
-        background-color:#2DBBD4 ;
+        background-color:#36C8F6 ;
         width: 100%;
         height: 15vh;
         top: 100vh;
