@@ -654,6 +654,33 @@ nav a:hover{
     margin-bottom: 10%;
 }
 
+
+#cours-list {
+list-style: none;
+padding: 0;
+max-width: 400px;
+margin: 0 auto;
+}
+
+#cours-list li {
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 12px;
+
+}
+
+.icon_download {
+cursor: pointer;
+transition: filter 0.2s;
+}
+
+.icon_download:hover {
+filter: brightness(0.7);
+}
+
+
 .list_item{
     border: 1px solid #000;
     justify-items: center;

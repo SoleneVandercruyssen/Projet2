@@ -235,7 +235,6 @@ form{
         font-size: 1rem;
 }
 
-
     footer{
         position: sticky;
         font-size: 12px;
@@ -304,7 +303,7 @@ form{
         #mail{
             border-radius: 0%;
         }
-   }
+    }
 }
 
 
