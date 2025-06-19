@@ -128,6 +128,7 @@ nav a:hover{
 
 
     button{
+        cursor: pointer;
         font-family: Spectral;
         font-size: 1.2rem;
         width: 100px;
@@ -137,7 +138,6 @@ nav a:hover{
         border: 1px solid #000000;
         box-shadow: 2px 4px 2px;
         color: #000000;
-
     }
 
     #public{
@@ -145,8 +145,13 @@ nav a:hover{
     background-color:  #36C8F6;
 }
 
+button:active{
+    color: #ffffff;
+}
+
 #formulaire{
     background-color: #F5CB5C;
+    margin-left: 60%;
 
     #mail_form{
         margin-top: 5%;
@@ -156,7 +161,8 @@ nav a:hover{
 }
 
 #form1{
-    margin-left: 50%;
+    position: relative;
+    left: 100%;
 }
 
 form{
@@ -165,6 +171,7 @@ form{
     background-color: #afddec;
     border-radius: 20px;
     margin-bottom: 10%;
+    margin-left: 70%;
     margin-top: 10%;
     display: flex;
     flex-direction: column;
