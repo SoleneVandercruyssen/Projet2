@@ -7,7 +7,7 @@
 /* ? Couleurs */
 
 :root {
---blue: #36C8F6;
+    --blue: #36C8F6;
     --yellow: #F5CB5C;
     --lightblue: #afddec;
     --purple: #9381FF;
@@ -157,7 +157,7 @@ nav a:hover{
 form{
     width: 300px;
     height: 420px;
-    background-color: var(--bluelighter);
+    background-color: #afddec;
     border-radius: 20px;
     margin-left: 50%;
     margin-bottom: 10%;
@@ -198,7 +198,6 @@ form{
     height: 24px;
     margin-top: 5%;
 }
-
 
 
 .face-to-face{
