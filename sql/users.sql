@@ -8,10 +8,6 @@ SET time_zone = "+00:00";
 CREATE DATABASE IF NOT EXISTS `quanticode` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `quanticode`;
 
--- ---------------------------------------------
--- Structure de la table users 
-
-
 CREATE TABLE IF NOT EXIST "users" (
 `idUser` int(11) NOT NULL AUTO_INCREMENT,
 `username` varchar(25) NOT NULL,

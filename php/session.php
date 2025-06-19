@@ -22,5 +22,12 @@ require "../ressources/template/_header.php";
 // Si on souhaite récupérer l'id de la session :
 var_dump($_COOKIE, session_id());
 
-$_SESSION['identifiant'] = "utilisateur";
+/* 
+    Pour sauvegarder ou récupérer des données.
+    On utilisera la super global "$_SESSION" qui est un tableau associatif de base.
+*/
+
+$_SESSION["logged"] = true;
+$_SESSION["username"] = "Maurice";
+// $_SESSION['identifiant'] = "Lola";
 ?>
