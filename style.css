@@ -1257,7 +1257,7 @@ h2{
 h3{
     font-family: Play;
     font-size: 1.2em;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     color: #FFFFFF;
 }
 
@@ -1301,7 +1301,7 @@ p{
     height: 54px;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;  
+    z-index: 1000;
 }
 /* ! Footer */
 

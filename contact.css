@@ -266,7 +266,14 @@ form{
     }
 }
 
-
+#gif-flèche{
+    position:fixed;
+    width: 54px;
+    height: 54px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;  
+}
 
 /* ! Footer */
 

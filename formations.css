@@ -280,8 +280,19 @@ dialog{
     padding:10px;
 }
 
+
+#gif-flèche {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 54px;
+    height: 54px;
+}
+
+
 /* ! Footer */
-/* TODO changer les fonts */
+
 
     #mirror{
         display: flex;
@@ -641,8 +652,17 @@ button:hover{
 }
 
 
+#gif-flèche {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 54px;
+    height: 54px;
+}
+
+
 /* ! Footer */
-/* TODO changer les fonts */
 
     #mirror{
         display: flex;
