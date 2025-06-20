@@ -326,6 +326,15 @@ h2{
 
 }
 
+#gif-flèche{
+    position:fixed;
+    width: 54px;
+    height: 54px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;  
+}
+
 /* ! Footer */
 
     #mirror{
@@ -727,6 +736,14 @@ h2{
 }
 }
 
+#gif-flèche{
+    position:fixed;
+    width: 54px;
+    height: 54px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;  
+}
 
 /* !FOOTER */
 

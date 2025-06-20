@@ -1,8 +1,6 @@
 <?php 
 
 
-
-
 /* 
 
     La session permet de stocker toute sortes d'informations (string, object, array...) d'une page à l'autre.
