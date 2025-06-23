@@ -10,6 +10,7 @@ session_start();
  * @param integer $time
  * @return void
  */
+
 function setCSRF(int $time = 0): void
 {
     // si $time est plus grand que 0 on ajoute en session un temps avant expiration
@@ -48,6 +49,7 @@ function isCSRFValid(): bool
     fonction de nettoyage des entrés utilisateur
     que l'on va réutiliser à chaque page.
 */
+
 /**
  * Sanitize a string
  *

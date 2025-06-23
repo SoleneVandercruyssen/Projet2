@@ -27,5 +27,4 @@ var_dump($_COOKIE, session_id());
 
 $_SESSION["logged"] = true;
 $_SESSION["username"] = "Solène";
-// $_SESSION['identifiant'] = "Lola";
 ?>

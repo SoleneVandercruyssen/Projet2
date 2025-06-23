@@ -9,10 +9,12 @@ if(session_status() !== PHP_SESSION_ACTIVE)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quanticode</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./login.css">
     <script type="module" src="./JS/script.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Quanticode</title>
+    
 </head>
 
 <body>
