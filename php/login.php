@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
-        header('Location: espace-membre.php');
+        header('Location: ./plateforme.html');
         exit;
     } else {
         echo "<p style='color:red;'>Identifiants incorrects</p>";
