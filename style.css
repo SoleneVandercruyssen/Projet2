@@ -129,10 +129,12 @@ nav a:hover{
 }
 
 
+/* ! MAIN */
+
 #titre{
     font-family: Play;
     position: relative;
-    left: 40%;
+    left: 42%;
     margin-top: 5%;
     margin-bottom: 10%;
 }
@@ -161,6 +163,7 @@ nav a:hover{
 #discover{
         width: 120px;
         height: 52px;
+        box-shadow: 2px 2px 2px;
         border-radius: 10px;
         background-color: var(--yellow);
         font-family: Spectral;
@@ -169,10 +172,24 @@ nav a:hover{
         margin-left: 45%;
         margin-top: 20%;
         border: none;
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        font-family: Spectral;
+        font-size: 22px;
+        text-decoration: none;
+        padding: 3px;
+        width: 20px;
+        cursor: pointer;
+        color: #000000;
+    }
 }
 
 
-/* ! MAIN */
+
 
 .section{
     display: flex;
@@ -229,11 +246,33 @@ nav a:hover{
     align-items: center;
     margin-top: 8%;
     margin-bottom: 20%;
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        font-family: Spectral;
+        font-size: 22px;
+        text-decoration: none;
+        padding: 3px;
+        width: 20px;
+        cursor: pointer;
+        color: #000000;
+    }
+
+    em{
+        color: #FFFFFF;
+    }
+
+    p{
+        margin-top: 8%;
+        font-size: 1.2rem;
+        font-family: Spectral;
+    };
 }
 
-/* #create:hover {
-    scale: 1.2;
-} */
+
 
 #section5 h1{
     font-family: Play;
@@ -255,16 +294,6 @@ nav a:hover{
     align-items: center;
     margin-top: 5%;
     margin-left: 5%;
-
-    p{
-        margin-top: 8%;
-        font-size: 1.2rem;
-        font-family: Spectral;
-    };
-
-    em{
-        color: #FFFFFF;
-    }
 }
 
 #seo{
@@ -281,15 +310,6 @@ nav a:hover{
     align-items: center;
     margin-top: 5%;
 
-    p{
-        margin-top: 8%;
-        font-size: 1.2rem;
-        font-family: Spectral;
-    };
-
-    em{
-        color: #FFFFFF;
-    }
 }
 
 #devops{
@@ -305,16 +325,6 @@ nav a:hover{
     align-items: center;
     margin-top: 5%;
     margin-left: 5%;
-
-    p{
-        margin-top: 8%;
-        font-size: 1.2rem;
-        font-family: Spectral;
-    };
-
-    em{
-        color: #FFFFFF;
-    }
 }
 
 #design{
@@ -330,21 +340,21 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-    
-    p{
-        margin-top: 8%;
-        font-size: 1.2rem;
-        font-family: Spectral;
-    };
-
-    em{
-        color: #FFFFFF;
-    }
 }
 
 
 
 /*! bouton en savoir + */
+
+.more{
+    padding: 3%;
+}
+
+.more:active{
+    color: #000000;
+}
+
+
 
 .more{
     margin-top: 5%;
