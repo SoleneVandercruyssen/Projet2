@@ -8,13 +8,30 @@ if(session_status() !== PHP_SESSION_ACTIVE)
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <meta >
     <title>Quanticode</title>
+    <!-- CSS HEADER + HOME -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./login.css">
     <script type="module" src="./JS/script.js"></script>
+    <script type="module" src="./JS/flèche.js"></script>
+    <!-- CSS CONTACT -->
+    <script type="module" src="./JS/flèche.js"></script>
+    <link rel="stylesheet" href="./contact.css">
+    <!-- CSS LOGIN -->
+    <link rel="stylesheet" href="./login.css">
+    <!-- CSS FORMATIONS -->
+    <link rel="stylesheet" href="./formations.css">
+    <script type="module" src="./JS/flèche.js"></script>
+    <script src="./JS/formations.js" defer></script>
+    <!-- CSS PLATEFORME -->
+    <script type="module"  src="./JS/calendar.js"></script>
+    <script type="module" src="./JS/date.js"></script>
+    <script type="module" src="./JS/flèche.js"></script>
+    <link rel="stylesheet" href="./plateforme.css" >
+    <script rel="stylesheet" src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
 </head>
 
 <body>

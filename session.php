@@ -10,21 +10,21 @@
 */
 
 
-if(session_status() === PHP_SESSION_NONE)
-{
-    session_start();
-}
+// if(session_status() === PHP_SESSION_NONE)
+// {
+//     session_start();
+// }
 
-require "../ressources/template/_header.php";
+// require "../ressources/template/_header.php";
 
-// Si on souhaite récupérer l'id de la session :
-var_dump($_COOKIE, session_id());
+// // Si on souhaite récupérer l'id de la session :
+// var_dump($_COOKIE, session_id());
 
-/* 
-    Pour sauvegarder ou récupérer des données.
-    On utilisera la super global "$_SESSION" qui est un tableau associatif de base.
-*/
+// /* 
+//     Pour sauvegarder ou récupérer des données.
+//     On utilisera la super global "$_SESSION" qui est un tableau associatif de base.
+// */
 
-$_SESSION["logged"] = true;
-$_SESSION["username"] = "Solène";
+// $_SESSION["logged"] = true;
+// $_SESSION["username"] = "Solène";
 ?>
