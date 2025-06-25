@@ -55,7 +55,9 @@ img{
     border-radius: 50%;
 }
 
-
+#profil{
+    display: none;
+}
 
 header{
     display: flex;

@@ -52,6 +52,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <div class="nav">
         <nav>
             <div class="nav-menu">
+                <img src="./images/icons8-profile-48.png" alt="icon profil en bleu" id="profil">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./contact.html">Contact</a></li>
