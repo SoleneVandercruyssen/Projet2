@@ -1,11 +1,16 @@
 <?php 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+$pageBodyClass = 'white'; 
+
 require "./_csrf.php";
 require "./_pdo.php";
 require "./_shouldBeLogged.php";
-require "./_header.php";
+
+
 $error = [];
 
-// session_start();
 $pdo = new PDO('mysql:host=bddsql;dbname=quanticode', 'root', 'root');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -16,15 +21,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute([$username]);
     $user = $stmt->fetch();
 
-    if ($user && password_verify($password, $user['password'])) {
-        $_SESSION['user_id'] = $user['id'];
-        header('Location: ./plateforme.html');
-        exit;
-    } else {
-        echo "<p style='color:red;'>Identifiants incorrects</p>";
+    // if ($user && password_verify($password, $user['password'])) {
+    //     $_SESSION['user_id'] = $user['idUser'];
+        
+    //     header('Location: ./plateforme.php');
+    //     exit;
+    // } 
+
+    if ($user && $password === $user['password']) {
+    $_SESSION['user_id'] = $user['idUser'];
+    $_SESSION['username'] = $user['username']; 
+    header('Location: ./plateforme.php');
+    exit;
+}else {
+        $error['login'] = "Identifiants incorrects";
     }
 }
-
+require "./_header.php";
 ?>
 
 <!-- FORMULAIRE 1 : CONNEXION -->
@@ -34,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div id="Forms">
     <div class="mirroir">
     <form action="login.php" method="POST" id="form1">   
-    <h2>Connexion</h2>
+    <h2 >Connexion</h2>
         <div class="compte">
             <button type="button" id="private">Privé</button>
             <button type="button" id="public">Public</button>
@@ -43,14 +56,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label for="prenom" id="prenom"></label>
                 <div class="face-to-face">
                 <img src="./images/icons8-name-tag-24.png" id="identity" alt="icône Identifiant">
-                <input type="text" name="prenom" placeholder="Identifiant" required>
+                <input type="text" name="prenom" placeholder="Identifiant" required autocomplete="username">
                 <span class="erreur"><?php echo $error["username"]??""; ?></span>
                 </div> 
                 <br>
                 <label for="password" id="password"></label>
                 <div class="face-to-face" >
                 <img src="./images/icons8-password-24.png" id="password" alt="icône password">   
-                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="password" placeholder="Password" required autocomplete="current-password">
                 <span class="erreur"><?php echo $error["password"]??""; ?></span>
                 </div> 
                 <br>
@@ -63,10 +76,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <div class="mirroir">
 <!-- ! Formulaire d'inscription -->
-    <form action="" method="get" id="formulaire">
-        <div class="compte">
-            <h2>Inscription</h2>
-        </div>
+    <form action="login.php" method="get" id="formulaire">
+        
+            <h2 id="inscription">Inscription</h2>
+        
         <!-- <br> -->
                 <label for="prenom" id="prenom"></label>
                 <div class="face-to-face">

@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+
+
 /* ? Couleurs */
 
 :root {
@@ -109,7 +111,16 @@ nav a:hover{
     color: #ffffff;
     transition: all 0.3s cubic-bezier(0.50, 1, 0.50, 2);
     text-decoration: underline;
+}
 
+
+#inscription
+{
+    color: #000000;
+}
+
+#connexion{
+    color: #000000;
 }
 
 #Forms{
@@ -117,7 +128,6 @@ nav a:hover{
     display: flex;
     flex-direction: row ;
     gap: 30%;
-}
 
 
     img{
@@ -126,13 +136,13 @@ nav a:hover{
         border-radius: 50%;
     }
 
-
+}
     button{
         cursor: pointer;
         font-family: Spectral;
         font-size: 1.2rem;
         width: 100px;
-        height: 30px;
+        height: 20px;
         background-color: var(--bluelighter);
         border-radius: 20px;
         border: 1px solid #000000;
@@ -141,7 +151,6 @@ nav a:hover{
     }
 
     #public{
-    
     background-color:  #36C8F6;
 }
 
@@ -178,26 +187,25 @@ form{
     justify-content: center;
     align-items: center;
 
-
 .compte{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
-    width: 100%;
-    margin-top: -25%;
-    margin-bottom: 20%;
+    gap: 10%;
+    width: 70%;
+    margin-bottom: 5%;
 }
 
 #sub{
-        margin-bottom: -14%;
+        margin-bottom: 15%;
         font-family: Spectral;
-        margin-top: 15%;
+        margin-top: 5%;
+
 }
 #sub2{
     background-color: #F5CB5C;
-    margin-bottom: -14%;
+    margin-bottom: 10%;
     font-family: Spectral;
     margin-top: 15%;
 }
@@ -212,7 +220,6 @@ form{
 .face-to-face{
     display: flex;
 }
-
 
     input{
         width: 100%;

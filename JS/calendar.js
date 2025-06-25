@@ -87,8 +87,9 @@
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  var calendarEl = document.getElementById('calendar');
-  var calendar = new FullCalendar.Calendar(calendarEl, {
+  const calendarEl = document.getElementById('calendar');
+  if (!calendarEl) return; // Stoppe tout si pas de calendrier 
+  const calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth',
     locale: 'fr',
     events: []
@@ -101,7 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
       color: '#2DBBD4'
     });
   });
-  calendar.render();
+ 
+
 
   // Gestion de la modale
   const modal = document.getElementById('eventModal');
@@ -143,4 +145,5 @@ document.addEventListener('DOMContentLoaded', function() {
       form.reset();
     }
   });
+   calendar.render();
 });

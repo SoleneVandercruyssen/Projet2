@@ -3,8 +3,15 @@
     margin: 0;
     padding: 0;
 }
+/* ? Background du body */
 
+.white {
+    background-color: #fff;
+}
 
+.blue {
+    background-color: #afddec;
+}
 
 
 /* ? Couleurs */
@@ -40,8 +47,8 @@
 body{
     width: 100%;
     height: 100vh;
-    
 }
+
 img{
     width: 350px;
     height: 350px;
@@ -134,7 +141,7 @@ nav a:hover{
 #titre{
     font-family: Play;
     position: relative;
-    left: 42%;
+    left: 22%;
     margin-top: 5%;
     margin-bottom: 10%;
 }
@@ -150,6 +157,7 @@ nav a:hover{
     right: 20px;
     z-index: 1000;  
 }
+
 
 
 #affiche{
@@ -169,13 +177,9 @@ nav a:hover{
         font-family: Spectral;
         font-size: 1em;
         font-weight: bold;
-        margin-left: 45%;
+        margin-left: 47%;
         margin-top: 20%;
         border: none;
-
-    li{
-        list-style: none;
-    }
 
     a{
         font-family: Spectral;
@@ -187,9 +191,6 @@ nav a:hover{
         color: #000000;
     }
 }
-
-
-
 
 .section{
     display: flex;
@@ -204,7 +205,6 @@ nav a:hover{
     height: 80vh;
     border-radius: 10px;
 }
-
 
 .paragraphes{
     display: flex;
@@ -234,6 +234,7 @@ nav a:hover{
 }
 
 /* TODO Cartes de présentation rapide */
+/* Section divisée en 4 */
 
 #section5{
     display: grid;
@@ -271,7 +272,6 @@ nav a:hover{
         font-family: Spectral;
     };
 }
-
 
 
 #section5 h1{
@@ -371,11 +371,11 @@ nav a:hover{
 /* ! Cercle */
 
 #IntroductionFormation{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30%;
-    margin-right: 2%;
+    left: 35%;
     background-color: var(--lightblue);
     width: 540px;
     height: 540px;
@@ -387,6 +387,8 @@ h1{
     margin-bottom: 5%;
     margin-left: 25%;
 }
+
+
 
 p{
     margin-top: 5%;
@@ -460,8 +462,6 @@ a{
     position: relative;
     margin-left: 5%;
 }
-
-
 
 
 /*! Carousel statistiques */
@@ -583,7 +583,6 @@ a{
     margin-top: 5%;
     background-color: var(--lightblue);
     width: 100%;
-    
 
 h2{
     font-family: Play;
@@ -607,6 +606,7 @@ h3{
     height: 100%;
 }
 
+
 .avis_item{
     width: 70%;
     height: 100%;
@@ -629,31 +629,38 @@ p{
     color: #FFFFFF;
 }
 
+#title-témoigner{
+    color: #000000;
+}
+
 }
 
 /* ! Footer */
-/* TODO changer les fonts */
+
 
     #mirror{
         display: flex;
         flex-direction: row;
-        margin-left: 2%;
+        position: relative;
+        left: -1%;
 }
 
 
     .liens_footer{
+        
         width: 100%;
+        height: 15vh;
         font-family: Play;
-        font-size: 1rem;
+        font-size: 1.2rem;
 }
 
 
     footer{
         position: sticky;
-        font-size: 12px;
+        font-size: 1.2rem;
         background-color:var(--blue) ;
         width: 100%;
-        height: 15vh;
+        height: 10vh;
         top: 100vh;
         grid-area: footer;
 
@@ -690,7 +697,7 @@ p{
     a{
         text-decoration: underline;
         color: black;
-        font-size: 1em;
+        /* font-size: 1em; */
         width: 100%;
     }
 }
@@ -710,9 +717,8 @@ p{
         }
 
         #tel{
-            width: 120px;
+            width: 115px;
         }
-        
         #email{
             border-radius: 0%;
         }
@@ -773,19 +779,33 @@ p{
 
  /* ! Attention : Titre de l'input : Discover */
 
-    #discover{
+#discover{
         width: 120px;
-        height: 22px;
+        height: 32px;
+        box-shadow: 2px 2px 2px;
         border-radius: 10px;
-        background-color: #F5CB5C;
+        background-color: var(--yellow);
         font-family: Spectral;
         font-size: 1em;
         font-weight: bold;
-        margin-left: 35%;
+        margin-left: 30%;
         margin-top: 50%;
         border: none;
-}
 
+    li{
+        list-style: none;
+    }
+
+    a{
+        font-family: Spectral;
+        font-size: 1rem ;
+        text-decoration: none;
+        padding: 3px;
+        width: 20px;
+        cursor: pointer;
+        color: #000000;
+    }
+}
 
 
 
@@ -929,6 +949,13 @@ nav a:hover{
     z-index: 1;
 }
 
+#discover li{
+        list-style: none
+}
+
+#discover{
+    margin-left: 35%;
+}
 
 .paragraphes{
     display: flex;
@@ -962,6 +989,21 @@ nav a:hover{
     align-items: center;
     margin-top: 20%;
     margin-bottom: 40%;
+
+    li{
+        list-style: none;
+        
+    }
+
+    a{
+        font-family: Spectral;
+        font-size: 1rem;
+        text-decoration: none;
+        padding: 2px;
+        width: 20px;
+        cursor: pointer;
+        color: #000000;
+    }
 }
 
 
@@ -1087,6 +1129,13 @@ nav a:hover{
 }
 
 
+#Nos-formations
+{
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+
 #IntroductionFormation{
     display: flex;
     flex-direction: column;
@@ -1100,11 +1149,6 @@ nav a:hover{
     width: 340px;
     height: 340px;
     border-radius: 50%;
-
-h1{
-    margin-left: 20%;
-    margin-bottom: 10%;
-}
 
 p{
     margin-top: 5%;
@@ -1142,6 +1186,8 @@ a{
 
 .carousel-container{
     width: 100%;
+    position: relative;
+    left: -2%;
     display: flex;
     flex-direction: column;
     align-items: center;

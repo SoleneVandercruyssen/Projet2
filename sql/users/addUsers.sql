@@ -8,4 +8,4 @@ VALUES
 ('Dulmène', 'dudu@outlook.fr', 'banane'),
 ('Ildéric', 'deric@gmail.com', 'inspecteur'),
 ('Hypolite', 'polite@gmail.com', 'hippopotame'),
-('Guilmée', 'gui@gmail.com', 'guillemet');
+('Olivia', 'oliviadesmont@gmail.com', 'olives50O');

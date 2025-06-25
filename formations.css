@@ -115,7 +115,7 @@ nav a:hover{
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-decoration: underline;
 }
-    
+
 /* ! MAIN */
 
 h1, h2{
@@ -123,7 +123,7 @@ font-family: Play;
 
 }
 
-h1{
+.first-title-formations{
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -132,7 +132,7 @@ h1{
     margin-left: 20%;
 }
 
-h2{
+.second-title-formations{
     margin-bottom: 4%;
     margin-top: 2%;
 }
@@ -374,92 +374,6 @@ dialog{
 
 /* ! Version desktop */
 @media screen and (min-width: 1000px) and (max-width: 1990px) {
-    
-    body{
-        width: 100%;
-        height: 100vh;
-    }
-
-/* ! Header */
-
-
-header{
-    display: flex;
-    flex-direction: row;
-    background-color: var(--blue);
-    width: 100%;
-    height: 9vh;
-    padding: 5px;
-    grid-area: header;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-    img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-    }
-} 
-
-.burger-container {
-    display: none; 
-} 
-
-
-.nav {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    width: 100%;
-}
-
-#burger-toggle:checked ~ .nav {
-    display:none;
-}
-
-.burger-line {
-    display: none;
-} 
-
-
-nav ul{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-nav li{
-    font-family: Spectral;
-    font-weight: 500;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    right: 20px;
-    padding: 10px;
-    list-style-type: none;
-}
-
-nav a{
-    width: 100%;
-    height: 30px;
-    position: relative;
-    text-decoration: none;
-    color: black;
-    font-size: large;
-    display: inline-block;
-}
-
-nav a:hover{
-    color: #ffffff;
-    transition: all 0.3s cubic-bezier(0.50, 1, 0.50, 2);
-    text-decoration: underline;
-
-}
 
 
 /* ! MAIN */
@@ -615,11 +529,6 @@ dialog{
         margin-left: 40%;
     }
 
-button:hover{
-    transform: ();
-}
-
-
     h2{
         margin-left: 20%;
     }
@@ -659,93 +568,5 @@ button:hover{
     z-index: 1000;
     width: 54px;
     height: 54px;
-}
-
-
-/* ! Footer */
-
-    #mirror{
-        display: flex;
-        flex-direction: row;
-        margin-left: 2%;
-}
-
-
-    .liens_footer{
-        width: 50%;
-        font-family: Play;
-}
-
-
-    footer{
-        position: sticky;
-        font-size: 12px;
-        background-color:#36C8F6 ;
-        width: 100%;
-        height: 15vh;
-        top: 100vh;
-        grid-area: footer;
-
-        img{
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            margin-right: 4%;
-        }
-    }
-    
-.face-to-face{
-    display: flex;
-    flex-direction: row;
-}
-
-
-    footer ul {
-        float: left;
-        justify-content: right;
-        align-items:left ; 
-        height: 20px;
-}
-
-    footer ul li{
-        display: flex;
-        float: left;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-    a{
-        text-decoration: underline;
-        color: black;
-        font-size: 1.2em;
-        width: 100%;
-    }
-}
-
-    .copyright{
-        font-family: Play;
-        font-size: 1rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: end;
-        color: black;
-
-        #mail, #tel{
-            text-decoration: underline;
-        }
-
-        #tel{
-            width: 120px;
-        }
-
-        #mail{
-            width: 180px;
-        }
-        #email{
-            border-radius: 0%;
-        }
 }
 }

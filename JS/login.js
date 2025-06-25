@@ -5,7 +5,7 @@ const form = document.querySelector("#form1");
 
 // input1.addEventListener("click", () =>
 //     {
-//         form.style.backgroundColor = ;
+//         form.style.backgroundColor = "#36C8F6" ;
 //     })
 
 // const lightblue = document.g

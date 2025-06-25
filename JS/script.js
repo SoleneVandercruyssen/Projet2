@@ -27,6 +27,7 @@ window.setSlide = setSlide;
 */
 
 function updateSlider() {
+if (!container) return; // Ne fait rien si container n'existe pas
 container.style.transform = `translateX(-${currentSlide * 100}%)`;  
 dots.forEach(dot => dot.classList.remove('active')),
 dots[currentSlide].classList.add('active');

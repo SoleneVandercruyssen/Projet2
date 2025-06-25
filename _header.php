@@ -1,6 +1,5 @@
 <?php 
-if(session_status() !== PHP_SESSION_ACTIVE)
-{
+if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 ?>
@@ -12,20 +11,20 @@ if(session_status() !== PHP_SESSION_ACTIVE)
     initial-scale=1.0">
     <meta >
     <title>Quanticode</title>
-    <!-- CSS HEADER + HOME -->
+    <!-- HEADER + HOME -->
     <link rel="stylesheet" href="style.css">
     <script type="module" src="./JS/script.js"></script>
     <script type="module" src="./JS/flèche.js"></script>
-    <!-- CSS CONTACT -->
+    <!-- CONTACT -->
     <script type="module" src="./JS/flèche.js"></script>
     <link rel="stylesheet" href="./contact.css">
-    <!-- CSS LOGIN -->
+    <!-- LOGIN -->
     <link rel="stylesheet" href="./login.css">
-    <!-- CSS FORMATIONS -->
+    <!-- FORMATIONS -->
     <link rel="stylesheet" href="./formations.css">
     <script type="module" src="./JS/flèche.js"></script>
     <script src="./JS/formations.js" defer></script>
-    <!-- CSS PLATEFORME -->
+    <!-- PLATEFORME -->
     <script type="module"  src="./JS/calendar.js"></script>
     <script type="module" src="./JS/date.js"></script>
     <script type="module" src="./JS/flèche.js"></script>
@@ -34,7 +33,8 @@ if(session_status() !== PHP_SESSION_ACTIVE)
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<!-- Ajout d'une classe qui contient une variable "$pageBodyClass" -->
+<body class="<?php echo $pageBodyClass ?? 'white'; ?>">
 <!-- ! Menu burger  -->
 <header>
     <div id="flex">

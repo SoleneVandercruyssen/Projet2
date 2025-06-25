@@ -1,4 +1,5 @@
 <?php 
+$pageBodyClass = 'white'; 
 require "./_header.php";
 ?>
 
@@ -12,7 +13,7 @@ require "./_header.php";
             <!-- Animation texte -->
             <div class="title-inner"><h1 id="titre" >Bienvenue sur Quanticode !</h1></div>
             
-            <li><button id="discover" type="button"><a href="">Découvrir</a> </button></li>
+            <ul><li><button id="discover" type="button"><a href="">Découvrir</a></button></li></ul>
         </div>
     </div>
 </section>
@@ -86,7 +87,6 @@ require "./_header.php";
         <h1>Nos Formations</h1>
         <p>Chez Quanticode, nous croyons que la formation est la clé pour rester compétitif dans un monde numérique en constante évolution. C'est pourquoi nous proposons une gamme de formations adaptées à tous les niveaux, du débutant au professionnel confirmé.</p>
         <li><a href="./formations.html" id="discoverFormation">Découvrir nos formations</a></li>
-        <!-- <button id="" type="button">Découvrir nos formations</button> -->
     </div>
 
 </section>
@@ -155,7 +155,7 @@ require "./_header.php";
 
 <!-- ! AVIS -->
 <section id="section7" class="section1">
-    <h2>Ils témoignent</h2>
+    <h2 id="title-témoigner">Ils témoignent</h2>
 <div id="avis">
     <div class="avis">
         <div class="avis_item">
