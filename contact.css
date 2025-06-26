@@ -155,9 +155,6 @@ p{
     justify-content: center;
     align-items: center;
 
-
-    
-
     textarea{
         height: 60vh;
         border: 1px solid rgb(0, 0, 0, 0.2);
@@ -187,8 +184,8 @@ p{
 
 #gif-flèche{
     position:fixed;
-    width: 54px;
-    height: 54px;
+    width: 34px;
+    height: 34px;
     bottom: 10px;
     right: 10px;
     z-index: 1000;  
@@ -199,9 +196,7 @@ p{
 /* ! Version Mobile */
 
 @media screen and (min-width: 350px) and (max-width: 999px){
-
-
-main{
+.contact main{
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
@@ -299,12 +294,13 @@ iframe{
     gap: 5px;
 }
 
-
-h1{
-    margin-left: 40%;
+#Nous-trouver{
+    margin-top: 15%;
+    margin-left: 25%;
+    font-family: Play;
 }
 
-h2{
+#Contact_title{
     margin-top: 15%;
     margin-left: 25%;
     font-family: Play;

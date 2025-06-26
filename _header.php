@@ -34,7 +34,7 @@ if (session_status() === PHP_SESSION_NONE) {
 </head>
 
 <!-- Ajout d'une classe qui contient une variable "$pageBodyClass" -->
-<body class="<?php echo $pageBodyClass ?? 'white'; ?>">
+<body class="<?php echo $pageBodyClass ?? 'white'; ?>" class="plateforme">
 <!-- ! Menu burger  -->
 <header>
     <div id="flex">
@@ -52,13 +52,16 @@ if (session_status() === PHP_SESSION_NONE) {
     <div class="nav">
         <nav>
             <div class="nav-menu">
-                <img src="./images/icons8-profile-48.png" alt="icon profil en bleu" id="profil">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./login.html">Login</a></li>
-                    <li><a href="./formations.html">Formations</a></li>
-                </ul>
+            <?php if (($pageBodyClass ?? '') === 'plateforme'): ?>
+        <img src="./images/icons8-profile-50.png" alt="Profil" id="profil">
+    <?php else: ?>
+        <ul>
+            <li><a href="./index.php">Home</a></li>
+            <li><a href="./contact.php">Contact</a></li>
+            <li><a href="./login.php">Login</a></li>
+            <li><a href="./formations.php">Formations</a></li>
+        </ul>
+    <?php endif; ?>
             </div>
         </nav>
     </div>

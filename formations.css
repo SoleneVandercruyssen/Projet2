@@ -137,13 +137,11 @@ font-family: Play;
     margin-top: 2%;
 }
 
-img{
+.img-formations{
     width: 100px;
     height: 100px;
     border-radius: 15px;
 }
-
-
 #titre{
     margin-left: 20%;
 }
@@ -200,11 +198,14 @@ img{
 }
 
 button{
-        width: 150px;
         height: 40px;
         border-radius: 10px;
         box-shadow: rgba(5, 5, 5, 0.5);
-        margin-top: 10%;
+        margin-top: 20%;
+        gap: 10px;
+}
+#private{
+    margin-right: 10%;
 }
 
 

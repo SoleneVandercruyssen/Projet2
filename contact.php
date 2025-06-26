@@ -3,7 +3,7 @@ $pageBodyClass = 'blue';
 require "./_header.php";
 ?>
 
-<main class="background-contact">
+<main class="background-contact" class="main-contact">
 <!-- TODO Formulaire / MAPS  -------------------------------------------ESSAYER EN PHP-->
     <section id="section" class="section1" >
     <div id="face-to-face">

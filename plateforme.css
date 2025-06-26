@@ -9,10 +9,7 @@
         height: 100vh;
     }
 
-    img{
-    width: 200px;
-    height: 200px;
-}
+  
 
 #profil{
     display: block;
@@ -22,10 +19,18 @@
     right: 20px;
 }
 
+#profil {
+    display: none;
+}
+.plateforme #profil {
+    display: block;
+}
+
 .button_mini_header{
     margin-top: 2%;
     margin-left: 4%;
     width: 55px;
+    height: 28px;
     background-color: #F5CB5C;
 }
 
@@ -114,48 +119,38 @@ nav a:hover{
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
 /* ! Main */
 
 /* ? UTILISATION D'UN CDN */
 
-#calendar{
-    width: 90%;
-    height: 50vh;
-    margin-left: 5%;
-    margin-top: 20%;
-    margin-bottom: 5%;
-    /* transition: background-color 200ms color 200ms; */
+#calendar,
+.fc {
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 1rem ;
+    max-width: 300px ;
 }
 
-#addEventBtn{
-    width: 150px;
-    height: 30px;
-    border: none;
-    border-radius: 5%;
-    background-color: #36C8F6;
-    position: relative;
-    left: 5%;
-    margin-bottom: 10%;
-}
+
 
 /* Changer la couleur de fond des jours */
 .fc-daygrid-day {
     background: #36C8F6;
     color: #000;
+    width: 50%;
 }
 
 /* Changer la couleur du header */
 .fc-toolbar-title {
     color: #36C8F6;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
+    width: 50%;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 1rem ;
+    padding: 0.2em 0 ;
 }
 
 /* Changer la couleur des événements */
@@ -175,13 +170,64 @@ nav a:hover{
 .fc-button {
     background: #36C8F6 !important;
     color: #fff !important;
-    border: none !important;
+    border: 1px solid #fff !important;
     border-radius: 4px;
+    width: 60px;
+    height: 24px;
 }
 
-#chiffres{
-    width: 100%;
-    height: 45vh;
+.fc .fc-button {
+    font-size: 0.7rem !important;
+    padding: 2px 8px !important;
+    min-width: 40px !important;
+}
+
+.fc .fc-daygrid-day-frame,
+.fc .fc-daygrid-day {
+    min-height: 18px !important;
+    height: 42px !important;
+    padding: 0 ;
+}
+
+.fc .fc-col-header-cell {
+    font-size: 0.7rem !important;
+    padding: 2px 0 !important;
+    height: 20px !important;
+}
+.fc .fc-daygrid-day-number {
+    font-size: 0.7rem !important;
+    padding: 0 2px !important;
+}
+
+.fc .fc-event {
+    font-size: 0.65rem !important;
+    padding: 1px 2px !important;
+    min-height: 16px !important;
+    line-height: 1.1 !important;
+}
+
+.fc .fc-scrollgrid-sync-table {
+    min-width: 100% !important;
+}
+
+.fc .fc-toolbar {
+    margin-bottom: 0.2em !important;
+}
+
+.fc .fc-daygrid-body {
+    min-height: 180px !important;
+}
+
+#addEventBtn{
+    width: 160px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    background-color: #36C8F6;
+    margin-bottom: 10%;
+    position: relative;
+    left: 10%;
+    margin-bottom: 10%;
 }
 
 #plateforme_icons{
@@ -201,7 +247,6 @@ nav a:hover{
         .list{
             width: 100%;
             height: 15vh;
-            border: 2px solid red;
         }
 }
 
@@ -209,28 +254,71 @@ nav a:hover{
 
 #plateforme_liste{
     position: relative;
-    left: 10%;
-    width: 80%;
-    height: 40vh;
+    left: 15%;
+    width: 70%;
+    height: 30vh;
     background-color: #9381FF;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 
+h3{
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: Play;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 .list_item{
+    height: 30vh;
     border: 1px solid #000;
     justify-items: center;
-    /* align-items: center; */
+    align-items: center;
 }
+
+select{
+    width: 200px;
+    position: absolute;
+    left: 10%;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    background-color: #9381FF;
+    font-size: 1rem;
+    font-family: Spectral;
+}
+
+#download-btn{
+    position: absolute;
+    left: 30%;
+    width: 90px;
+    margin-top: 70%;
+    margin-bottom: 10%;
+}
+select option:hover {
+    background-color: #fff;
+    color: #9381FF;
+}
+
+/* Section Papier Administratif */
 
 #title-administratif{
     position: relative;
-    left: 15%;
+    left: 8%;
     font-family: Spectral;
     color: red;
-    font-size: 1.0rem;
+    font-size: 1rem;
     width: 100%;
+    margin-top: 5%;
 }
+
+em{
+    color: #000000;
+}
+
 
 #Administratif
 {
@@ -248,15 +336,19 @@ nav a:hover{
 
     p{
         font-family: Spectral;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
+      img{
+    width: 25px;
+    height: 25px;
+}
 
 #import{
-    margin-left: 40px;
+    margin-left: 5px;
 }
 
 #export{
-    margin-left: 45px;
+    margin-left: 5px;
 }
 
 };
@@ -271,7 +363,6 @@ nav a:hover{
 }
 }
 }
-
 
 @media screen and (min-width: 990px) and (max-width: 1990px) {
 
@@ -369,14 +460,14 @@ nav a:hover{
 
 #addEventBtn{
     width: 150px;
-    height: 30px;
+    height: 80px;
     border: none;
     border-radius: 6px;
     box-shadow: 5px 2px #000;
     background-color: #36C8F6;
     position: relative;
     left: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
 }
 
 /* Changer la couleur de fond des jours */
@@ -443,44 +534,51 @@ nav a:hover{
     position: relative;
     left: 10%;
     width: 80%;
-    height: 40vh;
+    height: 60vh;
     background-color: #9381FF;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 10%;
 }
 
-#cours-list {
-list-style: none;
-padding: 0;
-max-width: 400px;
-margin: 0 auto;
+h3{
+    font-size: 2rem;
+    font-family: Play;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
-
-#cours-list li {
-list-style: none;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 12px;
-
-}
-
-.icon_download {
-cursor: pointer;
-transition: filter 0.2s;
-}
-
-.icon_download:hover {
-filter: brightness(0.7);
-}
-
 
 .list_item{
+    height:60vh;
     border: 1px solid #000;
     justify-items: center;
-    height: 100px
-    /* align-items: center; */
+    align-items: center;
 }
+
+select{
+    position: absolute;
+    left: 45%;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #9381FF;
+    font-size: 2rem;
+    font-family: Spectral;
+}
+
+#download-btn{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 43%;
+    margin-top: 30%;
+}
+
+select option:hover {
+    background-color: #fff;
+    color: #9381FF;
+}
+
+/* Section Administratif */
 
 #title-administratif{
     position: relative;
@@ -498,25 +596,31 @@ filter: brightness(0.7);
 
 #plateforme_pdf{
     margin-top: 5%;
+    margin-left: 20%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: row;
+    border-radius: 10px;
     background-color: #F5CB5C;
-    width: 100%;
+    width: 60%;
     justify-content: space-evenly;
 
     p{
         font-family: Spectral;
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
 #import{
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 35px;
     width: 80px;
+    height: 80px;
 }
 
 #export{
+    margin-top: 10px;
     width: 80px;
+    height: 80px;
     margin-left: 45px;
 }
 }

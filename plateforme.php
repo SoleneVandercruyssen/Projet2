@@ -1,5 +1,6 @@
 <?php 
 $pageBodyClass = 'white'; 
+$pageBodyClass = 'plateforme';
 require "./_header.php";
 
 if (session_status() === PHP_SESSION_NONE) {
@@ -12,7 +13,6 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 }
 
 ?>
-
 
 <!-- ! Mini Header -->
 <section id="plateforme_icons">
@@ -57,31 +57,15 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 
 <div class="list" >
     <div class="list_item">
-        <ul  id="cours-list">
-    <p>Cours HTML</p>
-    <li>
-    <a href="docs/intro_programmation.pdf" download></a>
-    <img src="./images/icons8-download-30.png" alt="Télécharger" class="icon_download">
-    </li>
-    </div>
-</div>
-<div class="list" >
-    <div class="list_item">
-    <p>Cours CSS</p>
-    <li>
-    <a href="" download></a>
-    <img src="./images/icons8-download-30.png" alt="Télécharger" class="icon_download">
-    </li>
-    </div>
-</div>
-<div class="list" >
-    <div class="list_item">
-    <p>Cours SASS</p>
-    <li>
-    <a href="" download></a>
-    <img src="./images/icons8-download-30.png" alt="Télécharger" class="icon_download">
-</li>
-</ul>
+    <h3>Mise à disposition des cours</h3>
+    <!-- Liste déroulante -->
+<select id="pdf-select">
+    <option value="" disabled selected>Choisissez un cours</option>
+    <option value="docs/intro_programmation.pdf">Cours HTML</option>
+    <option value="docs/cours_css.pdf">Cours CSS</option>
+    <option value="docs/cours_sass.pdf">Cours SASS</option>
+</select>
+<button id="download-btn">Télécharger</button>
     </div>
 </div>
 
