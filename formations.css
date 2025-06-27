@@ -28,15 +28,10 @@
 
 
 @media screen and (min-width: 350px) and (max-width: 900px) {
-    body{
-        width: 100%;
-        height: 100vh;
-    }
-
-/* ! Header */
 
 
-header{
+
+/* header{
     display: flex;
     flex-direction: row;
     background-color: #36C8F6;
@@ -114,23 +109,23 @@ nav a:hover{
     color: white;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-decoration: underline;
-}
+} */
 
 /* ! MAIN */
 
-h1, h2{
+/* h1, h2{
 font-family: Play;
 
-}
+} */
 
 .first-title-formations{
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-#h1{
+/* #h1{
     margin-left: 20%;
-}
+} */
 
 .second-title-formations{
     margin-bottom: 4%;
@@ -195,7 +190,7 @@ font-family: Play;
     background-color: var(--bluelighter);
     border-radius: 10px;
     box-shadow: 2px 5px 5px 2px;
-}
+
 
 button{
         height: 40px;
@@ -204,10 +199,11 @@ button{
         margin-top: 20%;
         gap: 10px;
 }
+}
 #private{
+    margin-bottom: 5%;
     margin-right: 10%;
 }
-
 
 .purple{
     background-color: var(--purple);
@@ -292,7 +288,7 @@ dialog{
 }
 
 
-/* ! Footer */
+/* ! Footer
 
 
     #mirror{
@@ -366,10 +362,9 @@ dialog{
         #mail, #tel{
             text-decoration: underline;
             
-        }
+        } */
 }
 
-}
 
 /* ! Fin Version Mobile */
 
@@ -379,24 +374,19 @@ dialog{
 
 /* ! MAIN */
 
-h1, h2{
-font-family: Play;
-
-}
-
-h1{
+.first-title-formations{
     margin-top: 5%;
     margin-bottom: 5%;
-}
-
-#h1{
     margin-left: 42%;
+    font-family: Play;
 }
 
-h2{
+
+.second-title-formations{
     font-size: 2rem;
     margin-bottom: 8%;
     margin-top: 2%;
+    font-family: Play;
 }
 
 img{
@@ -418,7 +408,7 @@ img{
     background-color: black;
     padding: 10px;
 
-    h1{
+    .first-title-formations{
         color: white;
         margin-left: 45%;
     }
@@ -428,19 +418,21 @@ img{
     background-color: white;
     padding: 10px;
 
-    h1{
+    .first-title-formations{
         color: black;
     }
 }
 
 #backgroundColor3{
-    h1{
+
+    .first-title-formations{
         margin-left: 45%;
     }
 }
 
 #backgroundColor4{
-    h1{
+    
+    .first-title-formations{
         margin-left: 42%;
     }
 }
