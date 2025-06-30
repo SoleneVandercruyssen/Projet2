@@ -49,6 +49,7 @@ body{
     height: 100vh;
 }
 
+
 img{
     width: 350px;
     height: 350px;
@@ -64,7 +65,7 @@ header{
     display: flex;
     flex-direction: row;
     background-color: var(--blue);
-    width: 100%;
+    width: 80%;
     height: 9vh;
     padding: 5px;
     grid-area: header;
@@ -99,7 +100,7 @@ header{
     display: none;
 } 
 
-nav ul{
+.nav ul{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -108,7 +109,7 @@ nav ul{
     position: relative;
 }
 
-nav li{
+.nav li{
     font-family: Spectral;
     font-weight: 500;
     position: relative;
@@ -120,7 +121,7 @@ nav li{
     list-style-type: none;
 }
 
-nav a{
+.nav a{
     width: 100%;
     height: 30px;
     position: relative;
@@ -130,7 +131,7 @@ nav a{
     display: inline-block;
 }
 
-nav a:hover{
+.nav a:hover{
     color: #ffffff;
     transition: all 0.3s cubic-bezier(0.50, 1, 0.50, 2);
     text-decoration: underline;
@@ -734,8 +735,6 @@ p{
 
 @media screen and (min-width: 350px) and (max-width: 900px){
 
-
-
 em{
     color: #FFFF;
     font-size: 11.5px;
@@ -757,15 +756,13 @@ p{
     font-size: 11px;
 }
 
-  
-
-    .logo_img{
+.logo_img{
         width: 50px;
         height: 50px;
         border-radius: 50%;
 }
 
-    #affiche{
+#affiche{
         position: absolute;
         width: 100%;
         height: 26vh;
@@ -805,12 +802,10 @@ p{
     }
 }
 
-
-
     body{
         width: 100%;
         height: 100vh;
-        font-size: 14px;
+        font-size: 1rem;
         display: flex;
         display: grid;
         grid-template-columns: 1fr;
@@ -821,6 +816,12 @@ p{
         /* border: 2px solid firebrick; */
 }
 
+
+.img-home{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+}
 
 
 /* TODO Faire un menu burger à droite, placer le titre au centre */
@@ -857,12 +858,13 @@ header{
 
 
 .nav {
-    position: absolute;
+    display: none;
+    /* position: absolute;
     top: 55px;
     right: 0;
     width: 100%;
     background-color: #36C8F6;
-    z-index: 4;
+    z-index: 4; */
 }
 
 #burger-toggle:checked ~ .nav {
@@ -870,19 +872,20 @@ header{
 }
 
 .burger-line {
+    display: block;
     height: 4px;
     background: #000000;
     border-radius: 2px;
 }
 
 
-nav ul{
+.nav ul{
     width: 30px;
     display: flex;
     flex-direction: column;
 }
 
-nav li{
+.nav li{
     position: relative;
     display: flex;
     padding: 5px;
@@ -890,7 +893,7 @@ nav li{
     list-style-type: none;
 }
 
-nav a{
+.nav a{
     position: relative;
     right: 0;
     text-decoration: none;
@@ -900,9 +903,9 @@ nav a{
     
 }
 
-nav a:hover{
+.nav a:hover{
     background-color: #36C8F6;
-    color: #000000;
+    color: #fff;
     transition: background 0.3s, color 0.3s;
     text-decoration: underline;
 }
@@ -918,7 +921,7 @@ nav a:hover{
         color: #fff;
     }
 
-      img{
+    img{
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -1366,6 +1369,7 @@ p{
     width: 54px;
     height: 54px;
     bottom: 20px;
+    border-radius: 10px;
     right: 20px;
     z-index: 1000;
 }

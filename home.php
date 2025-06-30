@@ -6,7 +6,7 @@ require "./_header.php";
 
 
 <main>
-    
+
 <section  id="presentation"  class="section1">
     <div>
         <div>
@@ -47,7 +47,7 @@ require "./_header.php";
 
         <div id="create">
             <h1 class="h1_home" class="values">Développement</h1>
-            <img src="./images/4716574.jpg" alt="illustration développement web">
+            <img src="./images/4716574.jpg" alt="illustration développement web" class="img-home">
             <p>Cœur de métier de Quanticode, le développement web est notre terrain d'expression. Nous construisons des <em>applications modernes, performantes et évolutives</em> , en utilisant les dernières technologies. Nos formations couvrent tout le cycle de développement : HTML/CSS, JavaScript, frameworks modernes, bases de données, API, etc</p>
             
             <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
@@ -55,7 +55,7 @@ require "./_header.php";
 
         <div class="values" id="seo">
             <h1 class="h1_home">SEO</h1>
-            <img src="./images/32010.jpg" alt="illustration SEO">
+            <img src="./images/32010.jpg" alt="illustration SEO" class="img-home">
             <p>Dans un web ultra-concurrentiel, être visible est crucial. Nous formons et accompagnons nos clients dans la <em>maîtrise du SEO </em> pour améliorer leur position sur les moteurs de recherche, générer du trafic qualifié et renforcer leur stratégie de contenu. De la technique à la sémantique, nous couvrons toutes les facettes du référencement.</p>
             
             <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
@@ -63,7 +63,7 @@ require "./_header.php";
 
         <div class="values" id="devops">
             <h1 class="h1_home">DEVOPS</h1>
-            <img src="./images/7060483.jpg" alt="illustration devops">
+            <img src="./images/7060483.jpg" alt="illustration devops" class="img-home">
             <p>L'agilité et la stabilité des systèmes sont des atouts majeurs dans un monde digital en constante évolution. Grâce à notre expertise <em>DevOps</em> , nous formons à <em> l'intégration continue</em>, au  <em>déploiement automatisé</em> et aux  <em>bonnes pratiques de collaboration </em>entre les équipes de développement et d'exploitation.</p>
             
             <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
@@ -71,7 +71,7 @@ require "./_header.php";
 
         <div class="values" id="design">
             <h1 class="h1_home">DESIGN</h1>
-            <img src="./images/2248604.jpg" alt="illustration design">
+            <img src="./images/2248604.jpg" alt="illustration design" class="img-home">
             <p>Un bon produit est avant tout un produit bien pensé pour l'utilisateur. Nous transmettons les fondements du <em>design UX/UI</em> , de la conception de maquettes à la création d'interfaces ergonomiques et engageantes. Nos designers travaillent également en synergie avec les développeurs pour proposer des solutions à la fois esthétiques et fonctionnelles</p>
             
             <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
