@@ -30,7 +30,7 @@
 
 /* ! Version Desktop */
 
-@media  screen and (min-width: 1000px) and (max-width: 1990px) {
+@media  screen and (min-width: 999px) and (max-width: 1990px) {
     body{
         width: 100%;
         height: 100vh;
@@ -54,11 +54,12 @@
 } 
 
 .burger-container {
-    display: none; 
+    display: none;
 } 
 
 
 .nav {
+    border: 2px solid red;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -67,8 +68,16 @@
     width: 100%;
 }
 
+/* .nav-menu
+{
+    border: 2px solid green;
+    display: block;
+    width: 100%;
+    height: 20vh;
+} */
+
 #burger-toggle:checked ~ .nav {
-    display:none;
+    display:flex;
 }
 
 .burger-line {

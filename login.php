@@ -22,14 +22,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $stmt->fetch();
 
     // if ($user && password_verify($password, $user['password'])) {
-    //     $_SESSION['user_id'] = $user['idUser'];
+    //     $_SESSION['user_id'] = $user['id'];
         
     //     header('Location: ./plateforme.php');
     //     exit;
     // } 
 
     if ($user && $password === $user['password']) {
-    $_SESSION['user_id'] = $user['idUser'];
+    $_SESSION['user_id'] = $user['id'];
     $_SESSION['username'] = $user['username']; 
     header('Location: ./plateforme.php');
     exit;

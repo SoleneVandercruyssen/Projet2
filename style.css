@@ -60,6 +60,7 @@ img{
 }
 
 header{
+    position: relative;
     display: flex;
     flex-direction: row;
     background-color: var(--blue);
@@ -91,13 +92,12 @@ header{
 }
 
 #burger-toggle:checked ~ .nav {
-    display:none;
+    display:block;
 }
 
 .burger-line {
     display: none;
 } 
-
 
 nav ul{
     width: 100%;

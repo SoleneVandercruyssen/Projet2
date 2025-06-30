@@ -1,4 +1,5 @@
 <?php 
+$isPlateforme = false;
 $pageBodyClass = 'white'; 
 require "./_header.php";
 ?>

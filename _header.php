@@ -34,10 +34,10 @@ if (session_status() === PHP_SESSION_NONE) {
 </head>
 
 <!-- Ajout d'une classe qui contient une variable "$pageBodyClass" -->
-<body class="<?php echo $pageBodyClass ?? 'white'; ?>" class="plateforme">
+<body class="<?php echo ($pageBodyClass ?? 'white') . (!empty($isPlateforme)); ?>">
 <!-- ! Menu burger  -->
 <header>
-    <div id="flex">
+   <div id="flex">
         <div class="logo">
             <img src="./images/logo.png" alt="Logo de l'entreprise" class="logo_img">
         </div>
@@ -50,20 +50,21 @@ if (session_status() === PHP_SESSION_NONE) {
         <div class="burger-line"></div>
     </label>
     <div class="nav">
-        <nav>
-            <div class="nav-menu">
-            <?php if (($pageBodyClass ?? '') === 'plateforme'): ?>
-        <img src="./images/icons8-profile-50.png" alt="Profil" id="profil">
-    <?php else: ?>
-        <ul>
-            <li><a href="./index.php">Home</a></li>
-            <li><a href="./contact.php">Contact</a></li>
-            <li><a href="./login.php">Login</a></li>
-            <li><a href="./formations.php">Formations</a></li>
-        </ul>
-    <?php endif; ?>
-            </div>
-        </nav>
+    <nav>
+        <div class="nav-menu">
+            <?php if (!empty($isPlateforme)): ?>
+                <img src="./images/icons8-profile-50.png" alt="Profil" id="profil">
+            <?php else: ?>
+                <ul>
+                    <li><a href="./home.php">Home</a></li>
+                    <li><a href="./contact.php">Contact</a></li>
+                    <li><a href="./login.php">Login</a></li>
+                    <li><a href="./formation.php">Formations</a></li>
+                </ul>
+            <?php endif; ?>
+        </div>
+    </nav>
+</div>
     </div>
 </header>
 <main>
