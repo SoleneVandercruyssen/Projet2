@@ -24,6 +24,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="./formations.css">
     <script type="module" src="./JS/flèche.js"></script>
     <script src="./JS/formations.js" defer></script>
+    <script src="./JS/cards.js" defer></script>
     <!-- PLATEFORME -->
     <script type="module"  src="./JS/calendar.js"></script>
     <script type="module" src="./JS/date.js"></script>
@@ -37,7 +38,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <body class="<?php echo ($pageBodyClass ?? 'white') . (!empty($isPlateforme)); ?>">
 <!-- ! Menu burger  -->
 <header>
-   <div id="flex">
+    <div id="flex">
         <div class="logo">
             <img src="./images/logo.png" alt="Logo de l'entreprise" class="logo_img">
         </div>

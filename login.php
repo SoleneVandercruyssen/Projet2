@@ -72,33 +72,7 @@ require "./_header.php";
 <br>
 </div>
 
-<!-- FORMULAIRE 2 : INSCRIPTION -->
-
-<div class="mirroir">
-<!-- ! Formulaire d'inscription -->
-    <form action="login.php" method="get" id="formulaire">
-        
-            <h2 id="inscription">Inscription</h2>
-        
-        <!-- <br> -->
-                <label for="prenom" id="prenom"></label>
-                <div class="face-to-face">
-                <img src="./images/icons8-name-tag-24.png" id="identity" alt="icône Identifiant">
-                <input type="text" name="prenom" placeholder="Identifiant">
-                <span class="erreur"><?php echo $error["username"]??""; ?></span>
-                </div> 
-                <br>
-                <label for="password" id="password"></label>
-                <div class="face-to-face" >
-                <img src="./images/icons8-password-24.png" id="mail_form" alt="icône mail">   
-                <input type="mail" name="mail" placeholder="Paul@gmail.com">
-                <span class="erreur"><?php echo $error["email"]??""; ?></span>
-                </div> 
-                <br>
-                <button type="submit" id="sub2">Valider</button>
-            </form>
-</div>
-</div>
+<li><a href="./_inscription">Cliquez sur ce lien pour créer votre compte</a></li>
 
 
 

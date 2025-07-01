@@ -144,7 +144,7 @@ header{
 #titre{
     font-family: Play;
     position: relative;
-    left: 22%;
+    left: 38%;
     margin-top: 5%;
     margin-bottom: 10%;
 }
@@ -168,6 +168,7 @@ header{
         left: 25%;
         width: 50%;
         height: 50%; 
+        
 }
 
 /* ! Bouton discover */
@@ -388,9 +389,8 @@ h1{
     font-family: Play;
     position: relative;
     margin-bottom: 5%;
-    margin-left: 25%;
+    margin-left: 20%;
 }
-
 
 
 p{
@@ -742,13 +742,13 @@ em{
 
 h1{
     font-family: Play;
-    font-size: 20px;
+    font-size: 1.8rem;
     margin-top: 5%;
 }
 
 
 #titre{
-    margin-left: 20%;
+    margin-left: 22%;
 }
 
 p{
@@ -768,6 +768,7 @@ p{
         height: 26vh;
         margin-bottom: 15%;
         z-index: 1;
+        top: 15%;
         /* border: 2px solid #2DBBD4; */
 }
 
@@ -783,8 +784,8 @@ p{
         font-family: Spectral;
         font-size: 1em;
         font-weight: bold;
-        margin-left: 30%;
-        margin-top: 50%;
+        margin-left: 34%;
+        margin-top: 60%;
         border: none;
 
     li{
@@ -873,9 +874,11 @@ header{
 
 .burger-line {
     display: block;
+    width: 30px;
     height: 4px;
     background: #000000;
     border-radius: 2px;
+    margin: 4px 0;
 }
 
 
@@ -903,11 +906,9 @@ header{
     
 }
 
-.nav a:hover{
+.nav a:active{
     background-color: #36C8F6;
     color: #fff;
-    transition: background 0.3s, color 0.3s;
-    text-decoration: underline;
 }
 
 
@@ -959,13 +960,6 @@ header{
     z-index: 1;
 }
 
-#discover li{
-        list-style: none
-}
-
-#discover{
-    margin-left: 35%;
-}
 
 .paragraphes{
     display: flex;

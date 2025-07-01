@@ -12,7 +12,7 @@ require "./_header.php";
     <h1 class="first-title-formations"> En Design</h1>
 <div class="cards" id="first">
     <h2 class="second-title-formations">Web design</h2>
-<img src="./images/5817154.jpg" alt="image vectorielle du design web">
+<img class="img-formations" src="./images/5817154.jpg" alt="image vectorielle du design web">
 
 <button type="button" class="purple" id="1">Voir plus de détails</button>
 
@@ -20,7 +20,7 @@ require "./_header.php";
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img src="./images/2248604.jpg" alt="image vectorielle du design web">
+            <img class="img-formations" src="./images/2248604.jpg" alt="image vectorielle du design web">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 3 mois</p>
@@ -720,7 +720,7 @@ require "./_header.php";
 
 <div class="cards">
     <h2 class="second-title-formations">IA & Machine Learning</h2>
-<img src="./images/4716574.jpg" alt="image vectorielle de design web">
+<img class="img-formations" src="./images/4716574.jpg" alt="image vectorielle de design web">
 <button type="button" class="white" id="8">Voir plus de détails</button>
 
 <!-- Pop-up -->

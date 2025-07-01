@@ -36,7 +36,7 @@
         height: 100vh;
     }
 
-    header{
+    /* header{
     display: flex;
     flex-direction: row;
     background-color: #36C8F6;
@@ -59,7 +59,6 @@
 
 
 .nav {
-    border: 2px solid red;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -68,13 +67,6 @@
     width: 100%;
 }
 
-/* .nav-menu
-{
-    border: 2px solid green;
-    display: block;
-    width: 100%;
-    height: 20vh;
-} */
 
 #burger-toggle:checked ~ .nav {
     display:flex;
@@ -120,7 +112,7 @@ nav a:hover{
     color: #ffffff;
     transition: all 0.3s cubic-bezier(0.50, 1, 0.50, 2);
     text-decoration: underline;
-}
+} */
 
 
 #inscription
@@ -170,14 +162,14 @@ button:active{
 #formulaire{
     background-color: #F5CB5C;
     margin-left: 60%;
+}
 
-    #mail_form{
+#mail_form1{
         margin-top: 5%;
         width: 24px;
         height: 24px;
+        border-radius: none;
     }
-}
-
 #form1{
     position: relative;
     left: 100%;
@@ -439,6 +431,13 @@ nav a:hover{
     background-color:  #36C8F6;
 }
 
+#mail_form1{
+        margin-top: 5%;
+        width: 24px;
+        height: 24px;
+        border-radius: none;
+}
+
 #formulaire{
     background-color: #F5CB5C;
 }
@@ -472,10 +471,6 @@ form{
 }
 
 
-
-
-
-
 #sub{
         margin-bottom: -14%;
         font-family: Spectral;
@@ -494,13 +489,10 @@ form{
     margin-top: 5%;
 }
 
-
-
 .face-to-face{
     display: flex;
     gap: 5%;
 }
-
 
     input{
         width: 100%;
@@ -510,7 +502,6 @@ form{
         color: #000000;
         border: 2px solid black;
     }
-
 }
 
 
