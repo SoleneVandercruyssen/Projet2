@@ -4,6 +4,8 @@ $pageBodyClass = 'blue';
 require "./_header.php";
 ?>
 
+<!-- TODO : prochaine étape créer une adresse mail mailtrap/PHPMailer -->
+
 <main class="background-contact" class="main-contact">
 <!-- TODO Formulaire / MAPS  -------------------------------------------ESSAYER EN PHP-->
     <section id="section" class="section1" >
