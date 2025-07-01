@@ -39,7 +39,8 @@ require "./_header.php";
         <h2 id="Contact_title">Contactez-nous !</h2>
         
         <div id="form">
-            <form action="https://web3forms.com/#start" method="post" id="form-contact">
+            <form action="https://api.web3forms.com/submit" method="post" id="form-contact">
+                <input type="hidden" name="access_key" value="d596b9a-2122-472e-8ba7-51de93146e62">
                 <label for="nom" id="nom"></label>
                 <input type="text" name="nom" placeholder="Dupont"> 
                 <br>
