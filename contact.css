@@ -32,11 +32,12 @@
     
 
 #Nous-trouver{
-    margin-left: 35%;
+    margin-top: 10%;
+    font-family: Play;
+    font-size: 2rem;
+    margin-left: 38%;
     color: #000000;
 }
-
-
 
 img{
     width: 200px;
@@ -115,10 +116,16 @@ iframe{
 
 #parking_desktop{
     height: 140px;
+    box-shadow: 2px 2px 0px 0.2px black;
 }
 
 #handicap_desktop{
     height: 140px;
+    box-shadow: 2px 2px 0px 0.2px black;
+}
+
+#local_desktop{
+    box-shadow: 2px 2px 0px 0.2px black;
 }
 
 .blanco{
@@ -130,6 +137,7 @@ iframe{
 }
 
 #Contact_title{
+    font-size: 2rem;
     margin-left: 45%;
     font-family: Play;
     margin-top: 5%;

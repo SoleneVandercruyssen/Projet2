@@ -87,7 +87,7 @@ require "./_header.php";
     <div class="formation">
         <h1>Nos Formations</h1>
         <p>Chez Quanticode, nous croyons que la formation est la clé pour rester compétitif dans un monde numérique en constante évolution. C'est pourquoi nous proposons une gamme de formations adaptées à tous les niveaux, du débutant au professionnel confirmé.</p>
-        <li><a href="./formations.html" id="discoverFormation">Découvrir nos formations</a></li>
+        <li><a href="./formation.php" id="discoverFormation">Découvrir nos formations</a></li>
     </div>
 
 </section>
