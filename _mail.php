@@ -26,5 +26,5 @@ try {
 } catch (Exception $e) {
     echo "Inscription réussie, mais l'e-mail n'a pas pu être envoyé. Erreur : {$mail->ErrorInfo}";
 }
-// Crée un mot de passe d’application dans la sécurité de ton compte Google
+// Crée un mot de passe d’application dans la sécurité de ton compte Google : essayer en compte personnel si le compte pro ne propose pas la fonctionnalité "mot de passe application"
 // Utilise ce mot de passe d’application à la place de ton mot de passe Gmail dans $mail->Password.

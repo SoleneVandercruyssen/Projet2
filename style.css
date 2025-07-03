@@ -79,7 +79,7 @@ header{
 } 
 
 .burger-container {
-    display: none; 
+    display: none;
 } 
 
 
@@ -97,7 +97,12 @@ header{
 }
 
 .burger-line {
-    display: none;
+    display: flex;
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 2px;
+    margin: 4px 0;
 } 
 
 .nav ul{
@@ -313,7 +318,6 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-
 }
 
 #devops{
@@ -734,7 +738,7 @@ p{
 /* ! VERSION MOBILE */
 
 
-@media screen and (min-width: 350px) and (max-width: 900px){
+@media screen and (min-width: 350px) and (max-width: 999px){
 
 em{
     color: #FFFF;
@@ -842,24 +846,23 @@ header{
 } 
 
 .burger-container {
-    cursor: pointer;
-    width: 30px;
     display: flex;
     flex-direction: column;
     gap: 6px;
+    cursor: pointer;
+    width: 30px;
     margin-left: 70%;
-    margin-top: 5%; 
+    margin-top: 3%;
 }
-
 
 .nav {
     display: none;
-    /* position: absolute;
+    position: absolute;
     top: 55px;
     right: 0;
     width: 100%;
     background-color: #36C8F6;
-    z-index: 4; */
+    z-index: 4;
 }
 
 #burger-toggle:checked ~ .nav {
@@ -867,12 +870,11 @@ header{
 }
 
 .burger-line {
-    display: block;
+    display: flex;
     width: 30px;
     height: 4px;
-    background: #000000;
+    background-color: #000000; 
     border-radius: 2px;
-    margin: 4px 0;
 }
 
 
@@ -904,8 +906,6 @@ header{
     background-color: #36C8F6;
     color: #fff;
 }
-
-
 
 /* ! MAIN */
 #section3{
@@ -1371,8 +1371,9 @@ p{
 
 
     .liens_footer{
-        width: 50%;
+        width: 40%;
         font-family: Play;
+        font-size: 0.8rem;
 }
 
 
@@ -1411,7 +1412,7 @@ p{
         list-style: none;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 80%;
 
     a{
         text-decoration: underline;
@@ -1427,6 +1428,7 @@ p{
         display: flex;
         flex-direction: column;
         margin-left: 2%;
+        margin-right: 20%;
         color: black;
 
         #email{
