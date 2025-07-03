@@ -1,4 +1,3 @@
-
 <?php 
 
 $pageBodyClass = 'white'; 
@@ -30,9 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'regis
         echo "Tous les champs sont obligatoires.";
     }
 }
-
-
-
 ?>
 
 
@@ -40,15 +36,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'regis
 <!-- FORMULAIRE 2 : INSCRIPTION -->
 
 <div class="mirroir">
-<!-- ! Formulaire d'inscription -->
-   <form action="_inscription.php" method="post" id="formulaire">
+
+    <form action="_inscription.php" method="post" id="formulaire">
     <input type="hidden" name="action" value="register">
     <h2 id="inscription">Inscription</h2>
 
     <label for="prenom"></label>
     <div class="face-to-face">
         <img src="./images/icons8-name-tag-24.png" id="identity" alt="icône Identifiant">
-        <input type="text" name="prenom" placeholder="Identifiant">
+        <input type="text" name="prenom" placeholder="Prénom">
         <span class="erreur"><?php echo $error["username"]??""; ?></span>
     </div> 
     <br>
@@ -61,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'regis
     <br>
     <label for="password"></label>
     <div class="face-to-face">
-        <img src="./images/icons8-password-24.png" alt="icône password">
+        <img src="./images/icons8-password-24.png" alt="icône password" id="img_password">
         <input type="password" name="password" placeholder="Mot de passe">
         <span class="erreur"><?php echo $error["password"]??""; ?></span>
     </div>

@@ -49,7 +49,9 @@ require "./_header.php";
     <form action="login.php" method="POST" id="form1">   
     <h2 >Connexion</h2>
         <div class="compte">
+            <!-- Accès aux cours de la formation -->
             <button type="button" id="private">Privé</button>
+            <!--   Accès à des courts gratuits pour tous -->
             <button type="button" id="public">Public</button>
         </div>
         <br>
@@ -68,11 +70,12 @@ require "./_header.php";
                 </div> 
                 <br>
                 <button type="submit" id="sub">Valider</button>
-    </form>
+                <li ><a id="lien_inscription" href="./_inscription.php">Cliquez sur ce lien pour créer votre compte</a></li>
+            </form>
 <br>
 </div>
 
-<li><a href="./_inscription">Cliquez sur ce lien pour créer votre compte</a></li>
+
 
 
 

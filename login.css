@@ -31,89 +31,6 @@
 /* ! Version Desktop */
 
 @media  screen and (min-width: 999px) and (max-width: 1990px) {
-    body{
-        width: 100%;
-        height: 100vh;
-    }
-
-    /* header{
-    display: flex;
-    flex-direction: row;
-    background-color: #36C8F6;
-    width: 100%;
-    height: 9vh;
-    padding: 5px;
-    grid-area: header;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-    img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-    }
-} 
-
-.burger-container {
-    display: none;
-} 
-
-
-.nav {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    width: 100%;
-}
-
-
-#burger-toggle:checked ~ .nav {
-    display:flex;
-}
-
-.burger-line {
-    display: none;
-} 
-
-
-nav ul{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-nav li{
-    font-family: Spectral;
-    font-weight: 500;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    right: 20px;
-    padding: 10px;
-    list-style-type: none;
-}
-
-nav a{
-    width: 100%;
-    height: 30px;
-    position: relative;
-    text-decoration: none;
-    color: black;
-    font-size: large;
-    display: inline-block;
-}
-
-nav a:hover{
-    color: #ffffff;
-    transition: all 0.3s cubic-bezier(0.50, 1, 0.50, 2);
-    text-decoration: underline;
-} */
-
 
 #inscription
 {
@@ -129,7 +46,6 @@ nav a:hover{
     display: flex;
     flex-direction: row ;
     gap: 30%;
-
 
     img{
         width: 65px;
@@ -161,7 +77,7 @@ button:active{
 
 #formulaire{
     background-color: #F5CB5C;
-    margin-left: 60%;
+    margin-left: 20%;
 }
 
 #mail_form1{
@@ -176,13 +92,13 @@ button:active{
 }
 
 form{
-    width: 300px;
-    height: 420px;
+    width: 550px;
+    height: 520px;
     background-color: #afddec;
     border-radius: 20px;
     margin-bottom: 10%;
-    margin-left: 70%;
-    margin-top: 10%;
+    margin-left: 20%;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,9 +128,10 @@ form{
 }
 
 #password, #identity{
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     margin-top: 5%;
+    margin-right: 3%;
 }
 
 
@@ -232,6 +149,22 @@ form{
     }
 
 }
+
+
+#lien_inscription{
+    color: #000000;
+    font-size: 1.7rem;
+    font-family: Spectral;
+
+    li a{
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+}
+
 
 
 /* ! Footer */
@@ -344,8 +277,6 @@ header{
     grid-area: header;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
-
-
     img{
         width: 65px;
         height: 65px;
@@ -379,19 +310,21 @@ header{
 }
 
 .burger-line {
+border: 2px solid red;
+z-index: 1000;
     height: 4px;
     background: #000000;
     border-radius: 2px;
 }
 
 
-nav ul{
+.nav ul{
     width: 30px;
     display: flex;
     flex-direction: column;
 }
 
-nav li{
+.nav li{
     position: relative;
     display: flex;
     padding: 5px;
@@ -399,7 +332,7 @@ nav li{
     list-style-type: none;
 }
 
-nav a{
+.nav a{
     position: relative;
     right: 0;
     text-decoration: none;
@@ -409,7 +342,7 @@ nav a{
     display: inline-block;
 }
 
-nav a:hover{
+.nav a:active{
     color: white;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-decoration: underline;
@@ -436,6 +369,10 @@ nav a:hover{
         width: 24px;
         height: 24px;
         border-radius: none;
+
+        input{
+            background-color: transparent;
+        }
 }
 
 #formulaire{
@@ -483,9 +420,9 @@ form{
     margin-top: 15%;
 }
 
-#password, #identity{
-    width: 24px;
-    height: 24px;
+#mail_form1, #identity, #img_password{
+    width: 30px;
+    height: 30px;
     margin-top: 5%;
 }
 
@@ -497,12 +434,20 @@ form{
     input{
         width: 100%;
         border-radius: 5px;
-        background-color: transparent;
+        height: 30px;
+        /* background-color: transparent; */
         margin-top: 5%;
         color: #000000;
         border: 2px solid black;
     }
 }
+
+#inscription{
+    margin-bottom: 15%;
+}
+
+
+
 
 
 /* ! Footer */
