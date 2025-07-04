@@ -70,12 +70,10 @@ require "./_header.php";
                 </div> 
                 <br>
                 <button type="submit" id="sub">Valider</button>
-                <li ><a id="lien_inscription" href="./_inscription.php">Cliquez sur ce lien pour créer votre compte</a></li>
+                <li id="lien"><a id="lien_inscription" href="./_inscription.php">Cliquez sur ce lien pour créer votre compte</a></li>
             </form>
 <br>
 </div>
-
-
 
 
 
