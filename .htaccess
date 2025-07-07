@@ -1,0 +1,15 @@
+# --- Activer l'outil de réécriture d'URL.
+RewriteEngine On
+
+# ---- Exclure les fichiers statiques de la redirection avec une condition (images, css, js...)
+# %{REQUEST_URI} est une variable fournie par apache
+RewriteCond %{REQUEST_URI} !\.(png|jpg|gif|jpeg|svg|css|js|ico)$
+
+# --- Rediriger tout le reste vers index.php
+# (.*) regex indiquant que l'on souhaite réécrire tout l'url.
+# "index.php" nouvel URL.
+
+# flag utilisés : [QSA,L]
+# QSA (Query String Append) : conserver les paramètres en GET
+# L (Last) : stoppe l'application des règles suivante si celle-ci est appliqué.
+RewriteRule ^(.*)$ router/index.php [QSA, L]

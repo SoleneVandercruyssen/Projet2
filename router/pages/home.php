@@ -1,7 +1,7 @@
 <?php 
 $isPlateforme = false;
 $pageBodyClass = 'white'; 
-require "./_header.php";
+include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
 
 
@@ -181,5 +181,5 @@ require "./_header.php";
 </main>
 
 <?php 
-require "./_footer.php";
+include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php';
 ?>
