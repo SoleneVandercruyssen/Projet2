@@ -1,13 +1,19 @@
 <?php 
+
+// booléan à faux : n'active pas la mise en page du header de la page Plateforme 
 $isPlateforme = false;
+
+// variable : fond bleu
 $pageBodyClass = 'blue';
-require "./_header.php";
+
+// lien vers le header
+include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
 
-<!-- TODO : prochaine étape créer une adresse mail mailtrap/PHPMailer -->
+
 
 <main class="background-contact" class="main-contact">
-<!-- TODO Formulaire / MAPS  -------------------------------------------ESSAYER EN PHP-->
+    <!-- Section MAP -->
     <section id="section" class="section1" >
     <div id="face-to-face">
         <div  class="desktop_mirror">
@@ -65,10 +71,8 @@ require "./_header.php";
     </div>
 
 </section>
-<img src="./images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
+<img src="/images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
 </main>
 
-
-<?php 
-require "./_footer.php";
-?>
+<!-- Lien vers le footer -->
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php'; ?>

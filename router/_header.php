@@ -12,26 +12,26 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta >
     <title>Quanticode</title>
     <!-- HEADER + HOME -->
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="./JS/script.js"></script>
-    <script type="module" src="./JS/flèche.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/JS/script.js"></script>
+    <script type="module" src="/JS/flèche.js"></script>
     <!-- CONTACT -->
-    <script type="module" src="./JS/flèche.js"></script>
-    <link rel="stylesheet" href="./contact.css">
+    <script type="module" src="/JS/flèche.js"></script>
+    <link rel="stylesheet" href="/contact.css">
     <!-- LOGIN -->
-    <link rel="stylesheet" href="./login.css">
-    <!-- FORMATIONS -->
-    <link rel="stylesheet" href="./formations.css">
-    <script type="module" src="./JS/flèche.js"></script>
-    <script src="./JS/formations.js" defer></script>
-    <script src="./JS/cards.js" defer></script>
+    <link rel="stylesheet" href="/login.css">
     <!-- PLATEFORME -->
-    <script type="module"  src="./JS/calendar.js"></script>
-    <script type="module" src="./JS/date.js"></script>
-    <script type="module" src="./JS/flèche.js"></script>
-    <link rel="stylesheet" href="./plateforme.css" >
+    <script type="module"  src="/JS/calendar.js"></script>
+    <script type="module" src="/JS/date.js"></script>
+    <script type="module" src="/JS/flèche.js"></script>
+    <link rel="stylesheet" href="/plateforme.css" >
     <script rel="stylesheet" src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- FORMATIONS -->
+    <link rel="stylesheet" href="/formations.css">
+    <script type="module" src="/JS/flèche.js"></script>
+    <script src="/JS/formations.js" defer></script>
+    <script src="/JS/cards.js" defer></script>
 </head>
 
 <!-- Ajout d'une classe qui contient une variable "$pageBodyClass" -->
@@ -40,7 +40,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <header>
     <div id="flex">
         <div class="logo">
-            <img src="./images/logo.png" alt="Logo de l'entreprise" class="logo_img">
+            <img src="/images/logo.png" alt="Logo de l'entreprise" class="logo_img">
         </div>
     </div>
     <input type="checkbox" id="burger-toggle" hidden>
@@ -69,10 +69,10 @@ if (session_status() === PHP_SESSION_NONE) {
 
             <?php else: ?>
                 <ul>
-                    <li><a href="./index.php">Home</a></li>
-                    <li><a href="./contact.php">Contact</a></li>
-                    <li><a href="./login.php">Login</a></li>
-                    <li><a href="./formation.php">Formations</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/formation">Formations</a></li>
                 </ul>
             <?php endif; ?>
         </div>

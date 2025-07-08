@@ -1,6 +1,12 @@
 <?php 
+
+// booléan à faux : n'active pas la mise en page du header de la page Plateforme  
 $isPlateforme = false;
+
+// variable : fond blanc
 $pageBodyClass = 'white'; 
+
+// Lien vers le header
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
 
@@ -10,7 +16,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 <section  id="presentation"  class="section1">
     <div>
         <div>
-            <img id="affiche" src="./images/logo_1_Quanticode.png" alt="image logo Quanticode 2">
+            <img id="affiche" src="/images/logo_1_Quanticode.png" alt="image logo Quanticode 2">
             <!-- Animation texte -->
             <div class="title-inner"><h1 id="titre" >Bienvenue sur Quanticode !</h1></div>
             
@@ -45,51 +51,49 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 <!-- ! Section coupée en 4 -->
 <section   id="section5"  class="section1">
 
-        <div id="create">
-            <h1 class="h1_home" class="values">Développement</h1>
-            <img src="./images/4716574.jpg" alt="illustration développement web" class="img-home">
-            <p>Cœur de métier de Quanticode, le développement web est notre terrain d'expression. Nous construisons des <em>applications modernes, performantes et évolutives</em> , en utilisant les dernières technologies. Nos formations couvrent tout le cycle de développement : HTML/CSS, JavaScript, frameworks modernes, bases de données, API, etc</p>
+    <div id="create">
+        <h1 class="h1_home" class="values">Développement</h1>
+        <img src="/images/4716574.jpg" alt="illustration développement web" class="img-home">
+        <p>Cœur de métier de Quanticode, le développement web est notre terrain d'expression. Nous construisons des <em>applications modernes, performantes et évolutives</em> , en utilisant les dernières technologies. Nos formations couvrent tout le cycle de développement : HTML/CSS, JavaScript, frameworks modernes, bases de données, API, etc</p>
             
-            <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
-        </div>
+        <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
+    </div>
 
-        <div class="values" id="seo">
-            <h1 class="h1_home">SEO</h1>
-            <img src="./images/32010.jpg" alt="illustration SEO" class="img-home">
-            <p>Dans un web ultra-concurrentiel, être visible est crucial. Nous formons et accompagnons nos clients dans la <em>maîtrise du SEO </em> pour améliorer leur position sur les moteurs de recherche, générer du trafic qualifié et renforcer leur stratégie de contenu. De la technique à la sémantique, nous couvrons toutes les facettes du référencement.</p>
+    <div class="values" id="seo">
+        <h1 class="h1_home">SEO</h1>
+        <img src="/images/32010.jpg" alt="illustration SEO" class="img-home">
+        <p>Dans un web ultra-concurrentiel, être visible est crucial. Nous formons et accompagnons nos clients dans la <em>maîtrise du SEO </em> pour améliorer leur position sur les moteurs de recherche, générer du trafic qualifié et renforcer leur stratégie de contenu. De la technique à la sémantique, nous couvrons toutes les facettes du référencement.</p>
             
-            <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
-        </div>
+        <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
+    </div>
 
-        <div class="values" id="devops">
-            <h1 class="h1_home">DEVOPS</h1>
-            <img src="./images/7060483.jpg" alt="illustration devops" class="img-home">
-            <p>L'agilité et la stabilité des systèmes sont des atouts majeurs dans un monde digital en constante évolution. Grâce à notre expertise <em>DevOps</em> , nous formons à <em> l'intégration continue</em>, au  <em>déploiement automatisé</em> et aux  <em>bonnes pratiques de collaboration </em>entre les équipes de développement et d'exploitation.</p>
+    <div class="values" id="devops">
+        <h1 class="h1_home">DEVOPS</h1>
+        <img src="/images/7060483.jpg" alt="illustration devops" class="img-home">
+        <p>L'agilité et la stabilité des systèmes sont des atouts majeurs dans un monde digital en constante évolution. Grâce à notre expertise <em>DevOps</em> , nous formons à <em> l'intégration continue</em>, au  <em>déploiement automatisé</em> et aux  <em>bonnes pratiques de collaboration </em>entre les équipes de développement et d'exploitation.</p>
             
-            <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
-        </div>
+        <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
+    </div>
 
-        <div class="values" id="design">
-            <h1 class="h1_home">DESIGN</h1>
-            <img src="./images/2248604.jpg" alt="illustration design" class="img-home">
-            <p>Un bon produit est avant tout un produit bien pensé pour l'utilisateur. Nous transmettons les fondements du <em>design UX/UI</em> , de la conception de maquettes à la création d'interfaces ergonomiques et engageantes. Nos designers travaillent également en synergie avec les développeurs pour proposer des solutions à la fois esthétiques et fonctionnelles</p>
+    <div class="values" id="design">
+        <h1 class="h1_home">DESIGN</h1>
+        <img src="/images/2248604.jpg" alt="illustration design" class="img-home">
+        <p>Un bon produit est avant tout un produit bien pensé pour l'utilisateur. Nous transmettons les fondements du <em>design UX/UI</em> , de la conception de maquettes à la création d'interfaces ergonomiques et engageantes. Nos designers travaillent également en synergie avec les développeurs pour proposer des solutions à la fois esthétiques et fonctionnelles</p>
             
-            <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
-        </div>
+        <li><button class="more" type="button"><a href="" target="_blank"> En savoir +</a></button></li>
+    </div>
 
 
 </section>
 <!-- ! Fin de la section  -->
 
 
-
 <section  id="IntroductionFormation" class="section1">
     <div class="formation">
         <h1>Nos Formations</h1>
         <p>Chez Quanticode, nous croyons que la formation est la clé pour rester compétitif dans un monde numérique en constante évolution. C'est pourquoi nous proposons une gamme de formations adaptées à tous les niveaux, du débutant au professionnel confirmé.</p>
-        <li><a href="./formation.php" id="discoverFormation">Découvrir nos formations</a></li>
+        <li><a href="/formation.php" id="discoverFormation">Découvrir nos formations</a></li>
     </div>
-
 </section>
 
 
@@ -107,79 +111,83 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
             <!-- ! Début du carousel/slider -->
         <div id="carousel">
         
-            <!--  Next and previous buttons -->
+            <!-- Previous buttons -->
             <a class="prev" onclick="changeSlide(-1)">&#10094; </a>
         
             <div class="slider-container">
 
-                <div class="carousel_mobile" > 
-                    <p>📈 +120 projets web livrés <br>
-                    Des sites vitrine, e-commerce, plateformes sur mesure et applications web réalisés pour des clients de tous secteurs.</p>
-                </div>
+                    <div class="carousel_mobile" > 
+                        <p>📈 +120 projets web livrés <br>
+                        Des sites vitrine, e-commerce, plateformes sur mesure et applications web réalisés pour des clients de tous secteurs.</p>
+                    </div>
 
-                <div  class="carousel_mobile">
-                    <p>🎓 +350 personnes formées <br>
-                    Des professionnels et passionnés ont suivi nos formations en SEO, DevOps, design UX/UI et développement web.</p>
-                </div>
+                    <div  class="carousel_mobile">
+                        <p>🎓 +350 personnes formées <br>
+                        Des professionnels et passionnés ont suivi nos formations en SEO, DevOps, design UX/UI et développement web.</p>
+                    </div>
 
-                <div class="carousel_mobile">
-                    <p><i class="fa-thin fa-globe" style="color: #74C0FC;"></i>🌐 97% de satisfaction client <br>
-                    Une qualité de service saluée par nos clients pour notre réactivité, notre expertise et notre accompagnement personnalisé.</p>
-                </div>
+                    <div class="carousel_mobile">
+                        <p><i class="fa-thin fa-globe" style="color: #74C0FC;"></i>🌐 97% de satisfaction client <br>
+                        Une qualité de service saluée par nos clients pour notre réactivité, notre expertise et notre accompagnement personnalisé.</p>
+                    </div>
 
-                <div  class="carousel_mobile">
-                    <p>👨‍💻 Une équipe de 12 experts <br>
-                    Développeurs, designers, formateurs et consultants réunis autour d'une même passion : l'innovation numérique.</p>
-                </div>
+                    <div  class="carousel_mobile">
+                        <p>👨‍💻 Une équipe de 12 experts <br>
+                        Développeurs, designers, formateurs et consultants réunis autour d'une même passion : l'innovation numérique.</p>
+                    </div>
 
-                <div class="carousel_mobile">
-                    <p>🚀 Taux de reconversion post-formation : 82% <br>
-                    Un grand nombre de nos apprenants trouvent un emploi ou lancent leur propre activité dans les 6 mois suivant la formation.</p>
+                    <div class="carousel_mobile">
+                        <p>🚀 Taux de reconversion post-formation : 82% <br>
+                        Un grand nombre de nos apprenants trouvent un emploi ou lancent leur propre activité dans les 6 mois suivant la formation.</p>
                     </div> 
+                    
+                    <!--Next buttons -->
+                    <a class="next"onclick="changeSlide(1)">&#10095;</a>
+
+                <!-- DOTS du carousel -->
+                <div class="dots">  
+                    <span class="dot" onclick="setSlide(0)"></span>
+                    <span class="dot" onclick="setSlide(1)"></span>
+                    <span class="dot" onclick="setSlide(2)"></span>
+                    <span class="dot" onclick="setSlide(3)"></span>
+                    <span class="dot" onclick="setSlide(4)"></span> 
+                </div> 
             </div>
-
-                <a class="next"onclick="changeSlide(1)">&#10095;</a>
-
-            <!-- DOTS du carousel -->
-            <div class="dots">  
-                <span class="dot" onclick="setSlide(0)"></span>
-                <span class="dot" onclick="setSlide(1)"></span>
-                <span class="dot" onclick="setSlide(2)"></span>
-                <span class="dot" onclick="setSlide(3)"></span>
-                <span class="dot" onclick="setSlide(4)"></span> 
-            </div> 
         </div>
     </div>
-</div>
 </section>
 <!-- ! Fin du carousel -->
 
 <!-- ! AVIS -->
 <section id="section7" class="section1">
     <h2 id="title-témoigner">Ils témoignent</h2>
-<div id="avis">
-    <div class="avis">
-        <div class="avis_item">
-            <p>"Une formation de qualité, très pratique et adaptée à mes besoins. J'ai pu rapidement mettre en place les compétences acquises dans mon travail."</p>
-            <h3>Marie.D - Etudiante</h3>
-    </div>
-    <div class="avis">
-        <div class="avis_item">
-            <p>"J'ai fait appel à Quanticode pour la création de mon site vitrine, et je suis bluffée par le résultat. L'équipe a su parfaitement capter l'univers de mon entreprise et le traduire en un design élégant et moderne. Le site est rapide, responsive et surtout, très facile à gérer au quotidien. Je recommande les yeux fermés !"</p>
-            <h3>Sarah L. - Fondatrice de L'Atelier Botanique</h3>
-    </div>
-    <div class="avis">
-        <div class="avis_item">
-            <p>"Quanticode nous a accompagnés de A à Z dans le développement de notre plateforme web. Leur écoute, leur réactivité et leur expertise technique ont fait toute la différence. Le projet a été livré dans les temps, avec un excellent suivi post-livraison. C'est une équipe fiable et créative, un vrai partenaire digital."</p>
-            <h3>Amine R. - CEO de NovaCom</h3>
-    </div>
+    <div id="avis">
+        <div class="avis">
+            <div class="avis_item">
+                <p>"Une formation de qualité, très pratique et adaptée à mes besoins. J'ai pu rapidement mettre en place les compétences acquises dans mon travail."</p>
+                <h3>Marie.D - Etudiante</h3>
+            </div>
+        </div>
+        <div class="avis">
+            <div class="avis_item">
+                <p>"J'ai fait appel à Quanticode pour la création de mon site vitrine, et je suis bluffée par le résultat. L'équipe a su parfaitement capter l'univers de mon entreprise et le traduire en un design élégant et moderne. Le site est rapide, responsive et surtout, très facile à gérer au quotidien. Je recommande les yeux fermés !"</p>
+                <h3>Sarah L. - Fondatrice de L'Atelier Botanique</h3>
+            </div>
+        </div>
+        <div class="avis">
+            <div class="avis_item">
+                <p>"Quanticode nous a accompagnés de A à Z dans le développement de notre plateforme web. Leur écoute, leur réactivité et leur expertise technique ont fait toute la différence. Le projet a été livré dans les temps, avec un excellent suivi post-livraison. C'est une équipe fiable et créative, un vrai partenaire digital."</p>
+                <h3>Amine R. - CEO de NovaCom</h3>
+            </div>
+        </div>
     </div>
 </section>
 <!-- ! Fin de la section AVIS -->
-
-<img src="./images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
+<img src="/images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
 </main>
 
+
 <?php 
+// Lien vers le footer
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php';
 ?>

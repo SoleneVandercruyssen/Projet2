@@ -1,7 +1,7 @@
 <?php 
 $pageBodyClass = 'white'; 
 $isPlateforme = true;
-require "./_header.php";
+include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -16,8 +16,8 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 
 <!-- ! Mini Header -->
 <section id="plateforme_icons">
-    <button type="button" class="button_mini_header" ><img src="./images/icons8-message-30.png" alt="icon message"></button>
-    <button type="button" class="button_mini_header"><img src="./images/icons8-language-50.png" alt="icon langue"></button>
+    <button type="button" class="button_mini_header" ><img src="/images/icons8-message-30.png" alt="icon message"></button>
+    <button type="button" class="button_mini_header"><img src="/images/icons8-language-50.png" alt="icon langue"></button>
 </section>
 
     <main>
@@ -76,21 +76,19 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 
 <section id="plateforme_pdf">
     <div>
-<a href=""download=""><img src="./images/icons8-import-50.png" id="import" alt="icon_import"></a>
+<a href=""download=""><img src="/images/icons8-import-50.png" id="import" alt="icon_import"></a>
 <p>Importez un fichier</p>
 </div>
 <div>
-<a href=""><img src="./images/icons8-export-50.png" id="export" alt="icon_export"></a>
+<a href=""><img src="/images/icons8-export-50.png" id="export" alt="icon_export"></a>
 <p>Exporter un fichier</p>
 </div>
 </section>
 </section>
-<img src="./images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
+<img src="/images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
     </main>
 
 
 
 
-<?php 
-require "./_footer.php";
-?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php'; ?>

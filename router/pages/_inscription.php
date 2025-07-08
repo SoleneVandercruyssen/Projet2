@@ -1,11 +1,11 @@
 <?php 
 
 $pageBodyClass = 'white'; 
-require "./_header.php";
+include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php'; 
 
 $error = [];
 
-$pdo = new PDO('mysql:host=bddsql;dbname=quanticode', 'root', 'root');
+$pdo = new PDO('mysql:host=bddsql;port=3306;dbname=quanticode', 'root', 'root');
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'register') {
@@ -69,6 +69,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'regis
 
 
 
-<?php 
-require "./_footer.php";
-?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php'; ?>

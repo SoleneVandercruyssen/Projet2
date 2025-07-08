@@ -6,12 +6,12 @@
 */
 
 const ROUTES = [
-    "router"=>"home.php",
-    "router/contact"=>"contact.php",
-    "router/connexion"=>"login.php",
-    "router/inscription"=>"_inscription.php",
-    "router/formations"=>"formation.php",
-    "router/plateforme"=>"plateforme.php",
+    "home"=>"home.php",
+    "contact"=>"contact.php",
+    "login"=>"login.php",
+    "inscription"=>"_inscription.php",
+    "formations"=>"formation.php",
+    "plateforme"=>"plateforme.php",
 ];
 
 

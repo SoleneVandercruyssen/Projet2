@@ -1,3 +1,4 @@
+<!-- filepath: router/_footer.php -->
 </main>
 
 <!-- ! FOOTER -->
@@ -8,10 +9,10 @@
                 <li><a href="/home.php">Home</a></li>
                 <!-- <li><a href="./presentation.html">Qui sommes-nous ?</a></li> -->
                 <li><a href="/formation.php">Formations</a></li>
-                <li><a href="">Projets</a></li>
-                <li><a href="">Mentions légales</a></li>
-                <li><a href="">Politique de confidentialité</a></li>
-                <li><a href="">Cookies</a></li>
+                <li><a href="/projets">Projets</a></li>
+                <li><a href="/mentionsLégales">Mentions légales</a></li>
+                <li><a href="/confidientialité">Politique de confidentialité</a></li>
+                <li><a href="/cookies">Cookies</a></li>
                 
             </ul>
         </div>

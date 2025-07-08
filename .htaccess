@@ -12,4 +12,4 @@ RewriteCond %{REQUEST_URI} !\.(png|jpg|gif|jpeg|svg|css|js|ico)$
 # flag utilisés : [QSA,L]
 # QSA (Query String Append) : conserver les paramètres en GET
 # L (Last) : stoppe l'application des règles suivante si celle-ci est appliqué.
-RewriteRule ^(.*)$ router/index.php [QSA, L]
+RewriteRule ^(.*)$ router/index.php [QSA,L]

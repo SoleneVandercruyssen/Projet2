@@ -5,7 +5,7 @@
     Il lui est demandé de traiter l'url et de charger le fichier correspondant
 */
 
-require __DIR__ . "/../_routes.php";
+require __DIR__ . "/_routes.php";
 // Permet de récupérer l'url qui a été demandé par l'utilisateur :
 $url = $_SERVER["REQUEST_URI"];
 $url = filter_var($url, FILTER_SANITIZE_URL);
@@ -19,25 +19,29 @@ $url = filter_var($url, FILTER_SANITIZE_URL);
 $url = explode("?", $url)[0];
 
 // trim permet de retirer au debut et à la fin, des caractères différent
-$url = trim($url, "/home.php");
+$url = trim($url, "/");
+
+
+if ($url === "") $url = "home"; // Pour la racine
+
 
 // Nous allons voir si notre url existe dans les routes
 
 if (array_key_exists($url, ROUTES)) {
     $page = ROUTES[$url];
-    $path = __DIR__ . "./$page";
+    $path = __DIR__ . "/pages/$page";
 
     if(is_file($path))
     {
         require $path;
     }
     else{
-        require __DIR__ . "/404.php";
+        require __DIR__ . "/pages/404.php";
     }
 }
 else{
     // Si l'url n'existe pas, on require à nouveau la page 404.php
-    require __DIR__ . "/404.php";
+    require __DIR__ . "/pages/404.php";
 }
 
 

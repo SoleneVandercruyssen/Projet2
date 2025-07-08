@@ -1,7 +1,7 @@
 <?php 
 $isPlateforme = false;
 $pageBodyClass = 'white'; 
-require "./_header.php";
+include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
 
 <main>
@@ -12,7 +12,7 @@ require "./_header.php";
     <h1 class="first-title-formations"> En Design</h1>
 <div class="cards" id="first">
     <h2 class="second-title-formations">Web design</h2>
-<img class="img-formations" src="./images/5817154.jpg" alt="image vectorielle du design web">
+<img class="img-formations" src="/images/5817154.jpg" alt="image vectorielle du design web">
 
 <button type="button" class="purple" id="1">Voir plus de détails</button>
 
@@ -20,7 +20,7 @@ require "./_header.php";
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img class="img-formations" src="./images/2248604.jpg" alt="image vectorielle du design web">
+            <img class="img-formations" src="/images/2248604.jpg" alt="image vectorielle du design web">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 3 mois</p>
@@ -112,7 +112,7 @@ require "./_header.php";
 </div>
 <div class="cards">
     <h2 class="second-title-formations">Designer UX/UI</h2>
-<img class="img-formations" src="./images/4738060.jpg" alt="image vectorielle du design UI/UX">
+<img class="img-formations" src="/images/4738060.jpg" alt="image vectorielle du design UI/UX">
 <button type="button" class="purple" id="2">Voir plus de détails</button>
 
 <!-- Pop-up -->
@@ -120,7 +120,7 @@ require "./_header.php";
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img  class="img-formations" src="./images/4738060.jpg" alt="image vectorielle du design UI/UX">
+            <img  class="img-formations" src="/images/4738060.jpg" alt="image vectorielle du design UI/UX">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 3 mois</p>
@@ -219,7 +219,7 @@ require "./_header.php";
 <!-- ! 2eme catégorie -->
 <div class="cards" id="second">
     <h2 class="second-title-formations">Développeur/se Web</h2>
-<img  class="img-formations" src="./images/9906021.jpg" alt="image vectorielle de développeur web">
+<img  class="img-formations" src="/images/9906021.jpg" alt="image vectorielle de développeur web">
 <button type="button" class="yellow" id="3">Voir plus de détails</button>
 
 <!-- Pop-up -->
@@ -227,7 +227,7 @@ require "./_header.php";
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img class="img-formations" src="./images/9906021.jpg" alt="image vectorielle de design web">
+            <img class="img-formations" src="/images/9906021.jpg" alt="image vectorielle de design web">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 3 mois</p>
@@ -319,7 +319,7 @@ require "./_header.php";
 <!-- ! SECTION CYBER -->
 <div class="cards">
     <h2 class="second-title-formations">Cybersécurité</h2>
-<img class="img-formations" src="./images/2867965.jpg" alt="image vectorielle de cybersécurité">
+<img class="img-formations" src="/images/2867965.jpg" alt="image vectorielle de cybersécurité">
 <button type="button" class="yellow" id="4">Voir plus de détails</button>
 
 <!-- Pop-up -->
@@ -327,7 +327,7 @@ require "./_header.php";
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img class="img-formations" src="./images/2867965.jpg" alt="image vectorielle de cybersécurite">
+            <img class="img-formations" src="/images/2867965.jpg" alt="image vectorielle de cybersécurite">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 3 mois</p>
@@ -420,7 +420,7 @@ require "./_header.php";
 
 <div class="cards">
     <h2 class="second-title-formations">SEO</h2>
-<img class="img-formations" src="./images/32010.jpg" alt="image vectorielle du SEO">
+<img class="img-formations" src="/images/32010.jpg" alt="image vectorielle du SEO">
 <button type="button" class="black" id="5">Voir plus de détails</button>
 
 <!-- Pop-up -->
@@ -428,7 +428,7 @@ require "./_header.php";
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img class="img-formations" src="./images/32010.jpg" alt="image vectorielle du SEO">
+            <img class="img-formations" src="/images/32010.jpg" alt="image vectorielle du SEO">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 3 mois</p>
@@ -517,7 +517,7 @@ require "./_header.php";
 <!-- ! SECTION SHOW 1 -->
 <div class="cards">
     <h2 class="second-title-formations">SHOW 1</h2>
-<img class="img-formations"class="img-formations" src="./images/4716574.jpg" alt="image vectorielle de design web">
+<img class="img-formations"class="img-formations" src="/images/4716574.jpg" alt="image vectorielle de design web">
 <button type="button" class="black" id="6">Voir plus de détails</button>
 
 <!-- Pop-up -->
@@ -525,7 +525,7 @@ require "./_header.php";
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img class="img-formations" src="./images/4716574.jpg" alt="image vectorielle de design web">
+            <img class="img-formations" src="/images/4716574.jpg" alt="image vectorielle de design web">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 3 mois</p>
@@ -621,7 +621,7 @@ require "./_header.php";
 <!-- ! 4eme catégorie -->
 <div class="cards" id="last">
     <h2 class="second-title-formations">DEVOPPS</h2>
-<img class="img-formations" src="./images/7060483.jpg" alt="image vectorielle de DEVOPPS">
+<img class="img-formations" src="/images/7060483.jpg" alt="image vectorielle de DEVOPPS">
 <button type="button" class="white" id="7">Voir plus de détails</button>
 
 <!-- Pop-up -->
@@ -629,7 +629,7 @@ require "./_header.php";
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img class="img-formations" src="./images/7060483.jpg" alt="image vectorielle de DEVOPPS">
+            <img class="img-formations" src="/images/7060483.jpg" alt="image vectorielle de DEVOPPS">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 3 mois</p>
@@ -720,7 +720,7 @@ require "./_header.php";
 
 <div class="cards">
     <h2 class="second-title-formations">IA & Machine Learning</h2>
-<img class="img-formations" src="./images/4716574.jpg" alt="image vectorielle de design web">
+<img class="img-formations" src="/images/4716574.jpg" alt="image vectorielle de design web">
 <button type="button" class="white" id="8">Voir plus de détails</button>
 
 <!-- Pop-up -->
@@ -728,7 +728,7 @@ require "./_header.php";
     <div class="modaleContainer">
         <section class="mirror">
         <div class="photos">
-            <img class="img-formations" src="./images/4716574.jpg" alt="image vectorielle de design web">
+            <img class="img-formations" src="/images/4716574.jpg" alt="image vectorielle de design web">
         </div>
         <div class="infos">
             <p> > Formation d'une durée de 8 mois</p>
@@ -814,29 +814,7 @@ require "./_header.php";
 </div>
 </div>
 
-<img src="./images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
+<img src="/images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
 </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php 
-require "./_footer.php";
-?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php'; ?>

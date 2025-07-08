@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error['login'] = "Identifiants incorrects";
     }
 }
-require "./_header.php";
+include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
 
 <!-- FORMULAIRE 1 : CONNEXION -->
@@ -79,6 +79,4 @@ require "./_header.php";
 
 
 
-<?php 
-require "./_footer.php";
-?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php'; ?>
