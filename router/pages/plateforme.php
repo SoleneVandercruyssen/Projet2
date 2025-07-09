@@ -76,13 +76,13 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 <h2 id="title-administratif">! Veuillez renommer vos fichiers <em>ex: Nom_Prenom_absence_01-12-2028</em> </h2>
 
 <section id="plateforme_pdf">
-    <div>
-<a href=""download=""><img src="/images/icons8-import-50.png" id="import" alt="icon_import"></a>
-<p>Importez un fichier</p>
+    
+    <div class="card">
+        <input type="file" name="import" id="fileId">
+    <a href=""download=""><img src="/images/icons8-import-50.png" id="import" alt="icon_import"></a>
 </div>
-<div>
+<div class="card">
 <a href=""><img src="/images/icons8-export-50.png" id="export" alt="icon_export"></a>
-<p>Exporter un fichier</p>
 </div>
 </section>
 </section>

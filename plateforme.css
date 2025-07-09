@@ -394,6 +394,11 @@ em{
     margin-top: 15%;
 }
 
+#fileId{
+    height: 8px;
+}
+
+
 #plateforme_pdf{
     margin-top: 5%;
     margin-bottom: 10%;
@@ -407,13 +412,10 @@ em{
         font-family: Spectral;
         font-size: 0.8rem;
     }
-      img{
+
+    img{
     width: 25px;
     height: 25px;
-}
-
-#import{
-    margin-left: 5px;
 }
 
 #export{
