@@ -20,6 +20,8 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="/contact.css">
     <!-- LOGIN -->
     <link rel="stylesheet" href="/login.css">
+    <!-- INSCRIPTION -->
+    <link rel="stylesheet" href="/inscription.css">
     <!-- PLATEFORME -->
     <script type="module"  src="/JS/calendar.js"></script>
     <script type="module" src="/JS/date.js"></script>

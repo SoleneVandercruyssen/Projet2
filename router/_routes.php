@@ -9,7 +9,7 @@ const ROUTES = [
     "home"=>"home.php",
     "contact"=>"contact.php",
     "login"=>"login.php",
-    "inscription"=>"_inscription.php",
+    "inscription"=>"inscription.php",
     "formations"=>"formation.php",
     "plateforme"=>"plateforme.php",
 ];

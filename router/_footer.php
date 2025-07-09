@@ -6,9 +6,9 @@
         <div id="mirror">
         <div class="liens_footer">
             <ul>
-                <li><a href="/home.php">Home</a></li>
+                <li><a href="/home">Home</a></li>
                 <!-- <li><a href="./presentation.html">Qui sommes-nous ?</a></li> -->
-                <li><a href="/formation.php">Formations</a></li>
+                <li><a href="/formations">Formations</a></li>
                 <li><a href="/projets">Projets</a></li>
                 <li><a href="/mentionsLégales">Mentions légales</a></li>
                 <li><a href="/confidientialité">Politique de confidentialité</a></li>

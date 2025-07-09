@@ -32,8 +32,22 @@
 
 @media  screen and (min-width: 999px) and (max-width: 1990px) {
 
-#connexion{
+#inscription
+{
     color: #000000;
+}
+
+#Forms{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row ;
+    gap: 30%;
+
+    img{
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }
 }
 
     button{
@@ -57,41 +71,35 @@ button:active{
     color: #ffffff;
 }
 
-#form1{
-    position: relative;
-    left: 100%;
+#formulaire{
+    background-color: #F5CB5C;
+    margin-left: 35%;
     width: 550px;
     height: 520px;
-    background-color: #afddec;
     border-radius: 20px;
     margin-bottom: 10%;
-    margin-left: 20%;
     margin-top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-.compte{
+
+/* Bouton VALIDER */
+
+#sub2{
+    background-color: #F5CB5C;
+    margin-bottom: 10%;
+    font-family: Spectral;
+    margin-top: 15%;
+}
+
+
+#img_password, #mail_form1, #name{
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    width: 70%;
-    margin-bottom: 5%;
-}
-
-#sub{
-        margin-bottom: 15%;
-        font-family: Spectral;
-        margin-top: 5%;
-
-}
-
-#password, #identity{
-    width: 50px;
-    height: 50px;
+    top: 50%;
+    width: 45px;
+    height: 45px;
     margin-top: 5%;
     margin-right: 3%;
 }
@@ -99,39 +107,43 @@ button:active{
 
 .face-to-face{
     display: flex;
+    gap: 5%;
 }
 
     input{
-        width: 100%;
+        position: relative;
+        top: 50%;
+        width: 300px;
         border-radius: 5px;
         background-color: transparent;
-        margin-top: 5%;
+        margin-top: 8%;
         color: #000000;
         border: 2px solid black;
     }
 
-
-
 }
+
+
 /* lien sur le formulaire de connexion pour : redirection vers inscription.php */
-#lien_inscription{
+#lien2{
     color: #000000;
     font-size: 1.7rem;
     font-family: Spectral;
     list-style: none;
+    
+    
+}
+#lien_retour:hover{
+        text-decoration: underline;
+    }
 }
 
-
-#lien_inscription:hover{
-    color: #ffffff;
-}
-}
 
 
 /* ! Version Mobile */
 
 
-@media screen and (min-width: 360px) and (max-width: 999px) {
+@media screen and (min-width: 360px) and (max-width: 990px) {
     body{
         width: 100%;
         height: 100vh;
@@ -164,6 +176,9 @@ button:active{
         }
 }
 
+#formulaire{
+    background-color: #F5CB5C;
+}
 
 form{
     width: 300px;
@@ -172,7 +187,7 @@ form{
     border-radius: 20px;
     margin-left: 10%;
     margin-bottom: 10%;
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,18 +199,20 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2%;
+    gap: 5%;
     width: 100%;
     margin-top: -25%;
     margin-bottom: 20%;
     /* border: 2px solid yellow; */
 }
 
-/* Bouton VALIDER */
-#sub{
-        margin-bottom: -14%;
-        font-family: Spectral;
-        margin-top: 15%;
+
+
+#sub2{
+    background-color: var(--yellow);
+    margin-bottom: -14%;
+    font-family: Spectral;
+    margin-top: 15%;
 }
 
 #mail_form1, #identity, #img_password{

@@ -58,6 +58,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 <div class="list" >
     <div class="list_item">
     <h3>Mise à disposition des cours</h3>
+    <hr>
     <!-- Liste déroulante -->
 <select id="pdf-select">
     <option value="" disabled selected>Choisissez un cours</option>
