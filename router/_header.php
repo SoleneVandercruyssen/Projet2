@@ -59,6 +59,9 @@ if (session_status() === PHP_SESSION_NONE) {
                 <img src="/images/icons8-profile-50.png" alt="Profil" id="profil">
                 <!-- From Uiverse.io by Lealdos --> 
 
+                
+                <button type="button"> Déconnexion </button>
+
             <?php else: ?>
                 <ul>
                     <li><a href="/home">Home</a></li>
