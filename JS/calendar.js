@@ -89,19 +89,22 @@
 document.addEventListener('DOMContentLoaded', function() {
   const calendarEl = document.getElementById('calendar');
   if (!calendarEl) return; // Stoppe tout si pas de calendrier 
+
   const calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth',
     locale: 'fr',
     events: []
   });
-  document.getElementById('addEventBtn').addEventListener('click', function() {
+  // document.getElementById('addEventBtn').addEventListener('click', function() {
 
-    calendar.addEvent({
-      title: 'Nouvel événement',
-      start: new Date().toISOString().slice(0, 10), // aujourd'hui
-      color: '#2DBBD4'
-    });
-  });
+  //   modal.style.dsiplay = 'flex';
+
+    // calendar.addEvent({
+    //   title: 'Nouvel événement',
+    //   start: new Date().toISOString().slice(0, 10), // aujourd'hui
+    //   color: '#2DBBD4'
+    // });
+  // });
  
 
 
@@ -124,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     const title = document.getElementById('eventTitle').value;
-    const date = document.getElementById('eventDate').value;
+    const date = document.getElementById('eventDate').value  + "T00:00:00";
     const color = document.getElementById('eventColor').value;
 
     if (title && date) {
