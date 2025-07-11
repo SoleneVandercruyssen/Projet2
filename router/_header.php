@@ -15,6 +15,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta name="og:title" content="Quanticode">
     <meta name="og:site_name" content="Quanticode">
     <meta name="og-url" content="">
+    <meta name="robots" content="noindex, nofollow">
     <title>Quanticode</title>
     <!-- HEADER + HOME -->
     <link rel="stylesheet" href="/style.css">
