@@ -4,12 +4,17 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0">
-    <meta >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content="Quanticode">
+    <meta name="type" content="site web">
+    <meta name="keywords" content="développement web, Quanticode, numérique, formations numériques, IA, Design">
+    <meta name="author" content="Solène Vandercruyssen">
+    <meta name="og:title" content="Quanticode">
+    <meta name="og:site_name" content="Quanticode">
+    <meta name="og-url" content="">
     <title>Quanticode</title>
     <!-- HEADER + HOME -->
     <link rel="stylesheet" href="/style.css">
@@ -67,7 +72,7 @@ if (session_status() === PHP_SESSION_NONE) {
                     <li><a href="/home">Home</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/login">Login</a></li>
-                    <li><a href="/formation">Formations</a></li>
+                    <li><a href="/formations">Formations</a></li>
                 </ul>
             <?php endif; ?>
         </div>
