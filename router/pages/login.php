@@ -2,6 +2,8 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
+
+
 $pageBodyClass = 'white'; 
 
 require "./_csrf.php";
@@ -17,26 +19,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['prenom'] ?? '';
     $password = $_POST['password'] ?? '';
 
+    // $stmt= $pdo->prepare('SELECT * FROM users WHERE email = ?');
     $stmt = $pdo->prepare('SELECT * FROM users WHERE username = ?');
     $stmt->execute([$username]);
     $user = $stmt->fetch();
 
-    // if ($user && password_verify($password, $user['password'])) {
-    //     $_SESSION['user_id'] = $user['id'];
-        
-    //     header('Location: /plateforme');
-    //     exit;
-    // } 
-
-    if ($user && $password === $user['password']) {
-    $_SESSION['user_id'] = $user['id'];
-    $_SESSION['username'] = $user['username']; 
-    header('Location: /plateforme');
-    exit;
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['user_id'] = $user['id'];
+        // $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+        header('Location: /plateforme');
+        exit;
+    } 
 }else {
         $error['login'] = "Identifiants incorrects";
     }
-}
+
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
 
@@ -48,6 +46,16 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
     <div class="mirroir">
     <form action="login" method="POST" id="form1">   
     <h2 >Connexion</h2>
+
+<?php 
+if (isset($_GET['logout']) && $_GET['logout'] == 1) {
+    echo "<p style='color: green;'>Vous avez été déconnecté avec succès.</p>";
+}
+?>
+<?php if (!empty($error['login'])): ?>
+    <p style="color: red; text-align: center;"><?php echo $error['login']; ?></p>
+<?php endif; ?>
+
         <div class="compte">
             <!-- Accès aux cours de la formation -->
             <button type="button" id="private">Privé</button>

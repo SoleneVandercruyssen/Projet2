@@ -65,8 +65,9 @@ if (session_status() === PHP_SESSION_NONE) {
                 <img src="/images/icons8-profile-50.png" alt="Profil" id="profil">
                 <!-- From Uiverse.io by Lealdos --> 
 
-                
+                <form action="/logout.php" method="post" style="display:inline;">
                 <button type="button"> Déconnexion </button>
+                </form>
 
             <?php else: ?>
                 <ul>
