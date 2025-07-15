@@ -76,6 +76,7 @@ header{
         height: 70px;
         border-radius: 50%;
     }
+
 } 
 
 .burger-container {
@@ -142,6 +143,8 @@ header{
     text-decoration: underline;
 
 }
+
+
 
 
 /* ! MAIN */

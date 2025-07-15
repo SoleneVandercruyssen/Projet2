@@ -78,7 +78,8 @@ if (isset($_GET['logout']) && $_GET['logout'] == 1) {
                 </div> 
                 <br>
                 <button type="submit" id="sub">Valider</button>
-                <ul>
+                <ul id="connexionLiens">
+                    <li id="NewPassword"> <a href="">Mot de passe oublié ?</a></li>
                 <li id="lien"><a id="lien_inscription" href="/inscription">Cliquez sur ce lien pour créer votre compte</a></li>
                 </ul>
         </form>

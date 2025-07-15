@@ -62,11 +62,14 @@ if (session_status() === PHP_SESSION_NONE) {
     <nav>
         <div class="nav-menu">
             <?php if (!empty($isPlateforme)): ?>
-                <img src="/images/icons8-profile-50.png" alt="Profil" id="profil">
+                <!-- <img src="/images/icons8-profile-50.png" alt="Profil" id="profil"> -->
                 <!-- From Uiverse.io by Lealdos --> 
 
-                <form action="/logout.php" method="post" style="display:inline;">
-                <button type="button"> Déconnexion </button>
+                <form action="/logout" method="post" style="display:inline;">
+                <button type="submit" id="disconnect"> 
+                    <span class="icon"> </span>
+                    <span class="text">Logout</span>                     
+                </button>
                 </form>
 
             <?php else: ?>

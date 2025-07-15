@@ -83,10 +83,9 @@ button:active{
 }
 
 #sub{
-        margin-bottom: 15%;
+        margin-bottom: 7%;
         font-family: Spectral;
         margin-top: 5%;
-
 }
 
 #password, #identity{
@@ -95,7 +94,6 @@ button:active{
     margin-top: 5%;
     margin-right: 3%;
 }
-
 
 .face-to-face{
     display: flex;
@@ -110,19 +108,38 @@ button:active{
         border: 2px solid black;
     }
 
-
-
 }
 /* lien sur le formulaire de connexion pour : redirection vers inscription.php */
+
+
+
+#connexionLiens{
+list-style: none;
+margin-top: 0;
+
 #lien_inscription{
     color: #000000;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-family: Spectral;
     list-style: none;
 }
 
+#NewPassword{
+    color: #000000;
+    font-size: 1.4rem;
+    font-family: Spectral;
+    list-style: none;
+}
 
-#lien_inscription:hover{
+}
+
+
+#NewPassword:hover{
+    color: #ffffff;
+}
+
+
+#lien_inscription:hover, #NewPassword:hover{
     color: #ffffff;
 }
 }
@@ -136,6 +153,35 @@ button:active{
         width: 100%;
         height: 100vh;
     }
+
+
+#connexionLiens{
+list-style: none;
+margin-top: 0;
+
+#lien_inscription{
+    color: #000000;
+    font-size: 1rem;
+    font-family: Spectral;
+    list-style: none;
+}
+
+#NewPassword{
+    color: #000000;
+    font-size: 1rem;
+    font-family: Spectral;
+    list-style: none;
+}
+
+
+
+#lien-retour{
+    width:min-content;
+    list-style: none;
+
+}
+
+
 
     /* Button switch */
     button{
@@ -232,3 +278,4 @@ form{
 
 /* ? Ajouter une classe pour que l'input soit rouge lorsqu'il y a une erreur ? */
 
+}
