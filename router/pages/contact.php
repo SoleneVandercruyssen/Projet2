@@ -48,20 +48,21 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
         
         <div id="form">
             <form action="https://api.web3forms.com/submit" method="post" id="form-contact">
-                <input type="hidden" name="access_key" value="d596b9a-2122-472e-8ba7-51de93146e62">
+                <!-- Pour web3form -->
+                <input type="hidden" name="access_key" value="14eea2ca-f23e-40b7-9162-270fb9763a68">
                 <label for="nom" id="nom"></label>
-                <input type="text" name="nom" placeholder="Dupont"> 
+                <input type="text" name="nom" placeholder="Dupont" required> 
                 <br>
                 <label for="prenom" id="prenom"></label>
-                <input type="text" name="prenom" placeholder="Lucas"> 
+                <input type="text" name="prenom" placeholder="Lucas" required> 
                 <br>
                 <label for="ville" id="ville"></label>
-                <input type="text" name="ville" placeholder="Lille"> 
+                <input type="text" name="ville" placeholder="Lille" required> 
                 <br>
                 <label for="email" id="email"></label>
-                <input type="email" name="email" placeholder="Dupont@gmail.com">
+                <input type="email" name="email" placeholder="Dupont@gmail.com" required>
                 <br>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message..."></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message..." required></textarea>
                 <br>
                 <button type="submit" id="sub">Envoyer</button>
             </form>
@@ -74,5 +75,24 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 <img src="/images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
 </main>
 
+
+
+<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+(function(){
+    emailjs.init("TON_USER_ID"); // Remplace avec ton User ID EmailJS
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('TON_SERVICE_ID', 'TON_TEMPLATE_ID', this)
+    .then(function() {
+        document.getElementById("confirmation").innerText = "Message envoyé avec succès !";
+    }, function(error) {
+        document.getElementById("confirmation").innerText = "Erreur : " + JSON.stringify(error);
+    });
+});
+</script> -->
 <!-- Lien vers le footer -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php'; ?>

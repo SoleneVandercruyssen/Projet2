@@ -181,22 +181,30 @@ margin-top: 0;
 
 }
 
+/* Button switch */
+#private{
 
+    width: 70px;
+    height: 30px;
+    margin: 0;
+    font-size: 1rem;
+    background-color: #afddec;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow: 2px 4px 2px;
+    color: #000000;
+}
 
-    /* Button switch */
-    button{
-        width: 100px;
-        height: 30px;
-        background-color: #afddec;
-        border-radius: 20px;
-        border: 1px solid #000000;
-        box-shadow: 2px 4px 2px;
-        color: #000000;
-
-    }
-
-    #public{
+#public{
+    width: 70px;
+    height: 30px;
+    margin: 0;
+    font-size: 1rem;
     background-color:  #36C8F6;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow: 2px 4px 2px;
+    color: #000000;
 }
 
 #mail_form1{

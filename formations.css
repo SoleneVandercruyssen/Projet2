@@ -394,13 +394,14 @@ dialog{
 
 .infos2{
     padding:20px;
+    width: 90%;
     margin-right: 15%;
     border: 2px dotted var(--yellow); 
 }
 
 .infos3{
     padding:20px;
-    height: 90vh;
+    height: 70vh;
     width: 1020px;
     border: 2px dotted var(--purple);
 }

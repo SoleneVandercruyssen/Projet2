@@ -83,7 +83,6 @@ header{
     display: none;
 } 
 
-
 .nav {
     display: flex;
     justify-content: right;
@@ -152,7 +151,7 @@ header{
 #titre{
     font-family: Play;
     position: relative;
-    left: 50%;
+    left: 43%;
     margin-top: 5%;
     margin-bottom: 10%;
 }
@@ -168,7 +167,6 @@ header{
     right: 20px;
     z-index: 1000;  
 }
-
 
 
 #affiche{

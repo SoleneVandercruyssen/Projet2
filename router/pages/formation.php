@@ -229,7 +229,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
         <div class="photos">
             <img class="img-formations" src="/images/9906021.jpg" alt="image vectorielle de design web">
         </div>
-        <div class="infos">
+        <div>
             <p> > Formation d'une durée de 3 mois</p>
             <p> > En présentiel OU distanciel</p>
             <p> > Prochaine date : 18 septembre au 18 décembre</p>
@@ -462,7 +462,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 <section>
     
     <h2 class="second-title-formations">💡 Nos solutions de financement</h2>
-        <div class="indos3">
+        <div class="infos3">
         <p>
             🎯 Pour les salariés
                 CPF (Compte Personnel de Formation)

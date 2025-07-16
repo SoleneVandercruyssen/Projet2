@@ -5,7 +5,7 @@ require("./_header.php");
 ?>
 <a href="router/404.php">Page 404</a>
 <br>
-<a href="router/home.php">Home</a>
+<a href="/home">Home</a>
 <p>Ceci est ma page 404!</p>
 <?php 
 require("./_footer.php");

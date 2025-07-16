@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 -- Changer idUser en id 
 
--- Requête préparée pour éviter injections SQL
+-- Requête préparée pour éviter les injections SQL
 
 $stmt = $pdo->prepare("INSERT INTO users (id, username, email, password, createdAt, editedAt) VALUES (?, ?, ?, ?, ?, ?)");
 $stmt->execute([$id, $username, $email, $hashedPassword, $createdAt, $editedAt]);
