@@ -118,10 +118,7 @@ button{
         margin: 10px auto
 }
 
-#private{
-    margin-bottom: 5%;
-    margin-right: 10%;
-}
+
 
 .purple{
     background-color: var(--purple);

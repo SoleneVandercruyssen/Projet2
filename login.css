@@ -193,6 +193,7 @@ margin-top: 0;
     border: 1px solid #000000;
     box-shadow: 2px 4px 2px;
     color: #000000;
+
 }
 
 #public{
@@ -206,6 +207,21 @@ margin-top: 0;
     box-shadow: 2px 4px 2px;
     color: #000000;
 }
+
+
+.compte{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    height: 10vh;
+    width: 100%;
+    margin-top: -25%;
+    margin-bottom: 20%;
+    border: 2px solid yellow;
+}
+
+
 
 #mail_form1{
         margin-top: 5%;
@@ -232,18 +248,6 @@ form{
     justify-content: center;
     align-items: center;
 
-
-.compte{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-    width: 100%;
-    margin-top: -25%;
-    margin-bottom: 20%;
-    /* border: 2px solid yellow; */
-}
 
 /* Bouton VALIDER */
 #sub{
@@ -285,5 +289,4 @@ form{
 }
 
 /* ? Ajouter une classe pour que l'input soit rouge lorsqu'il y a une erreur ? */
-
 }

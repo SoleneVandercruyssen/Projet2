@@ -194,20 +194,6 @@ form{
     align-items: center;
 
 
-.compte{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    width: 100%;
-    margin-top: -25%;
-    margin-bottom: 20%;
-    /* border: 2px solid yellow; */
-}
-
-
-
 #sub2{
     background-color: var(--yellow);
     margin-bottom: -14%;
