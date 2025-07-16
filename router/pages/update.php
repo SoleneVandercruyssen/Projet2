@@ -67,7 +67,7 @@ else
         $error["password"] = "Veuillez saisir un mot de passe plus complexe";
     }
     else{
-        $password = password_hash($password, PASSWORD_DEFAULT);
+        $password = Mpassword_hash($password, PASSWORD_DEFAULT);
     }
 }//Fin vérification password
 
