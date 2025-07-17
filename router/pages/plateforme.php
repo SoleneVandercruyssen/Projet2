@@ -78,12 +78,12 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 <section id="plateforme_pdf">
     
     <div class="card">
+        <div  class="together">
         <input type="file" name="import" id="fileId">
     <a href=""download=""><img src="/images/icons8-import-50.png" id="import" alt="icon_import"></a>
 </div>
-<div class="card">
-<a href=""><img src="/images/icons8-export-50.png" id="export" alt="icon_export"></a>
 </div>
+
 </section>
 </section>
 <img src="/images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
