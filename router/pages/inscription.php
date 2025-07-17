@@ -37,7 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'regis
 
 <div class="mirroir">
 
-    <form action="_inscription" method="post" id="formulaire">
+<!-- Je n'ai rien dans action pour que la requête puisse aller vers le fichier PHP.-->
+    <form action="" method="post" id="formulaire">
     <input type="hidden" name="action" value="register">
     <h2 id="inscription">Inscription</h2>
 

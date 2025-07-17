@@ -1,9 +1,8 @@
 <?php 
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
-
+// if (session_status() === PHP_SESSION_NONE) {
+//     session_start();
+// }
+session_start();
 $pageBodyClass = 'white'; 
 
 require "./_csrf.php";
@@ -19,14 +18,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['prenom'] ?? '';
     $password = $_POST['password'] ?? '';
 
-    // $stmt= $pdo->prepare('SELECT * FROM users WHERE email = ?');
+    // Prépare et exécute la requête pour récupérer l'utilisateur par username
     $stmt = $pdo->prepare('SELECT * FROM users WHERE username = ?');
     $stmt->execute([$username]);
     $user = $stmt->fetch();
 
+
     if ($user && password_verify($password, $user['password'])) {
+         // Connexion réussie : création des variables de session
         $_SESSION['user_id'] = $user['id'];
-        // $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
         header('Location: /plateforme');
         exit;

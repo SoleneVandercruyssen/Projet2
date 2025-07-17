@@ -1,8 +1,6 @@
 <?php 
-
 if(session_status() === PHP_SESSION_NONE)
 	session_start();
-
 /**
  * Vérifie si l'utilisateur est connecté ou non et le redirige dans le cas contraire
  * 

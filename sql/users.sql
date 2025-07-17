@@ -19,11 +19,11 @@ CREATE TABLE IF NOT EXISTS `users` (
     
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Changer idUser en id 
-
 -- Requête préparée pour éviter les injections SQL
 
 $stmt = $pdo->prepare("INSERT INTO users (id, username, email, password, createdAt, editedAt) VALUES (?, ?, ?, ?, ?, ?)");
 $stmt->execute([$id, $username, $email, $hashedPassword, $createdAt, $editedAt]);
 
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+-- CREATE TABLE IF NOT EXISTS `messages`

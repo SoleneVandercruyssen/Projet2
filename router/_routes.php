@@ -12,6 +12,7 @@ const ROUTES = [
     "inscription"=>"inscription.php",
     "formations"=>"formation.php",
     "plateforme"=>"plateforme.php",
+    "update"=>"update.php",
 ];
 
 

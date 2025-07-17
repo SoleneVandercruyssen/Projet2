@@ -1,8 +1,9 @@
 <?php 
+require_once __DIR__ . '/../../../_csrf.php';
+require_once __DIR__ . '/../../../_pdo.php';
+require_once __DIR__ . '/../../../_shouldBeLogged.php';
+
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
-require "../_csrf.php";
-require "../_pdo.php";
-require "../_shouldBeLogged.php";
 
 shouldBeLogged(true, "/");
 $b =connexionPDO(); 
@@ -67,7 +68,7 @@ else
         $error["password"] = "Veuillez saisir un mot de passe plus complexe";
     }
     else{
-        $password = Mpassword_hash($password, PASSWORD_DEFAULT);
+        $password = password_hash($password, PASSWORD_DEFAULT);
     }
 }//Fin vérification password
 
