@@ -13,6 +13,8 @@ const ROUTES = [
     "formations"=>"formation.php",
     "plateforme"=>"plateforme.php",
     "update"=>"update.php",
+    "logout" => "logout.php",
+
 ];
 
 

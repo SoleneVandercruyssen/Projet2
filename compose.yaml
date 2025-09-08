@@ -28,7 +28,8 @@ services:
       - DB_HOST=bddsql
       - DB_USER=root
       - DB_PASSWORD=root
-      - DB_NAME=quanticode
+      - MARIADB_DATABASE=quanticode
+      # - DB_NAME=quanticode
     container_name: serverMaria
     restart: always
     

@@ -16,7 +16,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
     <!-- Section MAP -->
     <section id="section" class="section1" >
     <div id="face-to-face">
-        <div  class="desktop_mirror">
+        <div class="desktop_mirror">
         <div id="map">
             <h2 id="Nous-trouver">Où nous trouver !</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162519.69705728866!2d2.9913000390577893!3d50.47145029567714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d77942699c0f%3A0x662161a01a841aa0!2sAFCI%20Formation%20-%20Villeneuve-d&#39;Ascq!5e0!3m2!1sfr!2sfr!4v1747225313365!5m2!1sfr!2sfr" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
