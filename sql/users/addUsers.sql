@@ -1,3 +1,4 @@
+-- ajout de plusieurs utilisateurs avec des identifiants, noms d'utilisateur, emails et mots de passe. 
 INSERT INTO users (username, email, password) 
 VALUES 
 ('Basile', 'basilic@laposte.net', 'detective'),
@@ -9,3 +10,4 @@ VALUES
 ('Ildéric', 'deric@gmail.com', 'inspecteur'),
 ('Hypolite', 'polite@gmail.com', 'hippopotame'),
 ('Olivia', 'oliviadesmont@gmail.com', 'olives50O');
+-- uniquement pour les tests, à supprimer en production
