@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `users` (
     `username` varchar(25) NOT NULL,
     `email` varchar(255) NOT NULL,
     -- `password` stocke le mot de passe haché
-    `password` text NOT NULL,
+    `password` varchar(255) NOT NULL,
     -- `createdAt` enregistre la date de création, `editedAt` la date de la dernière modification
     `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `editedAt` datetime DEFAULT NULL,
@@ -35,4 +35,36 @@ $stmt->execute([$id, $username, $email, $hashedPassword, $createdAt, $editedAt])
 
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
--- CREATE TABLE IF NOT EXISTS `messages`
+-- Création des tables messages et inscriptions avec des clés étrangères liées à la table users
+-- Table Messages
+CREATE TABLE IF NOT EXISTS messages (
+    -- Définition des colonnes de la table messages
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    -- `content` stocke le contenu du message
+    content TEXT NOT NULL,
+    -- `createdAt` enregistre la date de création du message 
+    createdAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+    -- Clé étrangère liée à la table users
+    user_id INT NOT NULL,
+    -- Définition de la contrainte de clé étrangère
+    CONSTRAINT fk_messages_users FOREIGN KEY (user_id) REFERENCES users(id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+        -- Si un utilisateur est supprimé, tous ses messages le sont aussi
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- Table Inscriptions
+CREATE TABLE IF NOT EXISTS inscriptions (
+    -- Définition des colonnes de la table inscriptions
+    -- `id` est la clé primaire auto-incrémentée
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    -- `dateInscription` enregistre la date d'inscription
+    dateInscription DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    -- `type` indique si l'inscription est publique ou privée
+    type ENUM('Public', 'Privé') NOT NULL,
+    user_id INT NOT NULL,
+    -- Définition de la contrainte de clé étrangère
+    CONSTRAINT fk_inscriptions_users FOREIGN KEY (user_id) REFERENCES users(id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+        -- Si un utilisateur est supprimé, toutes ses inscriptions le sont aussi
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

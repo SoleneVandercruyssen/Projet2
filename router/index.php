@@ -25,7 +25,7 @@ $url = trim($url, "/");
 if ($url === "") $url = "home"; // Pour la racine
 
 
-// Nous allons voir si notre url existe dans les routes
+// Si l'url existe dans les routes
 
 if (array_key_exists($url, ROUTES)) {
     $page = ROUTES[$url];
