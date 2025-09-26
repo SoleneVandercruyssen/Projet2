@@ -1,19 +1,19 @@
 <?php 
-require_once __DIR__ . '/../../../_csrf.php';
-require_once __DIR__ . '/../../../_pdo.php';
-require_once __DIR__ . '/../../../_shouldBeLogged.php';
+require_once __DIR__ . '/../_csrf.php';
+require_once __DIR__ . '/../_pdo.php';
+require_once __DIR__ . '/../_shouldBeLogged.php';
 
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 
 shouldBeLogged(true, "/");
-$b =connexionPDO(); 
+$db = connexionPDO(); 
 $sql = $db->prepare("SELECT * FROM users WHERE idUser=?");
 $sql->execute([(int)$_SESSION["user_id"]]);
 $user = $sql->fetch();
 
 $username = $password= $email = "";
 $error = [];
-$regexPassword= "/^(?=.*[!?@#$%^&*+-](?=.*[0-9])(?=.*[A-Z])(?=.*[a-z]).{6,}$/";
+$regexPassword= "/^(?=.*[!?@#$%^&*+-])(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z]).{6,}$/";
 
 if ($_SERVER['REQUEST_METHOD']=== 'POST' && isset($_POST['update'])) {
     // Si le champ est vide, je regarde lancien prénom
@@ -61,7 +61,7 @@ else
     if (empty($_POST["passwordBis"])) {
         $error["passwordBis"] = "Veuillez confirmer votre mot de passe";
     }
-    elseif ($_POST["passwordBis"] !== $_POST["passwordBis"]) {
+    elseif ($_POST["passwordBis"] !== $_POST["password"]) {
         $error["passwordBis"] = "Veuillez saisir le même mot de passe";
     }
     if (!preg_match($regexPassword, $password)) {
@@ -90,7 +90,8 @@ if (empty($error)) {
 
 }
 
-?>
+    ?>
+<h1>Mettre à jour mon profil</h1>
 <form action="" method="post">
     <!-- username -->
     <label for="username">Nom d'Utilisateur :</label>
@@ -126,3 +127,5 @@ if (empty($error)) {
         Read : Lire et afficher les données de notre table. 
         Update : Mettre à jour les données de notre table. 
         Delete : Supprimer les données de notre table. -->
+
+        

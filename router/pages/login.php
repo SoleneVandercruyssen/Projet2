@@ -32,6 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     } 
 }else {
+    // header('Location: /login?error=1'); 
+    // exit;
         $error['login'] = "Identifiants incorrects";
     }
 
@@ -45,16 +47,17 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
     <div id="Forms">
     <div class="mirroir">
     <form action="login" method="POST" id="form1">   
-    <h2 >Connexion</h2>
+    <h2> Connexion </h2>
 
 <?php 
 if (isset($_GET['logout']) && $_GET['logout'] == 1) {
     echo "<p style='color: green;'>Vous avez été déconnecté avec succès.</p>";
 }
+
 ?>
-<?php if (!empty($error['login'])): ?>
-    <p style="color: red; text-align: center;"><?php echo $error['login']; ?></p>
-<?php endif; ?>
+    <?php if (!empty($error['login'])): ?> 
+    <p style="color: red; text-align: center;"><?php echo $error['login']; ?></p> 
+    <?php endif; ?> 
 
         <div class="compte">
             <!-- Accès aux cours de la formation -->
