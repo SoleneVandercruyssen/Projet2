@@ -1,4 +1,6 @@
 <?php 
+
+
 if(session_status() === PHP_SESSION_NONE)
 	session_start();
 /**
@@ -14,7 +16,8 @@ if(session_status() === PHP_SESSION_NONE)
  */
 function shouldBeLogged(bool $logged = true, string $redirect = "/"): void
 {
-    $logged_in = $_SESSION["logged"]??$_SESSION["logged_in"]??false;
+    // Vérifie si la session contient un identifiant utilisateur
+    $logged_in = isset($_SESSION['user_id']) && !empty($_SESSION['user_id']);
 
     if($logged)
     {

@@ -9,7 +9,6 @@ require "./_csrf.php";
 require "./_pdo.php";
 require "./_shouldBeLogged.php";
 
-
 $error = [];
 
 $pdo = new PDO('mysql:host=bddsql;dbname=quanticode', 'root', 'root');
@@ -23,6 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute([$username]);
     $user = $stmt->fetch();
 
+//     var_dump($user);
+// exit;
 
     if ($user && password_verify($password, $user['password'])) {
          // Connexion réussie : création des variables de session

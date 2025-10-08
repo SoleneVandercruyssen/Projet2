@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('slide-in-center');
-                // observer.unobserve(entry.target); // décommente si tu veux l'animation une seule fois
             }
         });
     }, { threshold: 0.3 });

@@ -29,20 +29,3 @@ document.querySelectorAll('button + dialog').forEach((dialog, i) => {
         }
     }
 });
-
-
-// buttons.forEach((button, i )=>{
-//     button.addEventListener("click", () => {
-//     if(modaleDialog[i])
-//         {
-//         modaleDialog[i].showModale();
-//     }
-// })
-
-// if(closeButton){
-//     closeButton.addEventListener("click", ()=>
-//     {
-//         modaleDialog[i].close();
-//     })
-// }
-// })

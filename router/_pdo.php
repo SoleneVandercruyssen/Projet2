@@ -1,5 +1,5 @@
 <?php 
-/**
+/*
  * Retourne une instance de connexion PDO pour se connecter à la BDD "quanticode"
  * * PDO = (PHP Data Object)
  * Pour se connecter, PDO demande un DSN (Data Source Name)
@@ -10,7 +10,7 @@ function connexionPDO(): \PDO
     try
     {
         // Je récupère ma configuration :
-        $config = require __DIR__."/../config/_blogConfig.php";
+        $config = require $_SERVER['DOCUMENT_ROOT']."/config/blog_config.php";
         // Je construit mon DSN :
         /* 
         C'est un string contenant toute les informations pour localiser la BDD.

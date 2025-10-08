@@ -3,6 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,7 +15,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta name="author" content="Solène Vandercruyssen">
     <meta name="og:title" content="Quanticode">
     <meta name="og:site_name" content="Quanticode">
-    <meta name="og-url" content="">
+    <link rel="icon" type="image/png" href="./images/logo.png">
     <meta name="robots" content="noindex, nofollow">
     <title>Quanticode</title>
     <!-- HEADER + HOME -->

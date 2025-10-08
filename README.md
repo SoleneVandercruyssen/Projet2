@@ -1,6 +1,6 @@
 # <font color='red'> ![Quanticode](images/logo_1_Quanticode.png) </font>
 
- * Pour ce projet j'ai décidé de créer un site web responsive sur une entreprise nommée *Quanticode* créer à partir de ChatGPT. 
+ * Pour ce projet j'ai décidé de créer un site web responsive sur une entreprise nommée *Quanticode*. 
    Le site web mettra en avant les spécialités de l'entreprise ainsi qu'un accès à une Plateforme d'e-learning.
 
 

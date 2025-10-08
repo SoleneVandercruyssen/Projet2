@@ -6,7 +6,7 @@ return
 [
     "host"=>$_ENV["DB_HOST"],
     "port"=>3306,
-    "dbname"=>$_ENV["DB_NAME"],
+    "dbname"=>"quanticode", //$_ENV["DB_NAME"],
     "user"=>$_ENV["DB_USER"],
     "password"=>$_ENV["DB_PASSWORD"],
     "charset"=>"utf8mb4",
@@ -16,3 +16,6 @@ return
         PDO::ATTR_EMULATE_PREPARES => false
     ]
 ];
+
+var_dump($_ENV["DB_NAME"]);
+exit;

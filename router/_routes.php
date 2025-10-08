@@ -14,6 +14,7 @@ const ROUTES = [
     "plateforme"=>"plateforme.php",
     "update"=>"update.php",
     "logout" => "logout.php",
+    "update_profil" => "update_profil.php",
 
 ];
 
