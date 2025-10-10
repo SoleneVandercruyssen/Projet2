@@ -74,20 +74,23 @@ if (empty($error)) {
 }
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
+<div id="updateProfil">
 <h1>Mettre à jour mon profil</h1>
-<form action="" method="post">
+<form action="" method="post" id="formulaireMDP">
     <!-- Password -->
     <label for="password">Mot de passe :</label>
-    <input type="password" name="password" id="password">
+    <input type="password" name="password" id="passwordUpdate">
     <span class="erreur"><?php echo $error["password"]??""; ?></span> 
     <br>
     <!-- password verify -->
     <label for="passwordBis">Confirmation du mot de passe :</label>
-    <input type="password" name="passwordBis" id="passwordBis">
+    <input type="password" name="passwordBis" id="passwordBisUpdate">
     <span class="erreur"><?php echo $error["passwordBis"]??""; ?></span> 
     <br>
-    <input type="submit" value="Mettre à jour" name="update">
-</form>
+    <input type="submit" id="mettreAJour" value="Mettre à jour" name="update">
 
+    <li><a href="/login">Retour</a></li>
+</form>
+</div>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php';

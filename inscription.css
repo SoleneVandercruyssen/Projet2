@@ -28,6 +28,102 @@
 }
 
 
+/* ! Version Mobile */
+
+
+@media screen and (min-width: 360px) and (max-width: 990px) {
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    /* Button switch */
+    button{
+        width: 100px;
+        height: 30px;
+        background-color: #afddec;
+        border-radius: 20px;
+        border: 1px solid #000000;
+        box-shadow: 2px 4px 2px;
+        color: #000000;
+
+    }
+
+    #public{
+    background-color:  #36C8F6;
+}
+
+#mail_form1{
+        margin-top: 5%;
+        width: 24px;
+        height: 24px;
+        border-radius: none;
+
+        input{
+            background-color: transparent;
+        }
+}
+
+#formulaire1{
+    background-color: #F5CB5C;
+}
+
+#formulaire{
+    width: 200px;
+    height: 340px;
+    background-color: #afddec;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+#sub2{
+    background-color: var(--yellow);
+    margin-bottom: 5%;
+    font-family: Spectral;
+    margin-top: 18%;
+}
+
+#mail_form1, #identity, #img_password{
+    width: 30px;
+    height: 30px;
+    margin-top: 5%;
+}
+
+.face-to-face{
+    display: flex;
+    gap: 5%;
+}
+
+    input{
+        width: 100%;
+        border-radius: 5px;
+        height: 30px;
+        /* background-color: transparent; */
+        margin-top: 5%;
+        color: #000000;
+        border: 2px solid black;
+    }
+}
+
+#inscription{
+    margin-bottom: 15%;
+}
+
+#lien{
+    list-style: none;
+}
+
+}
+
+
+
 /* ! Version Desktop */
 
 @media  screen and (min-width: 999px) and (max-width: 1990px) {
@@ -123,7 +219,6 @@ button:active{
 
 }
 
-
 /* lien sur le formulaire de connexion pour : redirection vers inscription.php */
 #lien2{
     color: #000000;
@@ -137,101 +232,4 @@ button:active{
         text-decoration: underline;
     }
 }
-
-
-
-/* ! Version Mobile */
-
-
-@media screen and (min-width: 360px) and (max-width: 990px) {
-    body{
-        width: 100%;
-        height: 100vh;
-    }
-
-    /* Button switch */
-    button{
-        width: 100px;
-        height: 30px;
-        background-color: #afddec;
-        border-radius: 20px;
-        border: 1px solid #000000;
-        box-shadow: 2px 4px 2px;
-        color: #000000;
-
-    }
-
-    #public{
-    background-color:  #36C8F6;
-}
-
-#mail_form1{
-        margin-top: 5%;
-        width: 24px;
-        height: 24px;
-        border-radius: none;
-
-        input{
-            background-color: transparent;
-        }
-}
-
-#formulaire{
-    background-color: #F5CB5C;
-}
-
-form{
-    width: 300px;
-    height: 420px;
-    background-color: #afddec;
-    border-radius: 20px;
-    margin-left: 10%;
-    margin-bottom: 10%;
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-#sub2{
-    background-color: var(--yellow);
-    margin-bottom: -14%;
-    font-family: Spectral;
-    margin-top: 15%;
-}
-
-#mail_form1, #identity, #img_password{
-    width: 30px;
-    height: 30px;
-    margin-top: 5%;
-}
-
-.face-to-face{
-    display: flex;
-    gap: 5%;
-}
-
-    input{
-        width: 100%;
-        border-radius: 5px;
-        height: 30px;
-        /* background-color: transparent; */
-        margin-top: 5%;
-        color: #000000;
-        border: 2px solid black;
-    }
-}
-
-#inscription{
-    margin-bottom: 15%;
-}
-
-#lien{
-    list-style: none;
-}
-
-}
-
-/* ? Ajouter une classe pour que l'input soit rouge lorsqu'il y a une erreur ? */
 

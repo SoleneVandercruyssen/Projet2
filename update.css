@@ -4,7 +4,6 @@
     margin: 0;
 }
 
-
 /* ? Couleurs */
 
 :root {
@@ -26,7 +25,142 @@
     src: url(./fonts/Spectral/Spectral-Regular.ttf);
 }
 
+@media screen and (max-width: 990px) 
+{
+    body{
+        width: 100%;
+        height: 100vh;
+    }
 
-@media screen and (min-width: 1000px) and (max-width: 1999px) {
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+#updateProfil{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulaireMDP{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #afddec;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    margin-top: 2%;
+
+}
+
+    #passwordUpdate, #passwordBisUpdate{
+        width: 150px;
+        height: 20px;
+    }
+
+#mettreAJour{
+    cursor: pointer;
+    font-family: Spectral;
+    font-size: 1.2rem;
+    width: 110px;
+    height: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: var(--bluelighter);
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 2px 4px 2px;
+    color: #000000;
+}
+
+li{
+    list-style: none;
+    margin-top: 3%;
+}
+a{
+    text-decoration: underline;
+    color: black;
+
+}
+
+
+@media screen and (min-width: 991px) {
     
+
+    body{
+        width: 100%;
+        height: 100vh;
+        font-family: 'Play', sans-serif;
+    }
+
+
+#updateProfil{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mettreAJour{
+    cursor: pointer;
+    font-family: Spectral;
+    font-size: 1.2rem;
+    width: 110px;
+    height: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: var(--bluelighter);
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 2px 4px 2px;
+    color: #000000;
+}
+
+#formulaireMDP{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #afddec;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    margin-top: 2%;
+
+}
+    #passwordUpdate, #passwordBisUpdate{
+        width: 150px;
+        height: 20px;
+    }
+
+li{
+    list-style: none;
+    margin-top: 3%;
+}
+a{
+    text-decoration: underline;
+    color: black;
+
+}
+
+}
 }

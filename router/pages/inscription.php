@@ -1,5 +1,4 @@
 <?php 
-
 $pageBodyClass = 'white'; 
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php'; 
 
@@ -35,7 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'regis
 
 <!-- FORMULAIRE 2 : INSCRIPTION -->
 
-<div class="mirroir">
 
 <!-- Je n'ai rien dans action pour que la requête puisse aller vers le fichier PHP.-->
     <form action="" method="post" id="formulaire">
@@ -68,8 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'regis
         <li id="lien2"><a id="lien_retour" href="/login">Retour</a></li>
     </ul>
 </form>
-</div>
-</div>
+
 
 
 

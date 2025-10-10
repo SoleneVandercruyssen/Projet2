@@ -4,8 +4,6 @@
     padding: 0;
 }
 
-
-
 /* ? Couleurs */
 
 :root {
@@ -49,37 +47,34 @@
         color: #000000;
     }
 
-    #public{
-    background-color:  #36C8F6;
-}
-
 button:active{
     color: #ffffff;
 }
 
-#form1{
+#formulaire1{
     position: relative;
-    left: 100%;
+    background-color: #afddec;
+    margin-left: 35%;
     width: 550px;
     height: 520px;
-    background-color: #afddec;
     border-radius: 20px;
     margin-bottom: 10%;
-    margin-left: 20%;
     margin-top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-.compte{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    width: 70%;
-    margin-bottom: 5%;
+/* Bouton VALIDER */
+    input{
+        width: 100%;
+        border-radius: 5px;
+        background-color: transparent;
+        margin-top: 5%;
+        color: #000000;
+        border: 2px solid black;
+    }
+
 }
 
 #sub{
@@ -97,17 +92,6 @@ button:active{
 
 .face-to-face{
     display: flex;
-}
-
-    input{
-        width: 100%;
-        border-radius: 5px;
-        background-color: transparent;
-        margin-top: 5%;
-        color: #000000;
-        border: 2px solid black;
-    }
-
 }
 /* lien sur le formulaire de connexion pour : redirection vers inscription.php */
 
@@ -181,47 +165,6 @@ margin-top: 0;
 
 }
 
-/* Button switch */
-#private{
-
-    width: 70px;
-    height: 30px;
-    margin: 0;
-    font-size: 1rem;
-    background-color: #afddec;
-    border-radius: 20px;
-    border: 1px solid #000000;
-    box-shadow: 2px 4px 2px;
-    color: #000000;
-
-}
-
-#public{
-    width: 70px;
-    height: 30px;
-    margin: 0;
-    font-size: 1rem;
-    background-color:  #36C8F6;
-    border-radius: 20px;
-    border: 1px solid #000000;
-    box-shadow: 2px 4px 2px;
-    color: #000000;
-}
-
-
-.compte{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-    height: 10vh;
-    width: 100%;
-    margin-top: -25%;
-    margin-bottom: 20%;
-    border: 2px solid yellow;
-}
-
-
 
 #mail_form1{
         margin-top: 5%;
@@ -235,7 +178,7 @@ margin-top: 0;
 }
 
 
-form{
+#formulaire1{
     width: 300px;
     height: 420px;
     background-color: #afddec;
@@ -271,7 +214,6 @@ form{
         width: 100%;
         border-radius: 5px;
         height: 30px;
-        /* background-color: transparent; */
         margin-top: 5%;
         color: #000000;
         border: 2px solid black;

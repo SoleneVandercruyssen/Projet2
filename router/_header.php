@@ -29,6 +29,13 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="/login.css">
     <!-- INSCRIPTION -->
     <link rel="stylesheet" href="/inscription.css">
+    <!-- UPDATE -->
+    <link rel="stylesheet" href="/update.css">
+    <!-- FORMATIONS -->
+    <link rel="stylesheet" href="/formations.css">
+    <script type="module" src="/JS/flèche.js"></script>
+    <script src="/JS/formations.js" defer></script>
+    <script src="/JS/cards.js" defer></script>
     <!-- PLATEFORME -->
     <script type="module"  src="/JS/calendar.js"></script>
     <script type="module" src="/JS/date.js"></script>
@@ -36,11 +43,8 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="/plateforme.css" >
     <script rel="stylesheet" src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- FORMATIONS -->
-    <link rel="stylesheet" href="/formations.css">
-    <script type="module" src="/JS/flèche.js"></script>
-    <script src="/JS/formations.js" defer></script>
-    <script src="/JS/cards.js" defer></script>
+    <!-- UPDATE PROFIL -->
+    <link rel="stylesheet" href="/update_profil.css">
 </head>
 
 <!-- Ajout d'une classe qui contient une variable "$pageBodyClass" -->
@@ -68,8 +72,8 @@ if (session_status() === PHP_SESSION_NONE) {
 
                 <form action="/logout" method="post" style="display:inline;">
                 <button type="submit" id="disconnect"> 
-                    <span class="icon"> </span>
-                    <span class="text">Logout</span>                     
+                    <span class="icon"></span>
+                    <p>Exit</p>                    
                 </button>
                 </form>
 

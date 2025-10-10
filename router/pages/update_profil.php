@@ -5,8 +5,9 @@ require_once __DIR__ . '/../_shouldBeLogged.php';
 shouldBeLogged(true, '/login');
 ?>
 
+<div id="update_profil_container">
 <h1>Mettre à jour mon profil</h1>
-<form action="" method="post">
+<form action="" method="post" id="update_profil">
     <!-- username -->
     <label for="username">Nom d'Utilisateur :</label>
     <input type="text" name="username" id="username" value="<?php echo $user["username"] ?>">
@@ -19,7 +20,7 @@ shouldBeLogged(true, '/login');
     <br>
     <!-- Password -->
     <label for="password">Mot de passe :</label>
-    <input type="password" name="password" id="password">
+    <input type="password" name="password" id="passwordUpdateProfil">
     <span class="erreur"><?php echo $error["password"]??""; ?></span> 
     <br>
     <!-- password verify -->
@@ -30,7 +31,8 @@ shouldBeLogged(true, '/login');
     <input type="submit" value="Mettre à jour" name="update">
 </form>
 
-<form action="" method="post" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.')">
+<form id="formUpdateProfil" action="" method="post" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.')">
     <input type="hidden" name="delete_account" value="1">
-    <button type="submit">Supprimer mon compte</button>
+    <button type="submit" id="delete">Supprimer mon compte</button>
 </form>
+</div>

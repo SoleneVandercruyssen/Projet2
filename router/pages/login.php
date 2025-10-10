@@ -1,7 +1,4 @@
 <?php 
-// if (session_status() === PHP_SESSION_NONE) {
-//     session_start();
-// }
 session_start();
 $pageBodyClass = 'white'; 
 
@@ -11,6 +8,28 @@ require "./_shouldBeLogged.php";
 
 $error = [];
 
+// Initialisation de la variable de session pour le nombre de tentatives de connexion
+if(!isset($_SESSION['login_attempt'])) {
+    $_SESSION['login_attempt'] = 0;
+}
+
+if(!isset($_SESSION['last_login_attempt'])) {
+    $_SESSION['last_login_attempt'] = null;
+}
+
+$maxAttempts = 5; // Nombre maximum de tentatives
+$blockDuration = 300; // 5 minutes = 300 secondes
+
+// Vérification si l'utilisateur est bloqué
+if($_SESSION['last_login_attempt'] && (time() - $_SESSION['last_login_attempt'])< $blockDuration) {
+    $error['login'] = "Trop de tentatives de connexion. Veuillez réessayer plus tard.";
+} elseif($_SESSION['last_login_attempt'] && (time() - $_SESSION['last_login_attempt']) >= $blockDuration) {
+    // Réinitialiser les tentatives après la période de blocage
+    $_SESSION['login_attempt'] = 0;
+    $_SESSION['last_login_attempt'] = null;
+}
+
+// Connexion à la base de données
 $pdo = new PDO('mysql:host=bddsql;dbname=quanticode', 'root', 'root');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -27,15 +46,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($user && password_verify($password, $user['password'])) {
          // Connexion réussie : création des variables de session
+        $_SESSION['login_attempt'] = 0; // Réinitialiser le compteur de tentatives
+        $_SESSION['last_login_attempt'] = null; // Réinitialiser le temps de la dernière tentative
+
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
         header('Location: /plateforme');
         exit;
     } 
 }else {
-    // header('Location: /login?error=1'); 
-    // exit;
-        $error['login'] = "Identifiants incorrects";
+    // Échec de la connexion : incrémenter le compteur de tentatives
+    $_SESSION['login_attempt'] += 1;
+    if ($_SESSION['login_attempt'] >= $maxAttempts) {
+        $_SESSION['last_login_attempt'] = time();
+        $error['login'] = "Trop de tentatives. Veuillez réessayer dans 5 minutes.";
+    } else {
+        $remainingAttempts = $maxAttempts - $_SESSION['login_attempt'];
+        $error['login'] = "Identifiants incorrects. Il vous reste $remainingAttempts tentative(s).";
+    }
+    // Gestion des erreurs de connexion
+if(isset($_GET['error']) && $_GET['error'] == 1) {
+    $error['login'] = "Identifiants incorrects";
+}
+        // $error['login'] = "Identifiants incorrects";
     }
 
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
@@ -45,27 +78,17 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 
 
     <!-- Accés utilisateur et accés entreprise -->
-    <div id="Forms">
-    <div class="mirroir">
-    <form action="login" method="POST" id="form1">   
+    <form action="login" method="POST" id="formulaire1">   
     <h2> Connexion </h2>
 
-<?php 
-if (isset($_GET['logout']) && $_GET['logout'] == 1) {
+    <?php 
+    if (isset($_GET['logout']) && $_GET['logout'] == 1) {
     echo "<p style='color: green;'>Vous avez été déconnecté avec succès.</p>";
-}
-
-?>
+    }
+    ?>
     <?php if (!empty($error['login'])): ?> 
     <p style="color: red; text-align: center;"><?php echo $error['login']; ?></p> 
     <?php endif; ?> 
-
-        <div class="compte">
-            <!-- Accès aux cours de la formation -->
-            <button type="button" id="private">Privé</button>
-            <!--   Accès à des courts gratuits pour tous -->
-            <button type="button" id="public">Public</button>
-        </div>
         <br>
                 <label for="prenom" id="prenom"></label>
                 <div class="face-to-face">
@@ -88,8 +111,6 @@ if (isset($_GET['logout']) && $_GET['logout'] == 1) {
                 </ul>
         </form>
 <br>
-</div>
-
 
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php'; ?>

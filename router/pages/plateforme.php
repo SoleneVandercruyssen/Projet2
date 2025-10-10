@@ -115,7 +115,6 @@ $pageBodyClass = 'white'; // Classe CSS spécifique pour la page plateforme
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 include_once __DIR__ . '/update_profil.php';
 
-
 if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
     echo "Connecté en tant que " . htmlspecialchars($_SESSION['username']);
 } else {
@@ -125,17 +124,29 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 
 <!-- ! Mini Header -->
 <section id="plateforme_icons">
-    <button type="button" class="button_mini_header" ><img src="/images/icons8-message-30.png" alt="icon message"></button>
+    <button type="button" class="button_mini_header" id="openMessageModal"><img src="/images/icons8-message-30.png" alt="icon message"></button>
     <button type="button" class="button_mini_header"><img src="/images/icons8-language-50.png" alt="icon langue"></button>
 </section>
 
-    <main>
+<!-- Modale d'envoi de message -->
+<div id="messageModal" class="modal">
+    <div class="modal-content">
+        <span id="closeMessageModal" class="close">&times;</span>
+        <h3>Envoyer un message</h3>
+        <form action="/send_message.php" method="POST">
+            <textarea name="content" placeholder="Écrivez votre message ici..." required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>
+
+<!-- ! Section Calendrier -->
 <div id='calendar'></div>
 
 
 <!-- Modale cachée par défaut -->
-<div id="eventModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:1000; align-items:center; justify-content:center;">
-    <form id="eventForm" style="background:#fff; padding:20px; border-radius:10px; min-width:250px; display:flex; flex-direction:column; gap:10px;">
+<div id="eventModal">
+    <form id="eventForm">
     <label>
         Titre de l'événement :
         <input type="text" id="eventTitle" required>
@@ -148,7 +159,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
         Couleur :
         <input type="color" id="eventColor" value="#2DBBD4">
     </label>
-    <div style="display:flex; gap:10px; justify-content:flex-end;">
+    <div class="modal-buttons">
         <button type="button" id="closeModal">Annuler</button>
         <button type="submit">Ajouter</button>
     </div>
@@ -196,9 +207,5 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 </section>
 </section>
 <img src="/images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
-    </main>
-
-
-
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php'; ?>
