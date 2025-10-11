@@ -41,6 +41,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <script type="module" src="/JS/date.js"></script>
     <script type="module" src="/JS/flèche.js"></script>
     <link rel="stylesheet" href="/plateforme.css" >
+    <script src="/JS/plateforme.js" defer></script>
     <script rel="stylesheet" src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- UPDATE PROFIL -->

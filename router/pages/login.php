@@ -33,14 +33,21 @@ if($_SESSION['last_login_attempt'] && (time() - $_SESSION['last_login_attempt'])
 $pdo = new PDO('mysql:host=bddsql;dbname=quanticode', 'root', 'root');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    // Vérification du honeypot
+    if (!empty($_POST['website'])) {
+        // Si le champ caché a été rempli, on bloque immédiatement
+        $error['login'] = "Suspicious activity detected.";
+    } else{
+    // Récupération et validation des données du formulaire
     $username = $_POST['prenom'] ?? '';
     $password = $_POST['password'] ?? '';
 
+    if(!empty($error['login'])){}
     // Prépare et exécute la requête pour récupérer l'utilisateur par username
     $stmt = $pdo->prepare('SELECT * FROM users WHERE username = ?');
     $stmt->execute([$username]);
     $user = $stmt->fetch();
-
 //     var_dump($user);
 // exit;
 
@@ -48,12 +55,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          // Connexion réussie : création des variables de session
         $_SESSION['login_attempt'] = 0; // Réinitialiser le compteur de tentatives
         $_SESSION['last_login_attempt'] = null; // Réinitialiser le temps de la dernière tentative
-
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
         header('Location: /plateforme');
         exit;
     } 
+    }
 }else {
     // Échec de la connexion : incrémenter le compteur de tentatives
     $_SESSION['login_attempt'] += 1;
@@ -68,6 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 if(isset($_GET['error']) && $_GET['error'] == 1) {
     $error['login'] = "Identifiants incorrects";
 }
+
         // $error['login'] = "Identifiants incorrects";
     }
 
@@ -104,6 +112,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
                 <span class="erreur"><?php echo $error["password"]??""; ?></span>
                 </div> 
                 <br>
+                <div style="display:none;">
+                <label for="website">Ne pas remplir ce champ</label>
+                <input type="text" name="website" id="website" autocomplete="off">
+                </div>
                 <button type="submit" id="sub">Valider</button>
                 <ul id="connexionLiens">
                     <li id="NewPassword"> <a href="/update">Mot de passe oublié ?</a></li>

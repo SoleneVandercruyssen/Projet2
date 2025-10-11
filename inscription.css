@@ -67,11 +67,14 @@
 
 #formulaire1{
     background-color: #F5CB5C;
+    width: 320px;
+    height: 300px;
+    border-radius: 10px;
 }
 
 #formulaire{
-    width: 200px;
-    height: 340px;
+    width:320px;
+    height: 400px;
     background-color: #afddec;
     border-radius: 10px;
     margin-left: 5%;

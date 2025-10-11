@@ -11,8 +11,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
 
 
-<main>
-
 <section  id="presentation"  class="section1">
     <div>
         <div>
@@ -184,7 +182,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 </section>
 <!-- ! Fin de la section AVIS -->
 <img src="/images/icons8-flèche-haut.gif" alt="gif flèche vers le haut" id="gif-flèche">
-</main>
 
 
 <?php 

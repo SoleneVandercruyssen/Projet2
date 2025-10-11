@@ -74,8 +74,8 @@ if (empty($error)) {
 }
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
-<div id="updateProfil">
-<h1>Mettre à jour mon profil</h1>
+<section id="updateMDP">
+<h1 id="MDP">Mettre à jour mon mot de passe</h1>
 <form action="" method="post" id="formulaireMDP">
     <!-- Password -->
     <label for="password">Mot de passe :</label>
@@ -91,6 +91,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 
     <li><a href="/login">Retour</a></li>
 </form>
-</div>
+</section>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php';

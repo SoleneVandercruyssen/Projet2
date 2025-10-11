@@ -124,7 +124,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 
 <!-- ! Mini Header -->
 <section id="plateforme_icons">
-    <button type="button" class="button_mini_header" id="openMessageModal"><img src="/images/icons8-message-30.png" alt="icon message"></button>
+    <button type="button"  id="openMessageModal"  class="button_mini_header"><img src="/images/icons8-message-30.png" alt="icon message"></button>
     <button type="button" class="button_mini_header"><img src="/images/icons8-language-50.png" alt="icon langue"></button>
 </section>
 
@@ -133,7 +133,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
     <div class="modal-content">
         <span id="closeMessageModal" class="close">&times;</span>
         <h3>Envoyer un message</h3>
-        <form action="/send_message.php" method="POST">
+        <form action="/send_message" method="POST">
             <textarea name="content" placeholder="Écrivez votre message ici..." required></textarea>
             <button type="submit">Envoyer</button>
         </form>
