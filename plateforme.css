@@ -109,10 +109,10 @@ nav a{
 #messageModal {
     display: none; 
     position: fixed; 
-    top: 0; 
+    top: 50%; 
     left: 0; 
     width: 100%; 
-    height: 30%; 
+    height: 50%; 
     background: rgba(0,0,0,0.4);  
     align-items: center; 
     justify-content: center;
@@ -365,8 +365,6 @@ nav a{
     background-color: #36C8F6;
     margin-bottom: 10%;
     position: relative;
-    left: 10%;
-    margin-bottom: 10%;
 }
 
 #plateforme_icons{
@@ -393,12 +391,8 @@ nav a{
 
 #plateforme_liste{
     position: relative;
-    left: 15%;
-    width: 70%;
-    height: 30vh;
+    width: 60%;
     background-color: #9381FF;
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 h3{
@@ -966,7 +960,7 @@ select option:hover {
 
 #title-administratif{
     position: relative;
-    left: 25%;
+    left: 20%;
     font-family: Spectral;
     color: red;
     font-size: 2rem;
@@ -976,11 +970,18 @@ select option:hover {
 #Administratif
 {
     margin-top: 15%;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 #plateforme_pdf{
     margin-top: 5%;
-    margin-left: 20%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: row;

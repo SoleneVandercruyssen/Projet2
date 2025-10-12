@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `users` (
     `password` varchar(255) NOT NULL,
     -- `createdAt` enregistre la date de création, `editedAt` la date de la dernière modification
     `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `editedAt` datetime DEFAULT NULL, 
+    `editedAt` datetime DEFAULT NULL 
     -- `type` indique si l'inscription est publique ou privée
     -- `type` ENUM('Public', 'Privé') NOT NULL
 ) 

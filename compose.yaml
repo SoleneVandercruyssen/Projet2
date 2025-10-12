@@ -3,7 +3,6 @@ services:
     build: .
     depends_on:
       - bddsql
-      - bddnosql
     container_name: Quanticode1
     ports:
       - "8087:80"
@@ -14,8 +13,7 @@ services:
       - DB_HOST=bddsql
       - DB_USER=root
       - DB_PASSWORD=root
-      - DB_NAME=Quanticode
-      - MA_MOYENNE_VARIABLE=bidule
+      - DB_NAME=quanticode
     restart: always
     
   bddsql:
@@ -45,12 +43,3 @@ services:
       PMA_HOST: bddsql
       PMA_USER: root
       PMA_PASSWORD: root
-
-  bddnosql:
-      image: mongo 
-      container_name: serverMongoDB2025
-      ports:
-        - "27017:27017"
-      restart: always
-
-# Lorsque l'on crée un fichier compose.yalm il est important de ne pas oublier les espaces au début de chaque éléments sauf "services:"

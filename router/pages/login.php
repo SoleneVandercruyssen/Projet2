@@ -43,7 +43,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['prenom'] ?? '';
     $password = $_POST['password'] ?? '';
 
-    if(!empty($error['login'])){}
     // Prépare et exécute la requête pour récupérer l'utilisateur par username
     $stmt = $pdo->prepare('SELECT * FROM users WHERE username = ?');
     $stmt->execute([$username]);
@@ -57,11 +56,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['last_login_attempt'] = null; // Réinitialiser le temps de la dernière tentative
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
+
         header('Location: /plateforme');
         exit;
-    } 
-    }
-}else {
+    } else {
     // Échec de la connexion : incrémenter le compteur de tentatives
     $_SESSION['login_attempt'] += 1;
     if ($_SESSION['login_attempt'] >= $maxAttempts) {
@@ -71,13 +69,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $remainingAttempts = $maxAttempts - $_SESSION['login_attempt'];
         $error['login'] = "Identifiants incorrects. Il vous reste $remainingAttempts tentative(s).";
     }
-    // Gestion des erreurs de connexion
-if(isset($_GET['error']) && $_GET['error'] == 1) {
-    $error['login'] = "Identifiants incorrects";
+ } 
+} 
 }
-
-        // $error['login'] = "Identifiants incorrects";
+    // Gestion des erreurs de connexion
+    if(isset($_GET['error']) && $_GET['error'] == 1) 
+    {
+    $error['login'] = "Identifiants incorrects";
     }
+
 
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
@@ -86,12 +86,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 
 
     <!-- Accés utilisateur et accés entreprise -->
-    <form action="login" method="POST" id="formulaire1">   
+    <form action="" method="POST" id="formulaire1">   
     <h2> Connexion </h2>
 
     <?php 
-    if (isset($_GET['logout']) && $_GET['logout'] == 1) {
-    echo "<p style='color: green;'>Vous avez été déconnecté avec succès.</p>";
+    if (isset($_SESSION['logout_message'])) {
+    echo "<p style='color: green;'>".$_SESSION['logout_message']."</p>";
+    unset($_SESSION['logout_message']); //Pour éviter que le message n'apparaisse à chaque rechargement de la page
     }
     ?>
     <?php if (!empty($error['login'])): ?> 

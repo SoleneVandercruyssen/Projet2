@@ -8,6 +8,7 @@
    > dans la création de sites performants et sur mesure, tout en formant des talents aux métiers du numérique : **SEO**, **DevOps**, **UX/UI Design**
    > et **développement web**.
    > Notre mission : allier innovation, pédagogie et expertise pour propulser les projets et les carrières digitales.
+   > De plus notre entreprise met en place une plateforme e-learning pour ceux et celles qui souhaitent recevoir des cours gratuits et être au courant des prochains événements
 
 
  ## Fonctionnalités principales
