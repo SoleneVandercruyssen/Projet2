@@ -66,24 +66,41 @@ Accès à phpMyAdmin
 ##### Structure du projet
 
 > /
-> ├── html/                # Pages statiques HTML
-> ├── JS/                  # Scripts JavaScript
-> ├── images/              # Images et icônes
+> |__ config/              [blog_config.php]              # configuration
+> |__ env/                 [.env]                         # variables d'environnements
 > ├── fonts/               # Polices personnalisées
+> ├── images/              # Images et icônes
+> ├── JS/                  # Scripts JavaScript
+> |__ router/              [_deconnexion.php],            # Page deconnexion
+>                          [_footer.php],                 # Footer commun
+>                          [_csrf.php], 
+>                          [_header.php],                 # Header commun
+>                          [_mail.php], 
+>                          [_pdo.php],                    # Connexion PDO
+>                          [_routes.php],                 # Chemin des routes
+>                          [_shouldBeLogged.php], 
+>                          [index.php]                    # URL
+> |__ router/pages/        [404.php],                     # Page erreur 404
+>                          [contact.php],                 # Page contact
+>                          [formation.php],               # Page formations
+>                          [home.php],                    # Page d'accueil
+>                          [inscription.php],             # Formulaire d’inscription
+>                          [login.php],                   # Formulaire de connexion
+>                          [logout.php],                  # Redirection déconnexion de plateforme.php
+>                          [plateforme.php],              # Plateforme e-learning
+>                          [send_message.php],            # Page envoie d'un message
+>                          [update_profil],               # Update du profil
+>                          [update.php]                   # Update du MDP
 > ├── sql/                 # Scripts SQL (structure et données)
 > ├── vendor/              # Librairies PHP (PHPMailer, Composer)
-> ├── [style.css](http://_vscodecontentref_/0)            # Styles > globaux
-> ├── [contact.css](http://_vscodecontentref_/1)          # Styles page contact
-> ├── [login.css](http://_vscodecontentref_/2)            # Styles page login
-> ├── [plateforme.css](http://_vscodecontentref_/3)       # Styles plateforme e-learning
-> ├── [_header.php](http://_vscodecontentref_/4)          # Header commun
-> ├── [_footer.php](http://_vscodecontentref_/5)          # Footer commun
-> ├── [_inscription.php](http://_vscodecontentref_/6)     # Formulaire d’inscription
-> ├── [login.php](http://_vscodecontentref_/7)            # Formulaire de connexion
-> ├── [plateforme.php](http://_vscodecontentref_/8)       # Plateforme e-learning
+> |__ [.htaccess]
+> ├── [compose.yaml]       # Docker Compose
+> ├── [style.css]          # Styles > globaux
+> ├── [contact.css]        # Styles page contact
+> ├── [login.css]          # Styles page login
+> ├── [plateforme.css]     # Styles plateforme e-learning                                 
 > ├── _mail                # Script d’envoi d’e-mail (PHPMailer)
 > ├── dockerfile           # Dockerfile pour le service web
-> ├── [compose.yaml](http://_vscodecontentref_/9)         # Docker Compose
 > └── [README.md](http://_vscodecontentref_/10)            # Ce fichier
 
 ### Auteurs

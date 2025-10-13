@@ -18,6 +18,3 @@ const ROUTES = [
     "send_message" => "send_message.php",
 
 ];
-
-
-?>
