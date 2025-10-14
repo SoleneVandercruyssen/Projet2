@@ -18,7 +18,7 @@ VALUES
 ('Alice', 'alice@example.com', '$2y$10$abcdefghijklmNOPQRSTUVWXYZ1234567890abcdEfghijKLmnopqrstu', NOW()),
 ('Bob', 'bob@example.com', '$2y$10$abcdefghijklmNOPQRSTUVWXYZ1234567890abcdEfghijKLmnopqrstu', NOW()),
 ('Charlie', 'charlie@example.com', '$2y$10$abcdefghijklmNOPQRSTUVWXYZ1234567890abcdEfghijKLmnopqrstu', NOW());
-
+-- hash des mots de passe pour 'password123'
 
 -- Jeu d’essai pour la table Messages
 INSERT INTO messages (content, user_id, createdAt)

@@ -4,7 +4,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 
 $error = [];
 
-$pdo = new PDO('mysql:host=bddsql;port=3306;dbname=quanticode', 'root', 'root');
+require_once $_SERVER['DOCUMENT_ROOT'] . '/router/_pdo.php';
+$pdo = connexionPDO();
+// $pdo = new PDO('mysql:host=bddsql;port=3306;dbname=quanticode', 'root', 'root');
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'register') {
