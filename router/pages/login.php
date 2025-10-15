@@ -38,7 +38,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($_POST['website'])) {
         // Si le champ caché a été rempli, on bloque immédiatement
         $error['login'] = "Suspicious activity detected.";
-    } else{
+    }
+    // Vérification du captcha
+    if (!isset($_POST['captcha']) || $_POST['captcha'] != $_SESSION['captcha_answer']) {
+    $error['login'] = "Captcha incorrect. Veuillez réessayer.";
+    }  else{
+        unset($_SESSION['captcha_answer']);
+    // Vérification du token CSRF
+    
     // Récupération et validation des données du formulaire
     $username = $_POST['prenom'] ?? '';
     $password = $_POST['password'] ?? '';
@@ -79,6 +86,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
 
+// Générer un captcha (une opération mathématique simple)
+$number1 = rand(1, 9);
+$number2 = rand(1, 9);
+$_SESSION['captcha_answer'] = $number1 + $number2;
+
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
 
@@ -117,6 +129,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
                 <label for="website">Ne pas remplir ce champ</label>
                 <input type="text" name="website" id="website" autocomplete="off">
                 </div>
+                <div class="face-to-face">
+                <label for="captcha">Combien font <?php echo $number1 . " + " . $number2; ?> ?</label>
+                <input type="text" name="captcha" placeholder="Votre réponse" required>
+                </div>
+                <br>
                 <button type="submit" id="sub">Valider</button>
                 <ul id="connexionLiens">
                     <li id="NewPassword"> <a href="/update">Mot de passe oublié ?</a></li>
