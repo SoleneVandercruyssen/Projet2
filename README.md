@@ -73,6 +73,7 @@ Accès à phpMyAdmin
 > ├── JS/                  # Scripts JavaScript
 > |__ router/              [_deconnexion.php],            # Page deconnexion
 >                          [_footer.php],                 # Footer commun
+>                          [captcha.php],
 >                          [_csrf.php], 
 >                          [_header.php],                 # Header commun
 >                          [_mail.php], 
@@ -80,6 +81,7 @@ Accès à phpMyAdmin
 >                          [_routes.php],                 # Chemin des routes
 >                          [_shouldBeLogged.php], 
 >                          [index.php]                    # URL
+>
 > |__ router/pages/        [404.php],                     # Page erreur 404
 >                          [contact.php],                 # Page contact
 >                          [formation.php],               # Page formations
@@ -98,7 +100,9 @@ Accès à phpMyAdmin
 > ├── [style.css]          # Styles > globaux
 > ├── [contact.css]        # Styles page contact
 > ├── [login.css]          # Styles page login
-> ├── [plateforme.css]     # Styles plateforme e-learning                                 
+> ├── [plateforme.css]     # Styles plateforme e-learning
+> ├── [update_profil.css]  # Styles update (Profil) 
+> ├── [update.css]         # Styles page update (MDP) 
 > ├── _mail                # Script d’envoi d’e-mail (PHPMailer)
 > ├── dockerfile           # Dockerfile pour le service web
 > └── [README.md](http://_vscodecontentref_/10)            # Ce fichier
@@ -106,7 +110,7 @@ Accès à phpMyAdmin
 ### Auteurs
 
 * Projet réalisé par Vandercruyssen Solène dans le cadre d’un exercice de développement web.
-  
+
 ### Remarques
 
 * Pour toute question ou bug, ouvrez une issue ou contactez l’auteur.
