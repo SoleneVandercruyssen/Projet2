@@ -44,7 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $error['login'] = "Captcha incorrect. Veuillez réessayer.";
     }  else{
         unset($_SESSION['captcha_answer']);
-    // Vérification du token CSRF
     
     // Récupération et validation des données du formulaire
     $username = $_POST['prenom'] ?? '';
@@ -86,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
 
-// Générer un captcha (une opération mathématique simple)
+// Générer un captcha
 $number1 = rand(1, 9);
 $number2 = rand(1, 9);
 $_SESSION['captcha_answer'] = $number1 + $number2;

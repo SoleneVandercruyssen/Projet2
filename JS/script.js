@@ -2,7 +2,7 @@
 
 
 
-// ! MENU-BURGER
+// !Slidder
 
 /* 
 * Déclaration d'une variable "currentSlide" en let égale à 0
