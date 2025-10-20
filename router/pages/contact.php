@@ -64,6 +64,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
                 <br>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message..." required></textarea>
                 <br>
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
                 <button type="submit" id="sub">Envoyer</button>
             </form>
         </div>
