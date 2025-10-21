@@ -15,8 +15,9 @@ function setCSRF(int $time = 0): void
 {
     // si $time est plus grand que 0 on ajoute en session un temps avant expiration
     if($time>0)
+        // Cette fonction PHP retourne le timestamp UNIX actuel, c’est-à-dire le nombre de secondes écoulées depuis le 1er janvier 1970
         $_SESSION["tokenExpire"] = time() + 60*$time; 
-    /* 
+    /*  
         random_bytes va retourner un nombre d'octet aléatoire d'une longueur donnée en paramètre.
         bin2hex va transformer ces octets en hexadecimal.
         On range le tout en session.

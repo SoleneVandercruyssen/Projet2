@@ -34,11 +34,16 @@ $pdo = new PDO('mysql:host=bddsql;dbname=quanticode', 'root', 'root');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
+if (!isCSRFValid()) {
+        $error['login'] = "Requête non autorisée (CSRF détecté).";
+    } else {
+
     // Vérification du honeypot
     if (!empty($_POST['website'])) {
         // Si le champ caché a été rempli, on bloque immédiatement
         $error['login'] = "Suspicious activity detected.";
     }
+
     // Vérification du captcha
     if (!isset($_POST['captcha']) || $_POST['captcha'] != $_SESSION['captcha_answer']) {
     $error['login'] = "Captcha incorrect. Veuillez réessayer.";
@@ -46,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         unset($_SESSION['captcha_answer']);
     
     // Récupération et validation des données du formulaire
-    $username = $_POST['prenom'] ?? '';
+    $username = cleanData($_POST['prenom'] ?? '');
     $password = $_POST['password'] ?? '';
 
     // Prépare et exécute la requête pour récupérer l'utilisateur par username
@@ -62,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['last_login_attempt'] = null; // Réinitialiser le temps de la dernière tentative
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
-
+        
         header('Location: /plateforme');
         exit;
     } else {
@@ -75,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $remainingAttempts = $maxAttempts - $_SESSION['login_attempt'];
         $error['login'] = "Identifiants incorrects. Il vous reste $remainingAttempts tentative(s).";
     }
- } 
+ } }
 } 
 }
     // Gestion des erreurs de connexion
@@ -89,6 +94,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $number1 = rand(1, 9);
 $number2 = rand(1, 9);
 $_SESSION['captcha_answer'] = $number1 + $number2;
+
+
+setCSRF(30); // Jeton CSRF valable 30 minutes
 
 include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 ?>
@@ -133,6 +141,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
                 <input type="text" name="captcha" placeholder="Votre réponse" required>
                 </div>
                 <br>
+                <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
                 <button type="submit" id="sub">Valider</button>
                 <ul id="connexionLiens">
                     <li id="NewPassword"> <a href="/update">Mot de passe oublié ?</a></li>

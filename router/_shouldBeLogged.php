@@ -68,6 +68,7 @@ function isSelectedUser(string $redirect = "/", string $index = "id", string $se
 {
     $selectedId = $_GET[$index] ?? $_POST[$index]?? false;
 
+    // Si l'id sélectionné ne correspond pas à celui en session, on redirige
     if(!isset($_SESSION[$session]) || $_SESSION[$session] != $selectedId)
     {
         header("Location: ".$redirect);

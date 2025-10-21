@@ -17,7 +17,7 @@
 - Plateforme d’e-learning avec gestion des utilisateurs (inscription, connexion, sessions)
 - Téléchargement de cours au format PDF
 - Gestion d’un calendrier d’événements (FullCalendar)
-- Formulaire de contact avec envoi d’e-mail (PHPMailer)
+- Formulaire de contact avec envoi d’e-mail (Web3Form)
 - Interface responsive (mobile & desktop)
 - Administration basique (import/export de fichiers, gestion des utilisateurs)
 
@@ -28,7 +28,7 @@
 - **Frontend** : HTML5, CSS3 (custom + Tailwind), JavaScript (modules)
 - **Backend** : PHP 8+, PDO (MySQL/MariaDB)
 - **Base de données** : MariaDB (SQL)
-- **Envoi d’e-mails** : PHPMailer (SMTP Gmail ou Mailtrap pour le dev)
+- **Envoi d’e-mails** : Web3Form
 - **Gestion de projet** : Docker, Docker Compose
 - **Autres** : FullCalendar, Fontes personnalisées, icônes
 
@@ -39,7 +39,6 @@
 ### Prérequis
 
 - Docker & Docker Compose installés
-- Accès à un serveur SMTP (Mailtrap pour le dev, Gmail/OVH/Infomaniak pour la prod)
 
 ### Lancer le projet
 
@@ -53,14 +52,6 @@ Accès à phpMyAdmin
 * http://localhost:8093
 * Utilisateur : root
 * Mot de passe : root
-
-
-#### Configuration de l’envoi d’e-mails
-
-
-* Pour le développement, configurez PHPMailer avec Mailtrap (voir fichier _mail).
-* Pour la production, utilisez le SMTP de votre fournisseur (Gmail, OVH, etc.) et un mot de passe d’application si besoin.
-
 
 
 ##### Structure du projet

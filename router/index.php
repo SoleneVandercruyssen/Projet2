@@ -1,13 +1,9 @@
 <?php 
 
-/* 
-    Peu importe l'url écrit, on est redirigé vers ce fichier.
-    Il lui est demandé de traiter l'url et de charger le fichier correspondant
-*/
-
 require __DIR__ . "/_routes.php";
 // Permet de récupérer l'url qui a été demandé par l'utilisateur :
 $url = $_SERVER["REQUEST_URI"];
+// On sanitize l'url pour éviter les failles XSS
 $url = filter_var($url, FILTER_SANITIZE_URL);
 
 /* 
@@ -28,9 +24,13 @@ if ($url === "") $url = "home"; // Pour la racine
 // Si l'url existe dans les routes
 
 if (array_key_exists($url, ROUTES)) {
+
+    // Récupérer le nom de la page associée à l'url
     $page = ROUTES[$url];
+    // Construire le chemin vers le fichier de la page
     $path = __DIR__ . "/pages/$page";
 
+    // Si le fichier existe, on le require
     if(is_file($path))
     {
         require $path;

@@ -6,10 +6,11 @@ $error = [];
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/router/_pdo.php';
 $pdo = connexionPDO();
-// $pdo = new PDO('mysql:host=bddsql;port=3306;dbname=quanticode', 'root', 'root');
 
-
+// Traitement du formulaire d'inscription
+// Je vérifie que la requête est bien en POST et que l'action est "register"
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'register') {
+    // Récupération des données du formulaire
     $username = $_POST['prenom'] ?? '';
     $email = $_POST['mail'] ?? '';
     $password = $_POST['password'] ?? '';
@@ -19,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'regis
         // Hachage du mot de passe
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        // Insertion dans la base
+        // Insertion dans la base de données 
         $stmt = $pdo->prepare('INSERT INTO users (username, email, password) VALUES (?, ?, ?)');
         if ($stmt->execute([$username, $email, $hashedPassword])) {
             echo "Inscription réussie, vous pouvez vous connecter.";

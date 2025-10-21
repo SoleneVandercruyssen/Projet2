@@ -22,6 +22,7 @@ function connexionPDO(): \PDO
         // je retourne mon instance :
         return $pdo;
     }
+    // En cas d'erreur de connexion, on attrape l'exception et on la relance
     catch(\PDOException $e)
     {
         throw new \PDOException($e->getMessage(), (int)$e->getCode());

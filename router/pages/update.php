@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once __DIR__ . '/../_csrf.php';
 require_once __DIR__ . '/../_pdo.php';
 
@@ -7,9 +8,8 @@ $user = [];
 // convertit ces octets en une chaîne lisible en hexadécimal (64 caractères)
 $token = bin2hex(random_bytes(32)); 
 
-// Je stocke le token et sa date d'expiration dans la base de données
-// $sql = $db->prepare("UPDATE users SET reset_token = ?, reset_token_expire = DATE_ADD(NOW(), INTERVAL 30 MINUTE) WHERE email = ?");
-// $sql->execute([$token, $email]);
+// Connexion à la BDD
+$db = connexionPDO();
 
 if (isset($_GET['token'])) {
     $token = $_GET['token'];
@@ -18,11 +18,15 @@ if (isset($_GET['token'])) {
     $user = $sql->fetch();
 
     if (!$user) {
-        die("Lien de réinitialisation invalide ou expiré.");
+        $_SESSION['flash'] = "Lien de réinitialisation invalide ou expiré.";
+        header('Location: /login');
+        exit;
     }
 }
 
-$username = $password= $email = "";
+// $username = $password= $email = "";
+$username = $user['username'] ?? '';
+$email = $user['email'] ?? '';
 // Tableau d'erreurs
 $error = [];
 // Regex mot de passe
@@ -35,6 +39,7 @@ if (empty($_POST["password"])) {
 }
 else
 {
+    // Je nettoie la donnée
     $password = trim($_POST["password"]);
     // Je vérifie que le mot de passe est complexe et que la confirmation est correcte
     if (empty($_POST["passwordBis"])) {
@@ -56,7 +61,6 @@ else
 
 if (empty($error)) {
     // Je met à jour les informations dans la base de données
-    // $db = connexionPDO();
     $sql = $db->prepare("UPDATE users SET username=:us, email=:em, password=:mdp WHERE id=:id");
     $sql->execute([
         "id"=>$user["id"],
@@ -77,6 +81,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 <section id="updateMDP">
 <h1 id="MDP">Mettre à jour mon mot de passe</h1>
 <form action="" method="post" id="formulaireMDP">
+
     <!-- Password -->
     <label for="password">Mot de passe :</label>
     <input type="password" name="password" id="passwordUpdate">
@@ -94,3 +99,4 @@ include $_SERVER['DOCUMENT_ROOT'] . '/router/_header.php';
 </section>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/router/_footer.php';
+ob_end_flush();

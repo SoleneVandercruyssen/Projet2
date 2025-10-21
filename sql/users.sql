@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `users` (
     `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `editedAt` datetime DEFAULT NULL 
     -- `type` indique si l'inscription est publique ou privée
-    -- `type` ENUM('Public', 'Privé') NOT NULL
+    -- `type` ENUM('Public', 'Privé') NOT NULL DEFAULT 'Public'
 ) 
 -- Définition du moteur de stockage et du jeu de caractères de la table users 
 ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -44,7 +44,9 @@ CREATE TABLE IF NOT EXISTS `messages` (
     -- Clé étrangère liée à la table users
     `user_id` INT(1) NOT NULL,
     -- Définition de la contrainte de clé étrangère
-    CONSTRAINT `fk_messages_users` FOREIGN KEY (`user_id`) REFERENCES `users`(`id`)
+    CONSTRAINT `fk_messages_users` 
+        FOREIGN KEY (`user_id`) 
+        REFERENCES `users`(`id`)
         ON DELETE CASCADE ON UPDATE CASCADE
         -- Si un utilisateur est supprimé, tous ses messages le sont aussi
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
