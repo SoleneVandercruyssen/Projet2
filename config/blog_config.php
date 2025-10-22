@@ -17,7 +17,3 @@ return
         PDO::ATTR_EMULATE_PREPARES => false //désactive l’émulation des requêtes préparées
     ]
 ];
-
-// test
-var_dump($_ENV["DB_NAME"]);
-exit;
