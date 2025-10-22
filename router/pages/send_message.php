@@ -10,9 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset ($_POST['content']) && trim($
     $db = connexionPDO();
 
     $userId = (int)$_SESSION["user_id"];
+    // Récupération et validation du contenu du message
     $content = trim($_POST['content'] );
 
     if (!empty($content)) {
+        // Sécurisation du contenu pour éviter les injections XSS
         $content = htmlspecialchars($content, ENT_QUOTES, 'UTF-8');
         // Préparation et exécution de la requête d'insertion
         $sql = $db->prepare("INSERT INTO messages (user_id, content) VALUES (?, ?)");
