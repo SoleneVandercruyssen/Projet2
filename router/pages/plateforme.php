@@ -10,6 +10,7 @@ $sql = $db->prepare("SELECT * FROM users WHERE id=?");
 $sql->execute([(int)$_SESSION["user_id"]]);
 $user = $sql->fetch();
 
+// Variables pour le formulaire
 $username = $password= $email = "";
 // Tableau d'erreurs
 $error = [];
