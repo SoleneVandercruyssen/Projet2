@@ -58,6 +58,8 @@ else {
         }
     }
 }// Fin vérification email 
+
+
 // Si password est vide, alors on garde l'ancien mot de passe
 if (empty($_POST["password"])) {
     $password = $user["password"];
